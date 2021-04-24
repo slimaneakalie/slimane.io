@@ -1,12 +1,13 @@
 // import { useStore } from '../store'
 import React from "react";
 import { AppProps } from "next/app";
-import Navbar, { NavbarProps } from "../components/Navbar";
+import Header from "../src/components/Header";
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
-import theme from "../theme";
+import theme from "../src/theme";
 import Head from "next/head";
+import { HeaderProps } from "../src/types/Header";
 
-const navbarProps: NavbarProps = {
+const navbarProps: HeaderProps = {
   links: [
     {
       label: "Listings",
@@ -47,7 +48,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Navbar {...navbarProps} />
+        <Header {...navbarProps} />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
