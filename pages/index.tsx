@@ -1,7 +1,10 @@
+import { Typography } from "@material-ui/core";
+import VideoPanel from "../src/components/VideoPanel";
+
 export default function Home() {
   return (
     <>
-      <h1>Hello world</h1>
+      <VideoPanel />
     </>
-  )
+  );
 }
