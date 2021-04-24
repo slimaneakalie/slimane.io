@@ -1,10 +1,4 @@
-interface Article {
-  thumbnailURL: string;
-  title: string;
-  shortDescription: string;
-  readingTimeInMinute: number;
-  publishingDate: string;
-}
+import { Article } from "./article.types";
 
 interface ArticlesMap {
   [key: string]: Article;

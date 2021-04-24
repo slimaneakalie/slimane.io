@@ -2,11 +2,12 @@ import RecentArticles from "../components/RecentArticles";
 
 const articles = {
   "125": {
-    thumbnailURL: "thumb",
-    title: "title",
-    shortDescription: "description",
+    id: "125",
+    thumbnailURL: "https://picsum.photos/200/300",
+    title: "Article title",
+    shortDescription: "Article description",
     readingTimeInMinute: 9,
-    publishingDate: "publishingDate",
+    publishingDate: new Date(),
   },
 };
 

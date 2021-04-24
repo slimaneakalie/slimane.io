@@ -22,7 +22,7 @@ export default function WebsitePresenter(): JSX.Element {
             </div>
             <div>
               In this website I share whatever I learn or build and my thoughts
-              on life.
+              on various subjects.
             </div>
           </Typography>
         </div>

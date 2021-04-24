@@ -5,7 +5,6 @@ export const useWebsitePresenterStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    width: "100%",
     "@media (max-width: 1280px)": {
       display: "block",
     },

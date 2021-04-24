@@ -1,43 +1,41 @@
 import {
-  Button,
   CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
   Typography,
   Card,
 } from "@material-ui/core";
 import { useArticleStyles } from "../styles/article.styles";
+import { Article } from "../types/article.types";
 
-export default function ArticleCard(): JSX.Element {
+export default function ArticleCard(article: Article): JSX.Element {
   const classes = useArticleStyles();
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      <CardActionArea className={classes.container}>
         <CardMedia
           className={classes.media}
-          image="https://picsum.photos/200/300"
-          title="Contemplative Reptile"
+          image={article.thumbnailURL}
+          title={article.title}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {article.title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography gutterBottom variant="subtitle1" component="p">
+            {article.shortDescription}
+          </Typography>
+          <Typography
+            variant="body2"
+            component="p"
+            className={classes.metadataPanel}
+          >
+            {article.publishingDate.toLocaleDateString()} -{" "}
+            {article.readingTimeInMinute} min read
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
     </Card>
   );
 }
