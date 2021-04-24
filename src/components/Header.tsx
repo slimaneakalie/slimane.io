@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
-import { useHeaderStyles } from "../styles/Header";
+import { useHeaderStyles } from "../styles/header.styles";
 import { HeaderProps, HeaderState } from "../types/header.types";
 import { isClient } from "../common/utils";
 import LinkWrapper from "./LinkWrapper";
@@ -117,14 +117,13 @@ export default function Header({ links }: HeaderProps): JSX.Element {
 
   // rendering
   return (
-    <header>
-      <AppBar
-        position="static"
-        className={classes.header}
-        color={"transparent"}
-      >
-        {mobileView ? displayMobile() : displayDesktop()}
-      </AppBar>
-    </header>
+    <AppBar
+      elevation={0}
+      position="static"
+      className={classes.appBar}
+      color={"transparent"}
+    >
+      {mobileView ? displayMobile() : displayDesktop()}
+    </AppBar>
   );
 }

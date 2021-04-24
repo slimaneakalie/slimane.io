@@ -1,9 +1,10 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useHeaderStyles = makeStyles((theme) => ({
-  header: {
-    "@media (max-width: 900px)": {
-      paddingLeft: 0,
+  appBar: {
+    width: 1040,
+    "@media (max-width: 1040px)": {
+      width: "auto",
     },
   },
   link: {
@@ -37,8 +38,6 @@ export const useHeaderStyles = makeStyles((theme) => ({
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
-    paddingRight: 79,
-    paddingLeft: 118,
   },
   toolbarMobile: {
     display: "flex",
