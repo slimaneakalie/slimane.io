@@ -1,10 +1,12 @@
 import { Typography } from "@material-ui/core";
-import VideoPanel from "../src/components/VideoPanel";
+import WebsitePresenter from "../src/components/WebsitePresenter";
+import RecentArticles from "../src/containers/recentArticles.container";
 
 export default function Home() {
   return (
     <>
-      <VideoPanel />
+      <WebsitePresenter />
+      <RecentArticles />
     </>
   );
 }

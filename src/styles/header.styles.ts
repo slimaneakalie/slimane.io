@@ -2,8 +2,17 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useHeaderStyles = makeStyles((theme) => ({
   appBar: {
-    width: 1040,
-    "@media (max-width: 1040px)": {
+    paddingTop: 30,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "@media (max-width: 1280px)": {
+      display: "block",
+    },
+  },
+  container: {
+    width: 1280,
+    "@media (max-width: 1280px)": {
       width: "auto",
     },
   },

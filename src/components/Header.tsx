@@ -123,7 +123,9 @@ export default function Header({ links }: HeaderProps): JSX.Element {
       className={classes.appBar}
       color={"transparent"}
     >
-      {mobileView ? displayMobile() : displayDesktop()}
+      <div className={classes.container}>
+        {mobileView ? displayMobile() : displayDesktop()}
+      </div>
     </AppBar>
   );
 }

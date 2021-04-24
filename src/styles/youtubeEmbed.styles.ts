@@ -6,6 +6,7 @@ export const useYoutubeEmbedStyles = makeStyles((theme) => ({
     position: "relative",
     height: 0,
     paddingBottom: "56.25%",
+    borderRadius: 28,
     "& > iframe": {
       left: 0,
       top: 0,
