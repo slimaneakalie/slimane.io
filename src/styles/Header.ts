@@ -9,6 +9,9 @@ export const useHeaderStyles = makeStyles((theme) => ({
   link: {
     textDecoration: "none",
     color: "inherit",
+    "&:hover": {
+      textDecoration: "none",
+    },
   },
   logo: {
     width: 70,
@@ -17,17 +20,29 @@ export const useHeaderStyles = makeStyles((theme) => ({
   menuButton: {
     fontFamily: "Open Sans, sans-serif",
     fontWeight: 700,
-    size: "18px",
-    marginLeft: "38px",
+    size: 18,
+    marginLeft: 38,
+    textDecoration: "none",
+  },
+  menuDrawerItem: {
+    fontFamily: "Open Sans, sans-serif",
+    fontWeight: 700,
+    size: 18,
+    textAlign: "center",
+    marginTop: 20,
+    marginBottom: 20,
+    display: "block",
+    width: 190,
   },
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
-    paddingRight: "79px",
-    paddingLeft: "118px",
+    paddingRight: 79,
+    paddingLeft: 118,
   },
   toolbarMobile: {
     display: "flex",
     justifyContent: "space-between",
   },
+  mobileMenu: {},
 }));

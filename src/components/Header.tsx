@@ -6,48 +6,66 @@ import {
   IconButton,
   Drawer,
   MenuItem,
-  Link,
+  Link as MaterialLink,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+
 import { useHeaderStyles } from "../styles/Header";
-import { HeaderProps, HeaderState } from "../types/Header";
+import { HeaderProps, HeaderState } from "../types/header.types";
 import { isClient } from "../common/utils";
+import LinkWrapper from "./LinkWrapper";
 
 export default function Header({ links }: HeaderProps): JSX.Element {
-  const classes = useHeaderStyles();
+  // initial state
   const initialState: HeaderState = {
-    mobileView: false,
+    mobileView: true,
     drawerOpen: false,
   };
+
+  // hooks
+  const classes = useHeaderStyles();
   const [state, setState] = useState(initialState);
   const { mobileView, drawerOpen } = state;
 
+  // ui helpers
   const createMenuButtons = (): React.ReactNode[] =>
-    links.map(({ label, link }) => (
+    links.map(({ label, link, isExternal }) => (
       <Button key={label} color={"inherit"} className={classes.menuButton}>
-        <a className={classes.link} href={link}>
-          {label}
-        </a>
+        <LinkWrapper isExternal={isExternal} href={link}>
+          <a
+            className={classes.link}
+            href={isExternal ? link : undefined}
+            target={isExternal ? "_blank" : undefined}
+          >
+            {label}
+          </a>
+        </LinkWrapper>
       </Button>
     ));
 
   const createDrawerMenuChoices = (): React.ReactNode[] =>
-    links.map(({ label, link }) => (
-      <Link
-        {...{
-          to: link,
-          color: "inherit",
-          className: classes.link,
-          key: label,
-        }}
-      >
-        <MenuItem>{label}</MenuItem>
-      </Link>
+    links.map(({ label, link, isExternal }) => (
+      <LinkWrapper isExternal={isExternal} href={link} key={label}>
+        <MaterialLink
+          {...{
+            className: classes.link,
+            href: isExternal ? link : undefined,
+            target: isExternal ? "_blank" : undefined,
+          }}
+        >
+          <MenuItem className={classes.menuDrawerItem}>{label}</MenuItem>
+        </MaterialLink>
+      </LinkWrapper>
     ));
 
   const logo = (): React.ReactNode => (
     <img className={classes.logo} src={"/logo.svg"} />
   );
+
+  const handleDrawerOpen = () =>
+    setState((prevState) => ({ ...prevState, drawerOpen: true }));
+  const handleDrawerClose = () =>
+    setState((prevState) => ({ ...prevState, drawerOpen: false }));
 
   const displayDesktop = (): React.ReactNode => (
     <Toolbar className={classes.toolbar}>
@@ -55,11 +73,6 @@ export default function Header({ links }: HeaderProps): JSX.Element {
       <div>{createMenuButtons()}</div>
     </Toolbar>
   );
-
-  const handleDrawerOpen = () =>
-    setState((prevState) => ({ ...prevState, drawerOpen: true }));
-  const handleDrawerClose = () =>
-    setState((prevState) => ({ ...prevState, drawerOpen: false }));
 
   const displayMobile = (): React.ReactNode => {
     return (
@@ -84,23 +97,25 @@ export default function Header({ links }: HeaderProps): JSX.Element {
             onClose: handleDrawerClose,
           }}
         >
-          <div>{createDrawerMenuChoices()}</div>
+          <div className={classes.mobileMenu}>{createDrawerMenuChoices()}</div>
         </Drawer>
       </Toolbar>
     );
   };
 
-  useEffect(() => {
-    const setResponsiveness = () => {
-      return isClient() && window.innerWidth < 900
-        ? setState((prevState) => ({ ...prevState, mobileView: true }))
-        : setState((prevState) => ({ ...prevState, mobileView: false }));
-    };
+  // handle responsiveness
+  const setResponsiveness = () => {
+    return isClient() && window.innerWidth < 900
+      ? setState((prevState) => ({ ...prevState, mobileView: true }))
+      : setState((prevState) => ({ ...prevState, mobileView: false }));
+  };
 
+  useEffect(() => {
     setResponsiveness();
     isClient() && window.addEventListener("resize", () => setResponsiveness());
   }, []);
 
+  // rendering
   return (
     <header>
       <AppBar
