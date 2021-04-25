@@ -5,9 +5,9 @@ import {
   Typography,
   Card,
 } from "@material-ui/core";
-import { createArticleLink, createVideoLink } from "../common/utils";
-import { Video } from "../types/videoCard.types";
-import { useVideoCardStyles } from "../styles/videoCard.styles";
+import { createArticleLink, createVideoLink } from "../../common/utils";
+import { Video } from "../../types/home/videoCard.types";
+import { useVideoCardStyles } from "../../styles/home/videoCard.styles";
 
 export default function VideoCard(video: Video): JSX.Element {
   const classes = useVideoCardStyles();

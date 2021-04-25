@@ -1,7 +1,8 @@
-import { LatestPodcastProps } from "../types/LatestPodcast";
+import { LatestPodcastProps } from "../../types/home/LatestPodcast";
 import { Typography } from "@material-ui/core";
 import { PrimaryButton } from "./PrimaryButton";
 import LinkWrapper from "./LinkWrapper";
+import { useLatestPodcastStyles } from "../../styles/home/latestPodcast.styles";
 
 export default function LatestPodcast({
   podcastEmbedUrl,
@@ -11,22 +12,16 @@ export default function LatestPodcast({
   return (
     <section className={classes.root}>
       <Typography variant="h4" component="h1" className={classes.mainTitle}>
-        Latest Podcast
+        Latest PODCAST
       </Typography>
 
       <iframe
         src={podcastEmbedUrl}
-        height="300px"
+        height="161px"
         width="900px"
         frameBorder="0"
         scrolling="no"
       ></iframe>
-
-      <LinkWrapper href={podcastPageLink} isExternal={false}>
-        <PrimaryButton className={classes.seeAllButton}>
-          See all episodes
-        </PrimaryButton>
-      </LinkWrapper>
     </section>
   );
 }

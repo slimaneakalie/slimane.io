@@ -1,5 +1,5 @@
 import { Button, ButtonProps, LinkBaseProps } from "@material-ui/core";
-import { usePrimaryButtonStyles } from "../styles/primaryButton.styles";
+import { usePrimaryButtonStyles } from "../../styles/home/primaryButton.styles";
 
 export function PrimaryButton(props: ButtonProps & LinkBaseProps): JSX.Element {
   const classes = usePrimaryButtonStyles();

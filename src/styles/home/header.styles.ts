@@ -24,8 +24,9 @@ export const useHeaderStyles = makeStyles((theme) => ({
     },
   },
   logo: {
-    width: 70,
-    height: 60,
+    width: 130,
+    height: "auto",
+    cursor: "pointer",
   },
   menuButton: {
     fontFamily: "Open Sans, sans-serif",

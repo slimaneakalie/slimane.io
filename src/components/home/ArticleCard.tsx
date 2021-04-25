@@ -5,10 +5,10 @@ import {
   Typography,
   Card,
 } from "@material-ui/core";
-import { useArticleCardStyles } from "../styles/articleCard.styles";
-import { Article } from "../types/articleCard.types";
+import { useArticleCardStyles } from "../../styles/home/articleCard.styles";
+import { Article } from "../../types/home/articleCard.types";
 import LinkWrapper from "./LinkWrapper";
-import { createArticleLink } from "../common/utils";
+import { createArticleLink } from "../../common/utils";
 
 export default function ArticleCard(article: Article): JSX.Element {
   const classes = useArticleCardStyles();

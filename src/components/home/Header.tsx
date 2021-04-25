@@ -10,10 +10,11 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
-import { useHeaderStyles } from "../styles/header.styles";
-import { HeaderProps, HeaderState } from "../types/header.types";
-import { isClient } from "../common/utils";
+import { useHeaderStyles } from "../../styles/home/header.styles";
+import { HeaderProps, HeaderState } from "../../types/home/header.types";
+import { isClient } from "../../common/utils";
 import LinkWrapper from "./LinkWrapper";
+import Logo from "./Logo";
 
 export default function Header({ links }: HeaderProps): JSX.Element {
   // initial state
@@ -59,7 +60,9 @@ export default function Header({ links }: HeaderProps): JSX.Element {
     ));
 
   const logo = (): React.ReactNode => (
-    <img className={classes.logo} src={"/logo.svg"} />
+    <LinkWrapper href={"/"} isExternal={false}>
+      <Logo className={classes.logo} />
+    </LinkWrapper>
   );
 
   const handleDrawerOpen = () =>

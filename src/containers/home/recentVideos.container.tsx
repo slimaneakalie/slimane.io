@@ -1,5 +1,5 @@
-import RecentVideos from "../components/RecentVideos";
-import { Video } from "../types/videoCard.types";
+import RecentVideos from "../../components/home/RecentVideos";
+import { Video } from "../../types/home/videoCard.types";
 
 const videos: Video[] = [
   {

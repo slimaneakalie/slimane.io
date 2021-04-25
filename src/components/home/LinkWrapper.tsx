@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { LinkProps } from "../types/linkWrapper.types";
+import { LinkProps } from "../../types/home/linkWrapper.types";
 
 export default function LinkWrapper({
   isExternal,

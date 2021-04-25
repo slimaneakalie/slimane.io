@@ -1,7 +1,7 @@
-import { RecentVideosProps } from "../types/recentVideos.types";
+import { RecentVideosProps } from "../../types/home/recentVideos.types";
 import { Typography } from "@material-ui/core";
 import { PrimaryButton } from "./PrimaryButton";
-import { useRecentVideosStyles } from "../styles/recentVideos.styles";
+import { useRecentVideosStyles } from "../../styles/home/recentVideos.styles";
 import VideoCard from "./VideoCard";
 
 export default function RecentVideos({

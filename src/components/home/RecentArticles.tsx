@@ -1,6 +1,6 @@
-import { RecentArticlesProps } from "../types/recentArticles.types";
+import { RecentArticlesProps } from "../../types/home/recentArticles.types";
 import ArticleCard from "./ArticleCard";
-import { useRecentArticlesStyles } from "../styles/recentArticles.styles";
+import { useRecentArticlesStyles } from "../../styles/home/recentArticles.styles";
 import { Typography } from "@material-ui/core";
 import { PrimaryButton } from "./PrimaryButton";
 import LinkWrapper from "./LinkWrapper";

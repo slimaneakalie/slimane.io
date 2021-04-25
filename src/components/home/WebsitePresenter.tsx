@@ -1,5 +1,5 @@
 import { Typography } from "@material-ui/core";
-import { useWebsitePresenterStyles } from "../styles/websitePresenter.styles";
+import { useWebsitePresenterStyles } from "../../styles/home/websitePresenter.styles";
 import YoutubeEmbed from "./YoutubeEmbed";
 
 export default function WebsitePresenter(): JSX.Element {

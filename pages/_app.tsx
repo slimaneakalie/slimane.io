@@ -1,7 +1,7 @@
 // import { useStore } from '../store'
 import React from "react";
 import { AppProps } from "next/app";
-import Header from "../src/containers/header.container";
+import Header from "../src/containers/home/header.container";
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
 import theme from "../src/theme";
 import Head from "next/head";

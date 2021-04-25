@@ -1,4 +1,4 @@
-import LatestPodcast from "../components/LatestPodcast";
+import LatestPodcast from "../../components/home/LatestPodcast";
 
 const podcastEmbedUrl =
   "https://anchor.fm/kass-atay-podcast/embed/episodes/Open-source-ev39gr";

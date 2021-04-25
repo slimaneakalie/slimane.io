@@ -1,6 +1,6 @@
 import React from "react";
-import { YoutubeEmbedProps } from "../types/youtubeEmbed.types";
-import { useYoutubeEmbedStyles } from "../styles/youtubeEmbed.styles";
+import { YoutubeEmbedProps } from "../../types/home/youtubeEmbed.types";
+import { useYoutubeEmbedStyles } from "../../styles/home/youtubeEmbed.styles";
 
 export default function YoutubeEmbed({ embedId }: YoutubeEmbedProps) {
   const classes = useYoutubeEmbedStyles();
