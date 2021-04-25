@@ -12,13 +12,12 @@ export default function LatestPodcast({
   return (
     <section className={classes.root}>
       <Typography variant="h4" component="h1" className={classes.mainTitle}>
-        Latest PODCAST
+        LATEST PODCAST
       </Typography>
-
       <iframe
         src={podcastEmbedUrl}
         height="161px"
-        width="900px"
+        className={classes.embedContainer}
         frameBorder="0"
         scrolling="no"
       ></iframe>
