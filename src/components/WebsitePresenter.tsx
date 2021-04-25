@@ -17,12 +17,12 @@ export default function WebsitePresenter(): JSX.Element {
             className={classes.paragraph}
           >
             <div className={classes.selfPresentation}>
-              This is Slimane, I'm a software engineer, Youtuber and podcast
-              host.
+              This is Slimane, I'm a software engineer, part-time Youtuber and
+              podcast host.
             </div>
             <div>
               In this website I share whatever I learn or build and my thoughts
-              on various subjects.
+              on various topics.
             </div>
           </Typography>
         </div>

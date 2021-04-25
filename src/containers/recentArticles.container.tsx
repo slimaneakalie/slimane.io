@@ -9,6 +9,22 @@ const articles = {
     readingTimeInMinute: 9,
     publishingDate: new Date(),
   },
+  "126": {
+    id: "126",
+    thumbnailURL: "https://picsum.photos/200/300",
+    title: "Article title 2",
+    shortDescription: "Article description 2",
+    readingTimeInMinute: 6,
+    publishingDate: new Date(),
+  },
+  "127": {
+    id: "127",
+    thumbnailURL: "https://picsum.photos/200/300",
+    title: "Article title 3",
+    shortDescription: "Article description 3",
+    readingTimeInMinute: 4,
+    publishingDate: new Date(),
+  },
 };
 
 export default function RecentArticlesContainer(): JSX.Element {

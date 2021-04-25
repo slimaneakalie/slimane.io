@@ -23,10 +23,11 @@ export const useWebsitePresenterStyles = makeStyles((theme) => ({
     },
     "@media (max-width: 900px)": {
       flexDirection: "column",
-      height: 600,
+      height: 650,
       "& > div": {
         width: "100%",
-        height: "45%",
+        // height: "45%",
+        padding: 20,
       },
     },
     "@media (max-width: 1280px)": {

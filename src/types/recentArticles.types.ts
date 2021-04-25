@@ -1,4 +1,4 @@
-import { Article } from "./article.types";
+import { Article } from "./articleCard.types";
 
 interface ArticlesMap {
   [key: string]: Article;
