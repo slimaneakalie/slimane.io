@@ -2,18 +2,23 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useRecentArticlesStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: theme.palette.secondary.main,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
     flexDirection: "column",
     padding: "20px 0px",
   },
   mainTitle: {
     fontWeight: "bold",
   },
+  divider: {
+    border: "2px solid #23848C",
+  },
   seeAllButton: {
-    marginTop: 40,
+    marginTop: "auto",
     fontSize: 18,
+    cursor: "pointer",
+    "@media (max-width: 1280px)": {
+      marginTop: 40,
+    },
   },
 }));

@@ -1,8 +1,9 @@
 import { RecentVideosProps } from "../../types/home/recentVideos.types";
-import { Typography } from "@material-ui/core";
+import { Divider, Typography } from "@material-ui/core";
 import { PrimaryButton } from "./PrimaryButton";
 import { useRecentVideosStyles } from "../../styles/home/recentVideos.styles";
 import VideoCard from "./VideoCard";
+import AddIcon from "@material-ui/icons/Add";
 
 export default function RecentVideos({
   videos,
@@ -11,9 +12,12 @@ export default function RecentVideos({
   const classes = useRecentVideosStyles();
   return (
     <section className={classes.root}>
-      <Typography variant="h4" component="h1" className={classes.mainTitle}>
-        RECENT VIDEOS
-      </Typography>
+      <div>
+        <Typography variant="h4" component="h1" className={classes.mainTitle}>
+          RECENT VIDEOS
+        </Typography>
+        <Divider className={classes.divider} />
+      </div>
       <div className={classes.cardsContainer}>
         {videos.map((video) => (
           <VideoCard {...video} key={video.id} />
@@ -22,9 +26,10 @@ export default function RecentVideos({
       <PrimaryButton
         className={classes.seeAllButton}
         href={allVideosExternalLink}
+        endIcon={<AddIcon />}
         target={"_blank"}
       >
-        See all videos
+        See more
       </PrimaryButton>
     </section>
   );

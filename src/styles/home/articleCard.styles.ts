@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useArticleCardStyles = makeStyles((theme) => ({
   root: {
-    width: 800,
+    width: "90%",
     marginTop: 20,
     "@media (max-width: 900px)": {
       width: "90%",

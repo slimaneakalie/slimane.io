@@ -26,6 +26,18 @@ const videos: Video[] = [
     title:
       "في 8 مارس أميمة دحوم تتحدث عن التحرش الجنسي, تعدد الزوجات, ناقصات عقل و دين و الثقافة المغربية",
   },
+  {
+    id: "VzNDxZ01nk0",
+    thumbnailURL: "http://i3.ytimg.com/vi/VzNDxZ01nk0/hqdefault.jpg",
+    title:
+      "التكوين المهني، العمل في جوجل، توازن الحياة و العمل، Cloud computing و TEDx | عبد الفتاح الصغيور",
+  },
+  {
+    id: "1HCu8Js32-o",
+    thumbnailURL: "http://i3.ytimg.com/vi/1HCu8Js32-o/hqdefault.jpg",
+    title:
+      "في 8 مارس أميمة دحوم تتحدث عن التحرش الجنسي, تعدد الزوجات, ناقصات عقل و دين و الثقافة المغربية",
+  },
 ];
 
 const allVideosExternalLink =

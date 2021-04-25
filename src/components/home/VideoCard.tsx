@@ -20,16 +20,16 @@ export default function VideoCard(video: Video): JSX.Element {
         href={videoLink}
         target={"_blank"}
       >
-        {/*<CardMedia*/}
-
-        {/*  image={video.thumbnailURL}*/}
-        {/*  title={video.title}*/}
-        {/*/>*/}
-        <img
+        <CardMedia
+          image={video.thumbnailURL}
           title={video.title}
           className={classes.media}
-          src={video.thumbnailURL}
         />
+        {/*<img*/}
+        {/*  title={video.title}*/}
+        {/*  className={classes.media}*/}
+        {/*  src={video.thumbnailURL}*/}
+        {/*/>*/}
       </CardActionArea>
     </Card>
   );
