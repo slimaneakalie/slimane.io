@@ -1,7 +1,7 @@
 import { LatestPodcastProps } from "../../types/home/LatestPodcast";
 import { Typography } from "@material-ui/core";
-import { PrimaryButton } from "./PrimaryButton";
-import LinkWrapper from "./LinkWrapper";
+import { PrimaryButton } from "../shared/PrimaryButton";
+import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import { useLatestPodcastStyles } from "../../styles/home/latestPodcast.styles";
 
 export default function LatestPodcast({

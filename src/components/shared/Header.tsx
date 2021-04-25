@@ -10,11 +10,11 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
-import { useHeaderStyles } from "../../styles/home/header.styles";
+import { useHeaderStyles } from "../../styles/shared/header.styles";
 import { HeaderProps, HeaderState } from "../../types/home/header.types";
 import { isClient } from "../../common/utils";
-import LinkWrapper from "./LinkWrapper";
-import Logo from "./Logo";
+import LinkWrapper from "../../containers/shared/linkWrapper.container";
+import Logo from "../home/Logo";
 
 export default function Header({ links }: HeaderProps): JSX.Element {
   // initial state

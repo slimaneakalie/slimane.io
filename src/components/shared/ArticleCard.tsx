@@ -5,9 +5,9 @@ import {
   Typography,
   Card,
 } from "@material-ui/core";
-import { useArticleCardStyles } from "../../styles/home/articleCard.styles";
+import { useArticleCardStyles } from "../../styles/shared/articleCard.styles";
 import { Article } from "../../types/home/articleCard.types";
-import LinkWrapper from "./LinkWrapper";
+import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import { createArticleLink } from "../../common/utils";
 
 export default function ArticleCard(article: Article): JSX.Element {

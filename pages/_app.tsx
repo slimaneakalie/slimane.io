@@ -1,10 +1,12 @@
 // import { useStore } from '../store'
 import React from "react";
 import { AppProps } from "next/app";
-import Header from "../src/containers/home/header.container";
-import { CssBaseline, ThemeProvider } from "@material-ui/core";
-import theme from "../src/theme";
 import Head from "next/head";
+import { CssBaseline, ThemeProvider } from "@material-ui/core";
+import Header from "../src/containers/shared/header.container";
+
+import theme from "../src/theme";
+import Footer from "../src/components/shared/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -28,6 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </>
   );

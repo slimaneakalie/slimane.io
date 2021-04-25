@@ -1,10 +1,10 @@
 import { RecentArticlesProps } from "../../types/home/recentArticles.types";
-import ArticleCard from "./ArticleCard";
+import ArticleCard from "../shared/ArticleCard";
 import { useRecentArticlesStyles } from "../../styles/home/recentArticles.styles";
 import { Divider, Typography } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
-import { PrimaryButton } from "./PrimaryButton";
-import LinkWrapper from "./LinkWrapper";
+import { PrimaryButton } from "../shared/PrimaryButton";
+import LinkWrapper from "../../containers/shared/linkWrapper.container";
 
 export default function RecentArticles({
   articles,

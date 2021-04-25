@@ -1,5 +1,5 @@
 import { HeaderProps } from "../../types/home/header.types";
-import Header from "../../components/home/Header";
+import Header from "../../components/shared/Header";
 import React from "react";
 
 const navbarProps: HeaderProps = {
