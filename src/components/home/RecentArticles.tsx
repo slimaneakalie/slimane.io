@@ -2,9 +2,6 @@ import { RecentArticlesProps } from "../../types/home/recentArticles.types";
 import ArticleCard from "../shared/ArticleCard";
 import { useRecentArticlesStyles } from "../../styles/home/recentArticles.styles";
 import { Divider, Typography } from "@material-ui/core";
-import AddIcon from "@material-ui/icons/Add";
-import { PrimaryButton } from "../shared/PrimaryButton";
-import LinkWrapper from "../../containers/shared/linkWrapper.container";
 
 export default function RecentArticles({
   articles,
@@ -23,11 +20,6 @@ export default function RecentArticles({
       {Object.keys(articles).map((key) => (
         <ArticleCard {...articles[key]} key={key} />
       ))}
-      <LinkWrapper href={"/articles"} isExternal={false}>
-        <PrimaryButton endIcon={<AddIcon />} className={classes.seeAllButton}>
-          See more
-        </PrimaryButton>
-      </LinkWrapper>
     </section>
   );
 }

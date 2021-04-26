@@ -8,6 +8,9 @@ export const useLatestPodcastStyles = makeStyles((theme) => ({
     flexDirection: "column",
     padding: "20px 0px",
   },
+  divider: {
+    border: "2px solid #23848C",
+  },
   embedContainer: {
     width: 1280,
     "@media (max-width: 1280px)": {
@@ -16,7 +19,19 @@ export const useLatestPodcastStyles = makeStyles((theme) => ({
   },
   mainTitle: {
     fontWeight: "bold",
+  },
+  mainTitleContainer: {
     marginBottom: 20,
+  },
+  audioPlatformsContainer: {
+    marginTop: 20,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  audioPlatformsLink: {
+    marginLeft: 10,
+    textDecoration: "none",
   },
   seeAllButton: {
     marginTop: 40,

@@ -23,7 +23,7 @@ export default function ArticleCard(article: Article): JSX.Element {
             image={article.thumbnailURL}
             title={article.title}
           />
-          <CardContent>
+          <CardContent className={classes.content}>
             <Typography gutterBottom variant="h5" component="h2">
               {article.title}
             </Typography>

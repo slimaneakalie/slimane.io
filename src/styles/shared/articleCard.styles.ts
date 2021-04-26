@@ -12,10 +12,14 @@ export const useArticleCardStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     justifyContent: "flex-start",
+    flexDirection: "column",
   },
   media: {
-    height: 150,
-    width: 200,
+    height: 100,
+    width: "100%",
+  },
+  content: {
+    width: "100%",
   },
   metadataPanel: {
     color: "gray",

@@ -13,12 +13,4 @@ export const useRecentArticlesStyles = makeStyles((theme) => ({
   divider: {
     border: "2px solid #23848C",
   },
-  seeAllButton: {
-    marginTop: "auto",
-    fontSize: 18,
-    cursor: "pointer",
-    "@media (max-width: 1280px)": {
-      marginTop: 40,
-    },
-  },
 }));
