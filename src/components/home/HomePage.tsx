@@ -1,4 +1,4 @@
-import WebsitePresenter from "./WebsitePresenter";
+import WebsitePresenter from "../../containers/home/websitePresenter.container";
 import RecentArticles from "../../containers/home/recentArticles.container";
 import RecentVideos from "../../containers/home/recentVideos.container";
 import LatestPodcast from "../../containers/home/latestPodcast.container";

@@ -1,6 +1,7 @@
 import RecentArticles from "../../components/home/RecentArticles";
+import { ArticlesMap } from "../../types/home/recentArticles.types";
 
-const articles = {
+const articles: ArticlesMap = {
   "125": {
     id: "125",
     thumbnailURL: "https://picsum.photos/200/300",

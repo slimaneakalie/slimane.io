@@ -1,12 +1,13 @@
-// import { useStore } from '../store'
 import React from "react";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
-import Header from "../src/containers/shared/header.container";
+import { Provider as StoreProvider } from "react-redux";
 
 import theme from "../src/theme";
+import Header from "../src/containers/shared/header.container";
 import Footer from "../src/components/shared/Footer";
+import store from "../src/store";
 
 export default function App({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -28,9 +29,11 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
+        <StoreProvider store={store}>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </StoreProvider>
       </ThemeProvider>
     </>
   );

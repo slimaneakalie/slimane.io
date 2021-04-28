@@ -1,8 +1,11 @@
 import { Typography } from "@material-ui/core";
 import { useWebsitePresenterStyles } from "../../styles/home/websitePresenter.styles";
 import YoutubeEmbed from "./YoutubeEmbed";
+import { WebsitePresenterProps } from "../../types/home/websitePresenter.types";
 
-export default function WebsitePresenter(): JSX.Element {
+export default function WebsitePresenter({
+  videoId,
+}: WebsitePresenterProps): JSX.Element {
   const classes = useWebsitePresenterStyles();
   return (
     <section className={classes.root}>
@@ -27,7 +30,7 @@ export default function WebsitePresenter(): JSX.Element {
           </Typography>
         </div>
         <div>
-          <YoutubeEmbed embedId={"1sM54FPUagk"} />
+          <YoutubeEmbed embedId={videoId} />
         </div>
       </div>
     </section>

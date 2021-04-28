@@ -1,6 +1,6 @@
 import { Article } from "./articleCard.types";
 
-interface ArticlesMap {
+export interface ArticlesMap {
   [key: string]: Article;
 }
 
