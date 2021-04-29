@@ -1,6 +1,8 @@
 import WebsitePresenter from "../../components/home/WebsitePresenter";
+import { selectHomeStateField } from "../../store/home/selectors";
+import { useSelector } from "react-redux";
 
-const videoId: string = "1sM54FPUagk";
 export default function WebsitePresenterContainer(): JSX.Element {
-  return <WebsitePresenter videoId={videoId} />;
+  const videoId = useSelector(selectHomeStateField("presenterVideoId"));
+  return <WebsitePresenter videoId={videoId as string} />;
 }

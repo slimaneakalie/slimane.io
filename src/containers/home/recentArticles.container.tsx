@@ -8,7 +8,7 @@ const articles: ArticlesMap = {
     title: "Article title",
     shortDescription: "Article description",
     readingTimeInMinute: 9,
-    publishingDate: new Date(),
+    publishingDateStr: new Date().toLocaleDateString(),
   },
   "126": {
     id: "126",
@@ -16,7 +16,7 @@ const articles: ArticlesMap = {
     title: "Article title 2",
     shortDescription: "Article description 2",
     readingTimeInMinute: 6,
-    publishingDate: new Date(),
+    publishingDateStr: new Date().toLocaleDateString(),
   },
   "127": {
     id: "127",
@@ -24,7 +24,7 @@ const articles: ArticlesMap = {
     title: "Article title 2",
     shortDescription: "Article description 2",
     readingTimeInMinute: 6,
-    publishingDate: new Date(),
+    publishingDateStr: new Date().toLocaleDateString(),
   },
 };
 

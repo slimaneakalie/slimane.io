@@ -1,8 +1,14 @@
 import HomePageContainer from "../src/containers/home/homePage.container";
 import { NextPageContext } from "next";
 import { HomeState } from "../src/types/home/store.home.types";
+import { setState } from "../src/store/home/slice";
+
+import { useDispatch } from "react-redux";
 
 export default function Home(props: HomeState) {
+  const dispatch = useDispatch();
+  dispatch(setState(props));
+
   return <HomePageContainer />;
 }
 
@@ -40,7 +46,7 @@ const initialState: HomeState = {
       title: "Article title",
       shortDescription: "Article description",
       readingTimeInMinute: 9,
-      publishingDate: new Date(),
+      publishingDateStr: new Date().toLocaleDateString(),
     },
     "126": {
       id: "126",
@@ -48,7 +54,7 @@ const initialState: HomeState = {
       title: "Article title 2",
       shortDescription: "Article description 2",
       readingTimeInMinute: 6,
-      publishingDate: new Date(),
+      publishingDateStr: new Date().toLocaleDateString(),
     },
     "127": {
       id: "127",
@@ -56,7 +62,7 @@ const initialState: HomeState = {
       title: "Article title 2",
       shortDescription: "Article description 2",
       readingTimeInMinute: 6,
-      publishingDate: new Date(),
+      publishingDateStr: new Date().toLocaleDateString(),
     },
   },
   latestVideos: [

@@ -35,8 +35,8 @@ export default function ArticleCard(article: Article): JSX.Element {
               component="p"
               className={classes.metadataPanel}
             >
-              {article.publishingDate.toLocaleDateString()} -{" "}
-              {article.readingTimeInMinute} min read
+              {article.publishingDateStr} - {article.readingTimeInMinute} min
+              read
             </Typography>
           </CardContent>
         </CardActionArea>

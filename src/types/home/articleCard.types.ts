@@ -4,5 +4,5 @@ export interface Article {
   title: string;
   shortDescription: string;
   readingTimeInMinute: number;
-  publishingDate: Date;
+  publishingDateStr: string;
 }
