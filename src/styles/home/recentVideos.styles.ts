@@ -40,7 +40,7 @@ export const useRecentVideosStyles = makeStyles((theme) => ({
     fontWeight: "bold",
   },
   divider: {
-    border: "2px solid #dc0046",
+    border: "2px solid #8145A7",
   },
   seeAllButton: {
     marginTop: 40,

@@ -12,7 +12,7 @@ export default function WebsitePresenter({
       <div className={classes.container}>
         <div>
           <Typography variant="h3" component="h1" className={classes.mainTitle}>
-            Wa Drari !
+            Hello World !
           </Typography>
           <Typography
             variant="h4"

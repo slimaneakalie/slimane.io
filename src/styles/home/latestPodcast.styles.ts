@@ -9,7 +9,7 @@ export const useLatestPodcastStyles = makeStyles((theme) => ({
     padding: "20px 0px",
   },
   divider: {
-    border: "2px solid #23848C",
+    border: "2px solid #8145A7",
   },
   embedContainer: {
     width: 1280,

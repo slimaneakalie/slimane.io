@@ -6,7 +6,7 @@ const initialState: HomeState = {
   latestVideos: [],
   latestArticles: {},
   allVideosExternalLink: "",
-  podcastEmbedUrl: "",
+  latestPodcastEmbedUrl: "",
   presenterVideoId: "",
 };
 

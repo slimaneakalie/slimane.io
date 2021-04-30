@@ -11,6 +11,6 @@ export const useRecentArticlesStyles = makeStyles((theme) => ({
     fontWeight: "bold",
   },
   divider: {
-    border: "2px solid #23848C",
+    border: "2px solid #8145A7",
   },
 }));

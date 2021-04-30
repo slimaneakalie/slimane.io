@@ -1,17 +1,12 @@
-import {
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Typography,
-  Card,
-} from "@material-ui/core";
-import { createArticleLink, createVideoLink } from "../../common/utils";
+import { CardActionArea, CardMedia, Card } from "@material-ui/core";
+import { createVideoLink, createVideoThumbnailLink } from "../../common/utils";
 import { Video } from "../../types/home/videoCard.types";
 import { useVideoCardStyles } from "../../styles/home/videoCard.styles";
 
 export default function VideoCard(video: Video): JSX.Element {
   const classes = useVideoCardStyles();
   const videoLink = createVideoLink(video.id);
+  const thumbnailURL = createVideoThumbnailLink(video.id);
 
   return (
     <Card className={classes.root} raised={true}>
@@ -21,15 +16,10 @@ export default function VideoCard(video: Video): JSX.Element {
         target={"_blank"}
       >
         <CardMedia
-          image={video.thumbnailURL}
+          image={thumbnailURL}
           title={video.title}
           className={classes.media}
         />
-        {/*<img*/}
-        {/*  title={video.title}*/}
-        {/*  className={classes.media}*/}
-        {/*  src={video.thumbnailURL}*/}
-        {/*/>*/}
       </CardActionArea>
     </Card>
   );

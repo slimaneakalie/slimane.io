@@ -7,6 +7,6 @@ export interface HomeState {
   latestVideos: Video[];
   latestArticles: ArticlesMap;
   allVideosExternalLink: string;
-  podcastEmbedUrl: string;
+  latestPodcastEmbedUrl: string;
   presenterVideoId: string;
 }
