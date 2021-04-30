@@ -13,12 +13,13 @@ const navbarProps: HeaderProps = {
       link: "/podcast",
     },
     {
-      label: "Tools",
-      link: "/tools",
-    },
-    {
       label: "Videos",
       link: "https://www.youtube.com/channel/UCAKherxCCvXWHyGaeQKy-Jw/videos",
+      isExternal: true,
+    },
+    {
+      label: "Resume",
+      link: "https://bit.ly/3dStCLQ",
       isExternal: true,
     },
     {
