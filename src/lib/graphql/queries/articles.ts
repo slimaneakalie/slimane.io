@@ -41,8 +41,8 @@ export const GET_ARTICLE_DATA = gql`
 `;
 
 export const GET_ALL_ARTICLES_SLUGS = gql`
-  query getArticleData($slug: Int) {
-    allPost(where: { slug: { current: { eq: $slug } } }, limit: 1, offset: 0) {
+  {
+    allPost {
       slug {
         current
       }

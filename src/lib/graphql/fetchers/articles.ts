@@ -1,5 +1,9 @@
 import { executeGraphqlQuery } from "../client";
-import { GET_ARTICLE_DATA, GET_PAGE_ARTICLES } from "../queries/articles";
+import {
+  GET_ALL_ARTICLES_SLUGS,
+  GET_ARTICLE_DATA,
+  GET_PAGE_ARTICLES,
+} from "../queries/articles";
 import { ArticlesGraphqlResponse } from "../../../types/shared/graphql.types";
 import {
   Article,
@@ -35,7 +39,7 @@ export async function fetchArticleCompleteData(
 
 export async function fetchAllArticleSlugs(): Promise<SlugStaticPath[]> {
   const response = await executeGraphqlQuery<ArticlesGraphqlResponse>(
-    GET_ARTICLE_DATA,
+    GET_ALL_ARTICLES_SLUGS,
     {}
   );
 
