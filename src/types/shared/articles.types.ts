@@ -11,3 +11,7 @@ export interface Article {
 export interface ArticlesMap {
   [key: string]: Article;
 }
+
+export interface SlugStaticPath {
+  slug: string;
+}

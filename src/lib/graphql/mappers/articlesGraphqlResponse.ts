@@ -26,6 +26,7 @@ export function mapArticleElement(element: ArticleResponseElement): Article {
     title: element.title,
     shortDescription: element.excerpt,
     readingTimeInMinute: element.readingTimeInMinute,
+    body: element.body,
     publishingDateStr: new Date(element._createdAt).toLocaleDateString(),
   };
 }

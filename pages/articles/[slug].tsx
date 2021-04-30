@@ -4,7 +4,11 @@ import React, { useEffect } from "react";
 import { setArticleElementState } from "../../src/store/articles/slice";
 import Head from "next/head";
 import ArticlesPageContainer from "../../src/containers/articles/articlesPage.container";
-import { fetchArticleCompleteData } from "../../src/lib/graphql/fetchers/articles";
+import {
+  fetchAllArticleSlugs,
+  fetchArticleCompleteData,
+  fetchPageArticles,
+} from "../../src/lib/graphql/fetchers/articles";
 import { Article } from "../../src/types/shared/articles.types";
 import { useRouter } from "next/router";
 
@@ -41,6 +45,6 @@ export async function getStaticProps(context: NextPageContext) {
 export async function getStaticPaths() {
   return {
     fallback: true,
-    paths: [],
+    paths: await fetchAllArticleSlugs(),
   };
 }
