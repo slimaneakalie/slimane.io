@@ -1,5 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ArticlesState } from "../../types/articles/store.articles.types";
+import {
+  ArticlesState,
+  SetArticleElementStateAction,
+} from "../../types/articles/store.articles.types";
 
 const initialState: ArticlesState = {
   pageArticles: {},
@@ -18,9 +21,19 @@ const articlesSlice = createSlice({
         ...action.payload,
       };
     },
+    setArticleElementState(
+      state: ArticlesState,
+      action: PayloadAction<SetArticleElementStateAction>
+    ) {
+      const { id, newState } = action.payload;
+      state.pageArticles[id] = newState;
+    },
   },
 });
 
-export const { setArticlesState } = articlesSlice.actions;
+export const {
+  setArticlesState,
+  setArticleElementState,
+} = articlesSlice.actions;
 
 export const articlesRootReducer = articlesSlice.reducer;

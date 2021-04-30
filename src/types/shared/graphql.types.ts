@@ -1,4 +1,4 @@
-interface ArticleResponseElement {
+export interface ArticleResponseElement {
   title: string;
   excerpt: string;
   slug: {

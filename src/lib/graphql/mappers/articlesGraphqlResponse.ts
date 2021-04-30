@@ -1,5 +1,8 @@
-import { ArticlesGraphqlResponse } from "../../../types/shared/graphql.types";
-import { ArticlesMap } from "../../../types/shared/articles.types";
+import {
+  ArticleResponseElement,
+  ArticlesGraphqlResponse,
+} from "../../../types/shared/graphql.types";
+import { Article, ArticlesMap } from "../../../types/shared/articles.types";
 import { ApolloQueryResult } from "@apollo/client/core/types";
 
 export function mapResponseToArticlesMap(
@@ -9,16 +12,20 @@ export function mapResponseToArticlesMap(
   if (response) {
     const articles = response.data.allPost;
     articles?.forEach((article) => {
-      articlesMap[article.slug.current] = {
-        id: article.slug.current,
-        thumbnailURL: article.mainImage.asset.url,
-        title: article.title,
-        shortDescription: article.excerpt,
-        readingTimeInMinute: article.readingTimeInMinute,
-        publishingDateStr: new Date(article._createdAt).toLocaleDateString(),
-      };
+      articlesMap[article.slug.current] = mapArticleElement(article);
     });
   }
 
   return articlesMap;
+}
+
+export function mapArticleElement(element: ArticleResponseElement): Article {
+  return {
+    id: element.slug.current,
+    thumbnailURL: element.mainImage.asset.url,
+    title: element.title,
+    shortDescription: element.excerpt,
+    readingTimeInMinute: element.readingTimeInMinute,
+    publishingDateStr: new Date(element._createdAt).toLocaleDateString(),
+  };
 }

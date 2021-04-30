@@ -1,22 +1,30 @@
 import { NextPageContext } from "next";
-import { getInitialState } from "../../src/store/articles/initializeState";
-import { ArticlesState } from "../../src/types/articles/store.articles.types";
 import { useDispatch } from "react-redux";
 import React, { useEffect } from "react";
-import { setArticlesState } from "../../src/store/articles/slice";
+import { setArticleElementState } from "../../src/store/articles/slice";
 import Head from "next/head";
 import ArticlesPageContainer from "../../src/containers/articles/articlesPage.container";
+import { fetchArticleCompleteData } from "../../src/lib/graphql/fetchers/articles";
+import { Article } from "../../src/types/shared/articles.types";
+import { useRouter } from "next/router";
 
-export default function Article(props: ArticlesState): JSX.Element {
+export default function Article(props: Article): JSX.Element {
+  const router = useRouter();
+  const { slug } = router.query;
+  const action = {
+    id: slug as string,
+    newState: props,
+  };
+
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(setArticlesState(props));
+    dispatch(setArticleElementState(action));
   }, []);
 
   return (
     <>
       <Head>
-        <title>Articles | Slimane Akalië</title>
+        <title>{props.title} | Slimane Akalië</title>
       </Head>
       <ArticlesPageContainer />
     </>
@@ -24,7 +32,15 @@ export default function Article(props: ArticlesState): JSX.Element {
 }
 
 export async function getStaticProps(context: NextPageContext) {
+  const { slug } = context.query;
   return {
-    props: await getInitialState(),
+    props: await fetchArticleCompleteData(slug as string),
+  };
+}
+
+export async function getStaticPaths() {
+  return {
+    fallback: true,
+    paths: [],
   };
 }

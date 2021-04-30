@@ -4,7 +4,7 @@ import { HomeState } from "../src/types/home/store.home.types";
 import { setHomeState } from "../src/store/home/slice";
 
 import { useDispatch } from "react-redux";
-import { getInitialState } from "../src/store/home/initializeState";
+import { getHomeInitialState } from "../src/store/home/initializeState";
 
 export default function Home(props: HomeState) {
   const dispatch = useDispatch();
@@ -15,6 +15,6 @@ export default function Home(props: HomeState) {
 
 export async function getStaticProps(context: NextPageContext) {
   return {
-    props: await getInitialState(),
+    props: await getHomeInitialState(),
   };
 }

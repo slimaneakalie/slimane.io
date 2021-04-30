@@ -2,7 +2,7 @@ import ArticlesPageContainer from "../../src/containers/articles/articlesPage.co
 import Head from "next/head";
 import React, { useEffect } from "react";
 import { NextPageContext } from "next";
-import { getInitialState } from "../../src/store/articles/initializeState";
+import { getArticlesInitialState } from "../../src/store/articles/initializeState";
 import { useDispatch } from "react-redux";
 import { setArticlesState } from "../../src/store/articles/slice";
 import { ArticlesState } from "../../src/types/articles/store.articles.types";
@@ -25,6 +25,6 @@ export default function Articles(props: ArticlesState): JSX.Element {
 
 export async function getStaticProps(context: NextPageContext) {
   return {
-    props: await getInitialState(),
+    props: await getArticlesInitialState(),
   };
 }

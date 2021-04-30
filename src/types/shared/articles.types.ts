@@ -5,6 +5,7 @@ export interface Article {
   shortDescription: string;
   readingTimeInMinute: number;
   publishingDateStr: string;
+  body?: string;
 }
 
 export interface ArticlesMap {
