@@ -6,16 +6,19 @@ import {
   Card,
 } from "@material-ui/core";
 import { useArticleCardStyles } from "../../styles/shared/articleCard.styles";
-import { Article } from "../../types/home/articleCard.types";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
-import { createArticleLink } from "../../common/utils";
+import { createArticleLink } from "../../lib/utils";
+import { ArticleCardProps } from "../../types/shared/articleCard.types";
 
-export default function ArticleCard(article: Article): JSX.Element {
+export default function ArticleCard({
+  article,
+  className,
+}: ArticleCardProps): JSX.Element {
   const classes = useArticleCardStyles();
   const articleLink = createArticleLink(article.id);
 
   return (
-    <Card className={classes.root} raised={true}>
+    <Card className={`${classes.root} ${className}`} raised={true}>
       <LinkWrapper href={articleLink} isExternal={false}>
         <CardActionArea className={classes.container}>
           <CardMedia

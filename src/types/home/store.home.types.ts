@@ -1,6 +1,6 @@
 import { AudioPlatforms } from "./LatestPodcast";
-import { ArticlesMap } from "./recentArticles.types";
 import { Video } from "./videoCard.types";
+import { ArticlesMap } from "../shared/articles.types";
 
 export interface HomeState {
   audioPlatforms: AudioPlatforms[];

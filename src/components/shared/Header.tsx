@@ -12,7 +12,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import { useHeaderStyles } from "../../styles/shared/header.styles";
 import { HeaderProps, HeaderState } from "../../types/home/header.types";
-import { isClient } from "../../common/utils";
+import { isClient } from "../../lib/utils";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import Logo from "../home/Logo";
 

@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
-export const GET_LATEST_N_ARTICLES = gql`
-  query getLatestPosts($n: Int) {
-    allPost(sort: [{ _createdAt: DESC }], limit: $n, offset: 0) {
+export const GET_PAGE_ARTICLES = gql`
+  query {
+    allPost(sort: [{ _createdAt: DESC }]) {
       title
       excerpt
       slug {

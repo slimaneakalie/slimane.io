@@ -1,5 +1,5 @@
 import { ArticlesMap } from "../shared/articles.types";
 
-export interface RecentArticlesProps {
+export interface ArticlesPageProps {
   articles: ArticlesMap;
 }

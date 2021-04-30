@@ -6,3 +6,7 @@ export interface Article {
   readingTimeInMinute: number;
   publishingDateStr: string;
 }
+
+export interface ArticlesMap {
+  [key: string]: Article;
+}

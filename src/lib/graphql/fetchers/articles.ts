@@ -1,13 +1,13 @@
-import { GET_LATEST_N_ARTICLES } from "../queries/home";
 import { executeGraphqlQuery } from "../client";
+import { GET_PAGE_ARTICLES } from "../queries/articles";
 import { ArticlesGraphqlResponse } from "../../../types/shared/graphql.types";
-import { mapResponseToArticlesMap } from "../mappers/articlesGraphqlResponse";
 import { ArticlesMap } from "../../../types/shared/articles.types";
+import { mapResponseToArticlesMap } from "../mappers/articlesGraphqlResponse";
 
-export async function fetchLatestArticles(n: number): Promise<ArticlesMap> {
+export async function fetchPageArticles(): Promise<ArticlesMap> {
   const response = await executeGraphqlQuery<ArticlesGraphqlResponse>(
-    GET_LATEST_N_ARTICLES,
-    { n }
+    GET_PAGE_ARTICLES,
+    {}
   );
 
   return mapResponseToArticlesMap(response);

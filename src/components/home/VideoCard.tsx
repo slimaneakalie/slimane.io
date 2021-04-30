@@ -1,5 +1,5 @@
 import { CardActionArea, CardMedia, Card } from "@material-ui/core";
-import { createVideoLink, createVideoThumbnailLink } from "../../common/utils";
+import { createVideoLink, createVideoThumbnailLink } from "../../lib/utils";
 import { Video } from "../../types/home/videoCard.types";
 import { useVideoCardStyles } from "../../styles/home/videoCard.styles";
 
