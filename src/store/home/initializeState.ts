@@ -23,14 +23,13 @@ const latestVideos = [
       "في 8 مارس أميمة دحوم تتحدث عن التحرش الجنسي, تعدد الزوجات, ناقصات عقل و دين و الثقافة المغربية",
   },
   {
-    id: "VzNDxZ01nk0",
+    id: "rFRz_WVIg1s",
     title:
-      "التكوين المهني، العمل في جوجل، توازن الحياة و العمل، Cloud computing و TEDx | عبد الفتاح الصغيور",
+      "شنو تعلمت من الجامعة في المغرب بكل صراحة - What I've learned from college in Morocco (honestly)",
   },
   {
-    id: "1HCu8Js32-o",
-    title:
-      "في 8 مارس أميمة دحوم تتحدث عن التحرش الجنسي, تعدد الزوجات, ناقصات عقل و دين و الثقافة المغربية",
+    id: "kAjGmkyMJbM",
+    title: "eXtreme programming - البرمجة المتطرفة",
   },
 ];
 
