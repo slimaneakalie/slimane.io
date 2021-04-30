@@ -5,7 +5,7 @@ export interface Article {
   shortDescription: string;
   readingTimeInMinute: number;
   publishingDateStr: string;
-  body?: string;
+  body?: object;
 }
 
 export interface ArticlesMap {
@@ -13,5 +13,7 @@ export interface ArticlesMap {
 }
 
 export interface SlugStaticPath {
-  slug: string;
+  params: {
+    slug: string;
+  };
 }

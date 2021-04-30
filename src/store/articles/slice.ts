@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import {
   ArticlesState,
-  SetArticleElementStateAction,
+  SetArticleItemStateAction,
 } from "../../types/articles/store.articles.types";
 
 const initialState: ArticlesState = {
@@ -21,9 +21,9 @@ const articlesSlice = createSlice({
         ...action.payload,
       };
     },
-    setArticleElementState(
+    setArticleItemState(
       state: ArticlesState,
-      action: PayloadAction<SetArticleElementStateAction>
+      action: PayloadAction<SetArticleItemStateAction>
     ) {
       const { id, newState } = action.payload;
       state.pageArticles[id] = newState;
@@ -31,9 +31,6 @@ const articlesSlice = createSlice({
   },
 });
 
-export const {
-  setArticlesState,
-  setArticleElementState,
-} = articlesSlice.actions;
+export const { setArticlesState, setArticleItemState } = articlesSlice.actions;
 
 export const articlesRootReducer = articlesSlice.reducer;

@@ -20,7 +20,7 @@ export const GET_PAGE_ARTICLES = gql`
 `;
 
 export const GET_ARTICLE_DATA = gql`
-  query getArticleData($slug: Int) {
+  query getArticleData($slug: String) {
     allPost(where: { slug: { current: { eq: $slug } } }, limit: 1, offset: 0) {
       title
       excerpt

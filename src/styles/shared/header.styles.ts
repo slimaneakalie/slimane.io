@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useHeaderStyles = makeStyles((theme) => ({
   appBar: {
-    paddingTop: 30,
+    padding: "30px 0px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

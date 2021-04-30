@@ -11,7 +11,7 @@ export interface ArticleResponseElement {
   };
   readingTimeInMinute: number;
   _createdAt: string;
-  body: string;
+  bodyRaw: object;
 }
 
 export interface ArticlesGraphqlResponse {

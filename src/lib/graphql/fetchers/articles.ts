@@ -47,7 +47,7 @@ export async function fetchAllArticleSlugs(): Promise<SlugStaticPath[]> {
 
   if (response) {
     response.data.allPost.forEach((article) => {
-      slugs.push({ slug: article.slug.current });
+      slugs.push({ params: { slug: article.slug.current } });
     });
   }
 

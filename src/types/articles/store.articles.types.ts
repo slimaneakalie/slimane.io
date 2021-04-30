@@ -4,7 +4,7 @@ export interface ArticlesState {
   pageArticles: ArticlesMap;
 }
 
-export interface SetArticleElementStateAction {
+export interface SetArticleItemStateAction {
   id: string;
   newState: Article;
 }

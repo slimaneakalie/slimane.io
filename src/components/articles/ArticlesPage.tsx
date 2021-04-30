@@ -1,7 +1,6 @@
-import { ArticlesPageProps } from "../../types/articles/articlePages.types";
+import { ArticlesPageProps } from "../../types/articles/articlesPage.types";
 import ArticleCard from "../shared/ArticleCard";
 import { useArticlesPageStyles } from "../../styles/articles/articlesPage.styles";
-import { Typography } from "@material-ui/core";
 import MainTitle from "../shared/MainTitle";
 
 export default function ArticlesPage(props: ArticlesPageProps): JSX.Element {
