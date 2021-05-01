@@ -13,7 +13,7 @@ import {
 import {
   mapArticleElement,
   mapResponseToArticlesMap,
-} from "../mappers/articlesGraphqlResponse";
+} from "../mappers/articles.mappers";
 
 export async function fetchPageArticles(): Promise<ArticlesMap> {
   const response = await executeGraphqlQuery<ArticlesGraphqlResponse>(

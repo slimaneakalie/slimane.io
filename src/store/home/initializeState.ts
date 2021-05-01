@@ -2,8 +2,9 @@ import { HomeState } from "../../types/home/store.home.types";
 import { fetchLatestArticles } from "../../lib/graphql/fetchers/home";
 
 export async function getHomeInitialState(): Promise<HomeState> {
-  initialState.latestArticles = await fetchLatestArticles(3);
-  return initialState;
+  const state = { ...initialState };
+  state.latestArticles = await fetchLatestArticles(3);
+  return state;
 }
 
 const latestVideos = [
@@ -65,6 +66,7 @@ const initialState: HomeState = {
   ],
   latestPodcastEmbedUrl:
     "https://anchor.fm/kass-atay-podcast/embed/episodes/Open-source-ev39gr",
+
   latestArticles: {},
   allVideosExternalLink:
     "https://www.youtube.com/channel/UCAKherxCCvXWHyGaeQKy-Jw/videos",
