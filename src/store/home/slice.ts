@@ -14,7 +14,7 @@ const homeSlice = createSlice({
   name: "home",
   initialState,
   reducers: {
-    setState(state: HomeState, action: PayloadAction<HomeState>) {
+    setHomeState(state: HomeState, action: PayloadAction<HomeState>) {
       return {
         ...state,
         ...action.payload,
@@ -23,6 +23,6 @@ const homeSlice = createSlice({
   },
 });
 
-export const { setState } = homeSlice.actions;
+export const { setHomeState } = homeSlice.actions;
 
 export const homeRootReducer = homeSlice.reducer;

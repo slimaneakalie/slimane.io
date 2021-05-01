@@ -1,8 +1,4 @@
-import { Article } from "./articleCard.types";
-
-export interface ArticlesMap {
-  [key: string]: Article;
-}
+import { ArticlesMap } from "../shared/articles.types";
 
 export interface RecentArticlesProps {
   articles: ArticlesMap;

@@ -10,7 +10,6 @@ export const useWebsitePresenterStyles = makeStyles((theme) => ({
     },
   },
   container: {
-    marginTop: "3rem",
     marginBottom: "3rem",
     padding: "0 24px",
     display: "flex",

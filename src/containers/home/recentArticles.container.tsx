@@ -1,7 +1,7 @@
 import RecentArticles from "../../components/home/RecentArticles";
-import { ArticlesMap } from "../../types/home/recentArticles.types";
 import { useSelector } from "react-redux";
 import { selectHomeStateField } from "../../store/home/selectors";
+import { ArticlesMap } from "../../types/shared/articles.types";
 
 export default function RecentArticlesContainer(): JSX.Element {
   const latestArticles = useSelector(

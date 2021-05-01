@@ -3,6 +3,7 @@ import { Divider, Typography } from "@material-ui/core";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import { useLatestPodcastStyles } from "../../styles/home/latestPodcast.styles";
+import MainTitle from "../shared/MainTitle";
 
 export default function LatestPodcast({
   podcastEmbedUrl,
@@ -11,12 +12,9 @@ export default function LatestPodcast({
   const classes = useLatestPodcastStyles();
   return (
     <section className={classes.root}>
-      <div className={classes.mainTitleContainer}>
-        <Typography variant="h4" component="h1" className={classes.mainTitle}>
-          LATEST PODCAST
-        </Typography>
-        <Divider className={classes.divider} />
-      </div>
+      <MainTitle className={classes.mainTitleContainer}>
+        LATEST PODCAST
+      </MainTitle>
 
       <iframe
         src={podcastEmbedUrl}

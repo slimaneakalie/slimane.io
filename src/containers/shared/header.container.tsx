@@ -8,6 +8,10 @@ const navbarProps: HeaderProps = {
       label: "Articles",
       link: "/articles",
     },
+    // {
+    //   label: "Tools",
+    //   link: "/tools",
+    // },
     {
       label: "Podcast",
       link: "/podcast",
@@ -18,14 +22,8 @@ const navbarProps: HeaderProps = {
       isExternal: true,
     },
     {
-      label: "Resume",
-      link: "https://bit.ly/3dStCLQ",
-      isExternal: true,
-    },
-    {
-      label: "Contact",
-      link: "https://www.linkedin.com/in/slimaneakalie",
-      isExternal: true,
+      label: "About",
+      link: "/about",
     },
   ],
 };

@@ -26,5 +26,8 @@
   "exclude": [
     "node_modules"
   ],
-  "plugins": [{"name": "typescript-tslint-plugin"}]
+  "plugins": [{"name": "typescript-tslint-plugin"}],
+  "files": [
+    "@types/block-content-to-react.d.ts"
+  ]
 }
