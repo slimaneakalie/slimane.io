@@ -27,6 +27,14 @@ export function mapArticleElement(element: ArticleResponseElement): Article {
     shortDescription: element.excerpt,
     readingTimeInMinute: element.readingTimeInMinute,
     body: element.bodyRaw || {},
-    publishingDateStr: new Date(element._createdAt).toLocaleDateString(),
+    author: element.author || null,
+    tags: element.tags || null,
+    publishingDateStr: formatArticlePublishingDate(
+      new Date(element._createdAt)
+    ),
   };
+}
+
+function formatArticlePublishingDate(date: Date): string {
+  return date.toDateString().slice(4);
 }

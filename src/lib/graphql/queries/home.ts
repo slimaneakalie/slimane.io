@@ -15,6 +15,10 @@ export const GET_LATEST_N_ARTICLES = gql`
       }
       readingTimeInMinute
       _createdAt
+      author {
+        name
+        contactLink
+      }
     }
   }
 `;

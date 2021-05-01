@@ -32,7 +32,13 @@ export const GET_ARTICLE_DATA = gql`
           url
         }
       }
-
+      author {
+        name
+        contactLink
+      }
+      tags {
+        name
+      }
       readingTimeInMinute
       _createdAt
       bodyRaw

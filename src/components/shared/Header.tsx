@@ -31,17 +31,17 @@ export default function Header({ links }: HeaderProps): JSX.Element {
   // ui helpers
   const createMenuButtons = (): React.ReactNode[] =>
     links.map(({ label, link, isExternal }) => (
-      <Button key={label} color={"inherit"} className={classes.menuButton}>
-        <LinkWrapper isExternal={isExternal} href={link}>
-          <a
-            className={classes.link}
-            href={isExternal ? link : undefined}
-            target={isExternal ? "_blank" : undefined}
-          >
+      <LinkWrapper isExternal={isExternal} href={link} key={label}>
+        <a
+          className={classes.link}
+          href={isExternal ? link : undefined}
+          target={isExternal ? "_blank" : undefined}
+        >
+          <Button color={"inherit"} className={classes.menuButton}>
             {label}
-          </a>
-        </LinkWrapper>
-      </Button>
+          </Button>
+        </a>
+      </LinkWrapper>
     ));
 
   const createDrawerMenuChoices = (): React.ReactNode[] =>

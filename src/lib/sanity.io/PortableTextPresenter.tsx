@@ -5,6 +5,7 @@ const client = sanityClient({
   projectId: "fvljgowf",
   dataset: "production",
   useCdn: true,
+  apiVersion: "2021-05-01",
 });
 
 interface serializersCodeProps {

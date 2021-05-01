@@ -1,3 +1,12 @@
+interface Author {
+  name: string;
+  contactLink: string;
+}
+
+export interface Tag {
+  name: string;
+}
+
 export interface Article {
   id: string;
   thumbnailURL: string;
@@ -5,6 +14,8 @@ export interface Article {
   shortDescription: string;
   readingTimeInMinute: number;
   publishingDateStr: string;
+  author: Author | null;
+  tags: Tag[] | null;
   body?: object;
 }
 

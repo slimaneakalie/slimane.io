@@ -1,3 +1,5 @@
+import { Article } from "./articles.types";
+
 export interface ArticleResponseElement {
   title: string;
   excerpt: string;
@@ -11,7 +13,9 @@ export interface ArticleResponseElement {
   };
   readingTimeInMinute: number;
   _createdAt: string;
-  bodyRaw: object;
+  author: Article["author"];
+  tags: Article["tags"];
+  bodyRaw?: object;
 }
 
 export interface ArticlesGraphqlResponse {
