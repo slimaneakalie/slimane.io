@@ -20,7 +20,6 @@ export default function PodcastItemPageComponent({
         imgClassName={classes.imageTitle}
       />
       <div className={classes.bodyContainer}>
-        {/*Where to listen*/}
         <MainTitle>English description</MainTitle>
         <p className={classes.description}>{podcastItem.englishDescription}</p>
 

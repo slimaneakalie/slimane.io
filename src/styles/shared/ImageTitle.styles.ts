@@ -34,6 +34,7 @@ export const useImageTitleStyles = makeStyles((theme) => ({
     textShadow: "1px 1px 2px black, 0 0 1em black, 0 0 0.2em black",
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
     "@media (max-width: 1280px)": {
       width: "90%",
     },
