@@ -1,4 +1,5 @@
 import { Article } from "./articles.types";
+import { PodcastItem } from "../podcast/podcast.types";
 
 export interface ArticleResponseElement {
   title: string;
@@ -20,4 +21,12 @@ export interface ArticleResponseElement {
 
 export interface ArticlesGraphqlResponse {
   allPost: ArticleResponseElement[];
+}
+
+export interface AllPodcastsGraphqlResponse {
+  allPodcast: PodcastItem[];
+}
+
+export interface PodcastGraphqlResponse {
+  Podcast: PodcastItem;
 }

@@ -30,7 +30,7 @@ export default function WebsitePresenter({
           </Typography>
         </div>
         <div>
-          <YoutubeEmbed embedId={videoId} />
+          <YoutubeEmbed embedId={videoId} className={classes.videoContainer} />
         </div>
       </div>
     </section>

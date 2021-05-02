@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { ArticleTitleProps } from "../../types/articles/articleItemPage.types";
+import { ImageTitleProps } from "../../types/shared/imageTitle.types";
 
-export const useArticleTitleStyles = makeStyles((theme) => ({
+export const useImageTitleStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     height: 500,
@@ -10,19 +10,21 @@ export const useArticleTitleStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
   },
-  mainImage: (props: ArticleTitleProps) => ({
+  mainImage: (props: ImageTitleProps) => ({
     backgroundImage: `url(${props.mainImageUrl})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     width: "100%",
     height: "100%",
-    filter: "blur(2px) brightness(80%);",
     position: "absolute",
     top: 0,
     left: 0,
     zIndex: -100,
   }),
+  imageBackgroundFilter: {
+    filter: "blur(2px) brightness(80%)",
+  },
   titleTextContainer: {
     position: "relative",
     zIndex: 100,
@@ -39,5 +41,6 @@ export const useArticleTitleStyles = makeStyles((theme) => ({
   title: {
     fontWeight: "bold",
     textAlign: "center",
+    fontSize: "3rem",
   },
 }));

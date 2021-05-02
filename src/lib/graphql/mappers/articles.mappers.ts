@@ -4,6 +4,7 @@ import {
 } from "../../../types/shared/graphql.types";
 import { Article, ArticlesMap } from "../../../types/shared/articles.types";
 import { ApolloQueryResult } from "@apollo/client/core/types";
+import { formatDate } from "../../utils";
 
 export function mapResponseToArticlesMap(
   response?: ApolloQueryResult<ArticlesGraphqlResponse>
@@ -29,12 +30,6 @@ export function mapArticleElement(element: ArticleResponseElement): Article {
     body: element.bodyRaw || {},
     author: element.author || null,
     tags: element.tags || null,
-    publishingDateStr: formatArticlePublishingDate(
-      new Date(element._createdAt)
-    ),
+    publishingDateStr: formatDate(new Date(element._createdAt)),
   };
-}
-
-function formatArticlePublishingDate(date: Date): string {
-  return date.toDateString().slice(4);
 }

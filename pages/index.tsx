@@ -13,7 +13,7 @@ export default function Home(props: HomeState) {
   return <HomePageContainer />;
 }
 
-export async function getStaticProps(context: NextPageContext) {
+export async function getStaticProps() {
   return {
     props: await getHomeInitialState(),
   };

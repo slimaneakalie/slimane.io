@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
+import React from "react";
 
 export const useWebsitePresenterStyles = makeStyles((theme) => ({
   root: {
@@ -54,4 +55,5 @@ export const useWebsitePresenterStyles = makeStyles((theme) => ({
   selfPresentation: {
     marginBottom: 25,
   },
+  videoContainer: {},
 }));
