@@ -1,10 +1,10 @@
-import { PodcastsGraphqlResponse } from "../../../types/shared/graphql.types";
+import { AllPodcastsGraphqlResponse } from "../../../types/shared/graphql.types";
 import { PodcastMap } from "../../../types/podcast/podcast.types";
 import { ApolloQueryResult } from "@apollo/client/core/types";
 import { formatDate } from "../../utils";
 
 export function mapResponseToPodcastMap(
-  response?: ApolloQueryResult<PodcastsGraphqlResponse>
+  response?: ApolloQueryResult<AllPodcastsGraphqlResponse>
 ): PodcastMap {
   const podcastMap: PodcastMap = {};
 

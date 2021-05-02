@@ -1,9 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import {
-  ArticlesState,
-  SetArticleItemStateAction,
-} from "../../types/articles/store.articles.types";
-import { PodcastState } from "../../types/podcast/store.podcast.types";
+  PodcastState,
+  SetPodcastItemStateAction,
+} from "../../types/podcast/store.podcast.types";
 
 const initialState: PodcastState = {
   pagePodcastEpisodes: {},
@@ -19,9 +18,16 @@ const podcastSlice = createSlice({
         ...action.payload,
       };
     },
+    setPodcastItemState(
+      state: PodcastState,
+      action: PayloadAction<SetPodcastItemStateAction>
+    ) {
+      const { id, newState } = action.payload;
+      state.pagePodcastEpisodes[id] = newState;
+    },
   },
 });
 
-export const { setPodcastState } = podcastSlice.actions;
+export const { setPodcastState, setPodcastItemState } = podcastSlice.actions;
 
 export const podcastRootReducer = podcastSlice.reducer;

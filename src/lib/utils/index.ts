@@ -15,7 +15,7 @@ export function createVideoLink(videoId: string): string {
 }
 
 export function createVideoThumbnailLink(videoId: string): string {
-  return `http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+  return `http://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
 }
 
 export function formatDate(date: Date): string {

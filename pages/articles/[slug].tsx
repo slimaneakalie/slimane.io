@@ -1,9 +1,8 @@
-import { GetStaticPropsContext, NextPageContext } from "next";
+import { GetStaticPropsContext } from "next";
 import { useDispatch } from "react-redux";
 import React, { useEffect } from "react";
 import { setArticleItemState } from "../../src/store/articles/slice";
 import Head from "next/head";
-import ArticlesPageContainer from "../../src/containers/articles/articlesPage.container";
 import {
   fetchAllArticleSlugs,
   fetchArticleCompleteData,
@@ -36,7 +35,7 @@ export default function ArticleItem(props: Article): JSX.Element {
 }
 
 export async function getStaticProps(context: GetStaticPropsContext<any>) {
-  const slug = context.params["slug"] as string;
+  const slug = context.params.slug as string;
   return {
     props: await fetchArticleCompleteData(slug),
   };

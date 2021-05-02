@@ -8,3 +8,7 @@ export interface PodcastCardProps {
 export interface PodcastPageProps {
   podcastPageEpisodes: PodcastMap;
 }
+
+export interface PodcastItemPageProps {
+  podcastItem: PodcastItem;
+}

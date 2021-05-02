@@ -23,6 +23,10 @@ export interface ArticlesGraphqlResponse {
   allPost: ArticleResponseElement[];
 }
 
-export interface PodcastsGraphqlResponse {
+export interface AllPodcastsGraphqlResponse {
   allPodcast: PodcastItem[];
+}
+
+export interface PodcastGraphqlResponse {
+  Podcast: PodcastItem;
 }

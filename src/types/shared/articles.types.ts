@@ -22,9 +22,3 @@ export interface Article {
 export interface ArticlesMap {
   [key: string]: Article;
 }
-
-export interface SlugStaticPath {
-  params: {
-    slug: string;
-  };
-}

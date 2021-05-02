@@ -5,15 +5,12 @@ import {
   GET_PAGE_ARTICLES,
 } from "../queries/articles";
 import { ArticlesGraphqlResponse } from "../../../types/shared/graphql.types";
-import {
-  Article,
-  ArticlesMap,
-  SlugStaticPath,
-} from "../../../types/shared/articles.types";
+import { Article, ArticlesMap } from "../../../types/shared/articles.types";
 import {
   mapArticleElement,
   mapResponseToArticlesMap,
 } from "../mappers/articles.mappers";
+import { StaticPath } from "../../../types/shared/next.types";
 
 export async function fetchPageArticles(): Promise<ArticlesMap> {
   const response = await executeGraphqlQuery<ArticlesGraphqlResponse>(
@@ -37,19 +34,17 @@ export async function fetchArticleCompleteData(
   }
 }
 
-export async function fetchAllArticleSlugs(): Promise<SlugStaticPath[]> {
+export async function fetchAllArticleSlugs(): Promise<StaticPath[]> {
   const response = await executeGraphqlQuery<ArticlesGraphqlResponse>(
     GET_ALL_ARTICLES_SLUGS,
     {}
   );
 
-  const slugs: SlugStaticPath[] = [];
+  const slugs: StaticPath[] = [];
 
-  if (response) {
-    response.data.allPost.forEach((article) => {
-      slugs.push({ params: { slug: article.slug.current } });
-    });
-  }
+  response?.data.allPost?.forEach((article) => {
+    slugs.push({ params: { slug: article.slug.current } });
+  });
 
   return slugs;
 }
