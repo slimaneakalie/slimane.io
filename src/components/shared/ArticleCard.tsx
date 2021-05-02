@@ -9,6 +9,7 @@ import { useArticleCardStyles } from "../../styles/shared/articleCard.styles";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import { createArticleLink } from "../../lib/utils";
 import { ArticleCardProps } from "../../types/shared/articleCard.types";
+import clsx from "clsx";
 
 export default function ArticleCard({
   article,
@@ -18,7 +19,7 @@ export default function ArticleCard({
   const articleLink = createArticleLink(article.id);
 
   return (
-    <Card className={`${classes.root} ${className}`} raised={true}>
+    <Card className={clsx(classes.root, className)} raised={true}>
       <LinkWrapper href={articleLink} isExternal={false}>
         <CardActionArea className={classes.container}>
           <CardMedia

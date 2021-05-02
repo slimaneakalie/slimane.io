@@ -8,6 +8,7 @@ import {
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import { createPodcastLink } from "../../lib/utils";
 import { usePodcastCardStyles } from "../../styles/podcast/podcastCard.styles";
+import clsx from "clsx";
 
 export default function PodcastCard({
   podcastCardData,
@@ -16,10 +17,14 @@ export default function PodcastCard({
   const classes = usePodcastCardStyles();
   const podcastLink = createPodcastLink(podcastCardData._id);
   return (
-    <Card className={`${classes.root} ${className}`} raised={true}>
+    <Card className={clsx(classes.root, className)} raised={true}>
       <LinkWrapper href={podcastLink} isExternal={false}>
         <CardActionArea className={classes.container}>
-          <img src={podcastCardData.thumbnailURL} className={classes.media} />
+          <img
+            alt={podcastCardData.title}
+            src={podcastCardData.thumbnailURL}
+            className={classes.media}
+          />
           <CardContent className={classes.content}>
             <Typography
               gutterBottom

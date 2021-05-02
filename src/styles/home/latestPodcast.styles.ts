@@ -12,6 +12,7 @@ export const useLatestPodcastStyles = makeStyles((theme) => ({
     marginBottom: 20,
   },
   podcastCard: {
+    marginTop: 20,
     width: 1280,
     "@media (max-width: 1280px)": {
       width: "90%",

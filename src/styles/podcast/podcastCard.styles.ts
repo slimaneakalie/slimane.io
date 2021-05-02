@@ -2,11 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const usePodcastCardStyles = makeStyles((theme) => ({
   root: {
-    width: "90%",
-    marginTop: 20,
-    "@media (max-width: 900px)": {
-      width: "100%",
-    },
     animation: `$podcastTransition 1s ${theme.transitions.easing.easeInOut}`,
   },
   container: {

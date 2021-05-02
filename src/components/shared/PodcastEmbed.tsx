@@ -1,5 +1,6 @@
 import { PodcastEmbedProps } from "../../types/shared/podcastEmbed.types";
 import { usePodcastEmbedStyles } from "../../styles/shared/podcastEmbed.styles";
+import clsx from "clsx";
 
 export default function PodcastEmbed({
   podcastEmbedUrl,
@@ -10,9 +11,9 @@ export default function PodcastEmbed({
     <iframe
       src={podcastEmbedUrl}
       height="161px"
-      className={`${classes.root} ${className}`}
+      className={clsx(classes.root, className)}
       frameBorder="0"
       scrolling="no"
-    ></iframe>
+    />
   );
 }

@@ -6,6 +6,7 @@ import PodcastEmbed from "../shared/PodcastEmbed";
 import { createPodcastEmbedLink } from "../../lib/utils";
 import ImageTitle from "../shared/ImageTitle";
 import WhereToListenContainer from "../../containers/shared/whereToListen.container";
+import clsx from "clsx";
 
 export default function PodcastItemPageComponent({
   podcastItem,
@@ -24,7 +25,7 @@ export default function PodcastItemPageComponent({
         <p className={classes.description}>{podcastItem.englishDescription}</p>
 
         <MainTitle>Arabic description</MainTitle>
-        <p className={`${classes.description} ${classes.arabicText}`}>
+        <p className={clsx(classes.description, classes.arabicText)}>
           {podcastItem.arabicDescription}
         </p>
 

@@ -13,7 +13,11 @@ export default function PodcastPageComponent({
       <div className={classes.cardsContainer}>
         {podcastPageEpisodes &&
           Object.keys(podcastPageEpisodes).map((key) => (
-            <PodcastCard key={key} podcastCardData={podcastPageEpisodes[key]} />
+            <PodcastCard
+              key={key}
+              podcastCardData={podcastPageEpisodes[key]}
+              className={classes.podcastCard}
+            />
           ))}
       </div>
     </section>
