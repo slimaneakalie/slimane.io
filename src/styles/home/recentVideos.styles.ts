@@ -11,29 +11,11 @@ export const useRecentVideosStyles = makeStyles((theme) => ({
     display: "flex",
     flexFlow: "row wrap",
     justifyContent: "center",
-    // width: 1280,
     "& > div": {
-      flexBasis: "43%",
+      flexBasis: "auto",
       position: "relative",
       boxSizing: "border-box",
       margin: 20,
-      // maxWidth: "20%",
-      //flex: 1,
-    },
-    "@media (max-width: 1280px)": {
-      "& > div": {
-        flexBasis: "22%",
-      },
-    },
-    "@media (max-width: 1000px)": {
-      "& > div": {
-        flexBasis: "29%",
-      },
-    },
-    "@media (max-width: 900px)": {
-      "& > div": {
-        flexBasis: "50%",
-      },
     },
   },
   seeAllButton: {

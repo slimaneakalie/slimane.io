@@ -15,11 +15,12 @@ export default function VideoCard(video: Video): JSX.Element {
         href={videoLink}
         target={"_blank"}
       >
-        <CardMedia
-          image={thumbnailURL}
-          title={video.title}
-          className={classes.media}
-        />
+        {/*<CardMedia*/}
+        {/*  image={thumbnailURL}*/}
+        {/*  title={video.title}*/}
+        {/*  className={classes.media}*/}
+        {/*/>*/}
+        <img src={thumbnailURL} title={video.title} className={classes.media} />
       </CardActionArea>
     </Card>
   );

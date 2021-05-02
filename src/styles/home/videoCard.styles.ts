@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useVideoCardStyles = makeStyles((theme) => ({
   root: {
-    width: 320,
     marginTop: 20,
     animation: `$videoTransition 1s ${theme.transitions.easing.easeInOut}`,
   },
@@ -13,7 +12,7 @@ export const useVideoCardStyles = makeStyles((theme) => ({
   },
   media: {
     height: 155,
-    width: "100%",
+    width: "auto",
     "@media (max-width: 1024px)": {
       height: 128,
     },
