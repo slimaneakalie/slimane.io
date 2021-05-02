@@ -15,19 +15,24 @@ export default function PodcastItemPageComponent({
       {/*<ArticleTitle*/}
       <div className={classes.bodyContainer}>
         {/*Where to listen*/}
+        <MainTitle>English description</MainTitle>
+        <p className={classes.description}>{podcastItem.englishDescription}</p>
+
+        <MainTitle>Arabic description</MainTitle>
+        <p className={`${classes.description} ${classes.arabicText}`}>
+          {podcastItem.arabicDescription}
+        </p>
+
         <MainTitle>Video version</MainTitle>
         <div className={classes.videoContainer}>
           <YoutubeEmbed embedId={podcastItem.videoId} />
         </div>
+
         <MainTitle>Audio version</MainTitle>
         <PodcastEmbed
           podcastEmbedUrl={podcastEmbedUrl}
           className={classes.podcastEmbed}
         />
-        <MainTitle>Arabic description</MainTitle>
-        <p className={classes.description}>{podcastItem.arabicDescription}</p>
-        <MainTitle>English description</MainTitle>
-        <p className={classes.description}>{podcastItem.englishDescription}</p>
       </div>
     </section>
   );

@@ -35,4 +35,7 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
     lineHeight: 1.8,
     textAlign: "justify",
   },
+  arabicText: {
+    direction: "rtl",
+  },
 }));
