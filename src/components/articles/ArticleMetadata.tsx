@@ -10,25 +10,27 @@ export default function ArticleMetadata({
   const classes = useArticleMetadataStyles();
   const Separator = () => <span className={classes.separator}>|</span>;
   return (
-    <Typography variant="body1" component="p" className={classes.root}>
-      <span>{article.publishingDateStr}</span>
-      <Separator />
-      <span className={classes.authorLabel}>Written by </span>
-      <a
-        href={article.author?.contactLink}
-        target={"_blank"}
-        className={classes.link}
-      >
-        {article.author?.name}
-      </a>
-      {article.tags && article.tags.length > 0 && (
-        <>
-          <Separator />
-          <ArticleTags tags={article.tags as Tag[]} />
-        </>
-      )}
+    <>
+      <Typography variant="body1" component="p" className={classes.root}>
+        <span>{article.publishingDateStr}</span>
+        <Separator />
+        <span className={classes.authorLabel}>Written by </span>
+        <a
+          href={article.author?.contactLink}
+          target={"_blank"}
+          className={classes.link}
+        >
+          {article.author?.name}
+        </a>
+        {article.tags && article.tags.length > 0 && (
+          <>
+            <Separator />
+            <ArticleTags tags={article.tags as Tag[]} />
+          </>
+        )}
+      </Typography>
       <Divider />
-    </Typography>
+    </>
   );
 }
 
