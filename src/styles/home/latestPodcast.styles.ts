@@ -11,18 +11,11 @@ export const useLatestPodcastStyles = makeStyles((theme) => ({
   mainTitleContainer: {
     marginBottom: 20,
   },
-  audioPlatformsContainer: {
-    marginTop: 20,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  audioPlatformsLink: {
-    marginLeft: 10,
-    textDecoration: "none",
-  },
   seeAllButton: {
     marginTop: 40,
     fontSize: 18,
+  },
+  whereToListenContainer: {
+    marginTop: 20,
   },
 }));

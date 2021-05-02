@@ -2,7 +2,6 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { HomeState } from "../../types/home/store.home.types";
 
 const initialState: HomeState = {
-  audioPlatforms: [],
   latestVideos: [],
   latestArticles: {},
   allVideosExternalLink: "",

@@ -4,9 +4,4 @@ export interface ArticleItemPageProps {
   article: Article;
 }
 
-export interface ArticleTitleProps {
-  mainImageUrl: string;
-  title: string;
-}
-
 export type ArticleMetadataProps = ArticleItemPageProps;

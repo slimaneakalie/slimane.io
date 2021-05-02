@@ -7,7 +7,11 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
   },
+  imageTitle: {
+    filter: "blur(6px) brightness(80%)",
+  },
   bodyContainer: {
+    margin: "40px 0px",
     width: 1280,
     display: "flex",
     alignItems: "flex-start",

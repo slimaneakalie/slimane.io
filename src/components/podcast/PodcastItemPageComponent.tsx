@@ -4,6 +4,8 @@ import MainTitle from "../shared/MainTitle";
 import YoutubeEmbed from "../home/YoutubeEmbed";
 import PodcastEmbed from "../shared/PodcastEmbed";
 import { createPodcastEmbedLink } from "../../lib/utils";
+import ImageTitle from "../shared/ImageTitle";
+import WhereToListenContainer from "../../containers/shared/whereToListen.container";
 
 export default function PodcastItemPageComponent({
   podcastItem,
@@ -12,7 +14,11 @@ export default function PodcastItemPageComponent({
   const podcastEmbedUrl = createPodcastEmbedLink(podcastItem.audioId);
   return (
     <section className={classes.root}>
-      {/*<ArticleTitle*/}
+      <ImageTitle
+        mainImageUrl={"/podcast.png"}
+        title={podcastItem.title}
+        imgClassName={classes.imageTitle}
+      />
       <div className={classes.bodyContainer}>
         {/*Where to listen*/}
         <MainTitle>English description</MainTitle>
@@ -33,6 +39,8 @@ export default function PodcastItemPageComponent({
           podcastEmbedUrl={podcastEmbedUrl}
           className={classes.podcastEmbed}
         />
+
+        <WhereToListenContainer />
       </div>
     </section>
   );

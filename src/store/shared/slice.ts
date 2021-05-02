@@ -1,9 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { HomeState } from "../../types/home/store.home.types";
 import { SharedState } from "../../types/shared/store.types";
+import { audioPlatforms } from "./initializeState";
 
 const initialState: SharedState = {
   darkModeActivated: false,
+  audioPlatforms,
 };
 
 const sharedSlice = createSlice({
