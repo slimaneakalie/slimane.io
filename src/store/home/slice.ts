@@ -5,8 +5,8 @@ const initialState: HomeState = {
   latestVideos: [],
   latestArticles: {},
   allVideosExternalLink: "",
-  latestPodcastEmbedUrl: "",
   presenterVideoId: "",
+  latestPodcast: null,
 };
 
 const homeSlice = createSlice({

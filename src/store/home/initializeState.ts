@@ -1,10 +1,19 @@
 import { HomeState } from "../../types/home/store.home.types";
-import { fetchLatestArticles } from "../../lib/graphql/fetchers/home";
+import {
+  fetchLatestArticles,
+  fetchLatestPodcast,
+} from "../../lib/graphql/fetchers/home";
 
 export async function getHomeInitialState(): Promise<HomeState> {
-  const state = { ...staticState };
-  state.latestArticles = await fetchLatestArticles(3);
-  return state;
+  const [latestArticles, latestPodcast] = await Promise.all([
+    fetchLatestArticles(3),
+    fetchLatestPodcast(),
+  ]);
+  return {
+    ...staticState,
+    latestArticles: latestArticles,
+    latestPodcast: latestPodcast,
+  };
 }
 
 const latestVideos = [
@@ -40,9 +49,8 @@ const latestVideos = [
 ];
 
 const staticState: HomeState = {
-  latestPodcastEmbedUrl:
-    "https://anchor.fm/kass-atay-podcast/embed/episodes/Open-source-ev39gr",
   latestArticles: {},
+  latestPodcast: null,
   allVideosExternalLink:
     "https://www.youtube.com/channel/UCAKherxCCvXWHyGaeQKy-Jw/videos",
   presenterVideoId: "1sM54FPUagk",

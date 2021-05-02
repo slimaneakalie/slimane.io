@@ -22,3 +22,15 @@ export const GET_LATEST_N_ARTICLES = gql`
     }
   }
 `;
+
+export const GET_LATEST_PODCAST_EPISODE = gql`
+  {
+    allPodcast(sort: [{ streamingDateStr: DESC }], limit: 1, offset: 0) {
+      _id
+      thumbnailURL
+      title
+      excerpt
+      streamingDateStr
+    }
+  }
+`;

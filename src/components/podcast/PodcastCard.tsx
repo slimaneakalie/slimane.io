@@ -3,7 +3,6 @@ import {
   Card,
   CardActionArea,
   CardContent,
-  CardMedia,
   Typography,
 } from "@material-ui/core";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";

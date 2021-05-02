@@ -1,21 +1,12 @@
 import LatestPodcast from "../../components/home/LatestPodcast";
-import { AudioPlatforms } from "../../types/home/LatestPodcast";
 import { useSelector } from "react-redux";
 import { selectHomeStateField } from "../../store/home/selectors";
+import { PodcastItem } from "../../types/podcast/podcast.types";
 
 export default function LatestPodcastContainer(): JSX.Element {
-  const podcastEmbedUrl = useSelector(
-    selectHomeStateField("latestPodcastEmbedUrl")
-  ) as string;
+  const podcastItem = useSelector(
+    selectHomeStateField("latestPodcast")
+  ) as PodcastItem;
 
-  const audioPlatforms = useSelector(
-    selectHomeStateField("audioPlatforms")
-  ) as AudioPlatforms[];
-
-  return (
-    <LatestPodcast
-      podcastEmbedUrl={podcastEmbedUrl}
-      audioPlatforms={audioPlatforms}
-    />
-  );
+  return <LatestPodcast podcastItem={podcastItem} />;
 }
