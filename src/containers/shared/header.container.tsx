@@ -5,6 +5,10 @@ import React from "react";
 const navbarProps: HeaderProps = {
   links: [
     {
+      label: "Home",
+      link: "/",
+    },
+    {
       label: "Articles",
       link: "/articles",
     },
