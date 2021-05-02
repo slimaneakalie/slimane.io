@@ -4,6 +4,7 @@ import { PrimaryButton } from "../shared/PrimaryButton";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import { useLatestPodcastStyles } from "../../styles/home/latestPodcast.styles";
 import MainTitle from "../shared/MainTitle";
+import PodcastEmbed from "../shared/PodcastEmbed";
 
 export default function LatestPodcast({
   podcastEmbedUrl,
@@ -16,13 +17,7 @@ export default function LatestPodcast({
         LATEST PODCAST
       </MainTitle>
 
-      <iframe
-        src={podcastEmbedUrl}
-        height="161px"
-        className={classes.embedContainer}
-        frameBorder="0"
-        scrolling="no"
-      ></iframe>
+      <PodcastEmbed podcastEmbedUrl={podcastEmbedUrl} />
 
       <div className={classes.audioPlatformsContainer}>
         <Typography variant="h6" component="h1">

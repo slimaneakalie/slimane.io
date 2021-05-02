@@ -8,12 +8,6 @@ export const useLatestPodcastStyles = makeStyles((theme) => ({
     flexDirection: "column",
     padding: "20px 0px",
   },
-  embedContainer: {
-    width: 1280,
-    "@media (max-width: 1280px)": {
-      width: "90%",
-    },
-  },
   mainTitleContainer: {
     marginBottom: 20,
   },

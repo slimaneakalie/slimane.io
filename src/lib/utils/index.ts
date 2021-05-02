@@ -10,6 +10,10 @@ export function createPodcastLink(podcastId: string): string {
   return `/podcast/${podcastId}`;
 }
 
+export function createPodcastEmbedLink(podcastId: string): string {
+  return `https://anchor.fm/kass-atay-podcast/embed/episodes/${podcastId}`;
+}
+
 export function createVideoLink(videoId: string): string {
   return `https://youtu.be/${videoId}`;
 }
