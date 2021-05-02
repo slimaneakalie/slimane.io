@@ -7,7 +7,7 @@ import {
 import { ApolloQueryResult } from "@apollo/client/core/types";
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
-  uri: "https://fvljgowf.api.sanity.io/v1/graphql/production/default",
+  uri: process.env.GRAPHQL_SERVER,
   cache: new InMemoryCache(),
 });
 
