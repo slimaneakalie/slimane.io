@@ -17,7 +17,7 @@ export default function PodcastItemPageComponent({
       <ImageTitle
         mainImageUrl={"/podcast.png"}
         title={podcastItem.title}
-        imgClassName={classes.imageTitle}
+        imgFilterClassName={classes.imageTitle}
       />
       <div className={classes.bodyContainer}>
         <MainTitle>English description</MainTitle>
