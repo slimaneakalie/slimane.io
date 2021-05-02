@@ -11,9 +11,12 @@ export const useLatestPodcastStyles = makeStyles((theme) => ({
   mainTitleContainer: {
     marginBottom: 20,
   },
-  seeAllButton: {
-    marginTop: 40,
-    fontSize: 18,
+  podcastCard: {
+    marginTop: 20,
+    width: 1280,
+    "@media (max-width: 1280px)": {
+      width: "90%",
+    },
   },
   whereToListenContainer: {
     marginTop: 20,

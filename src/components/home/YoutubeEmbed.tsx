@@ -1,6 +1,7 @@
 import React from "react";
 import { YoutubeEmbedProps } from "../../types/home/youtubeEmbed.types";
 import { useYoutubeEmbedStyles } from "../../styles/home/youtubeEmbed.styles";
+import clsx from "clsx";
 
 export default function YoutubeEmbed({
   embedId,
@@ -8,7 +9,7 @@ export default function YoutubeEmbed({
 }: YoutubeEmbedProps) {
   const classes = useYoutubeEmbedStyles();
   return (
-    <div className={`${classes.root} ${className}`}>
+    <div className={clsx(classes.root, className)}>
       <iframe
         width={"100%"}
         height={"100%"}

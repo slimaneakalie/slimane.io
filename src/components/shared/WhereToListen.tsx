@@ -1,6 +1,7 @@
 import { Typography } from "@material-ui/core";
 import { WhereToListenProps } from "../../types/shared/whereToListen.types";
 import { useWhereToListenStyles } from "../../styles/shared/whereToListen.styles";
+import clsx from "clsx";
 
 export default function WhereToListen({
   audioPlatforms,
@@ -8,7 +9,7 @@ export default function WhereToListen({
 }: WhereToListenProps): JSX.Element {
   const classes = useWhereToListenStyles();
   return (
-    <div className={`${classes.root} ${className}`}>
+    <div className={clsx(classes.root, className)}>
       <Typography variant="h6" component="h1">
         Where to listen:
       </Typography>

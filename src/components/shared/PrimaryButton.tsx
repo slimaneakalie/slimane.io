@@ -1,5 +1,6 @@
 import { Button, ButtonProps, LinkBaseProps } from "@material-ui/core";
 import { usePrimaryButtonStyles } from "../../styles/shared/primaryButton.styles";
+import clsx from "clsx";
 
 export function PrimaryButton(props: ButtonProps & LinkBaseProps): JSX.Element {
   const classes = usePrimaryButtonStyles();
@@ -7,7 +8,7 @@ export function PrimaryButton(props: ButtonProps & LinkBaseProps): JSX.Element {
   return (
     <Button
       {...props}
-      className={`${propClassName} ${classes.root}`}
+      className={clsx(propClassName, classes.root)}
       variant="contained"
     >
       {props.children}

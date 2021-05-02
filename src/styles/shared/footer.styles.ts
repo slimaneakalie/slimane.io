@@ -9,6 +9,9 @@ export const useFooterStyles = makeStyles((theme) => ({
     alignItems: "center",
     backgroundColor: "black",
     color: "white",
+    position: "absolute",
+    width: "100%",
+    bottom: 0,
   },
   contentContainer: {
     display: "flex",

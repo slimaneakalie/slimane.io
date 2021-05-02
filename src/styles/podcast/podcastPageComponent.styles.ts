@@ -18,4 +18,11 @@ export const usePodcastPageStyles = makeStyles((theme) => ({
       width: "90%",
     },
   },
+  podcastCard: {
+    marginTop: 20,
+    width: "90%",
+    "@media (max-width: 900px)": {
+      width: "100%",
+    },
+  },
 }));

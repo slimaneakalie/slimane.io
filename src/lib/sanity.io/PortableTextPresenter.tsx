@@ -2,8 +2,8 @@ import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "@sanity/client";
 
 const client = sanityClient({
-  projectId: "fvljgowf",
-  dataset: "production",
+  projectId: process.env.NEXT_PUBLIC_SANITY_IO_PROJECT_ID as string,
+  dataset: process.env.NEXT_PUBLIC_SANITY_IO_DATASET,
   useCdn: true,
   apiVersion: "2021-05-01",
 });

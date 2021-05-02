@@ -1,12 +1,16 @@
 import { LatestPodcastProps } from "../../types/home/LatestPodcast";
 import { useLatestPodcastStyles } from "../../styles/home/latestPodcast.styles";
 import MainTitle from "../shared/MainTitle";
-import PodcastEmbed from "../shared/PodcastEmbed";
 import WhereToListenContainer from "../../containers/shared/whereToListen.container";
+import PodcastCard from "../podcast/PodcastCard";
 
 export default function LatestPodcast({
-  podcastEmbedUrl,
-}: LatestPodcastProps): JSX.Element {
+  podcastItem,
+}: LatestPodcastProps): JSX.Element | null {
+  if (!podcastItem) {
+    return null;
+  }
+
   const classes = useLatestPodcastStyles();
   return (
     <section className={classes.root}>
@@ -14,8 +18,10 @@ export default function LatestPodcast({
         LATEST PODCAST
       </MainTitle>
 
-      <PodcastEmbed podcastEmbedUrl={podcastEmbedUrl} />
-
+      <PodcastCard
+        podcastCardData={podcastItem}
+        className={classes.podcastCard}
+      />
       <WhereToListenContainer className={classes.whereToListenContainer} />
     </section>
   );

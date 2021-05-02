@@ -1,3 +1,5 @@
+import { PodcastItem } from "../podcast/podcast.types";
+
 export interface LatestPodcastProps {
-  podcastEmbedUrl: string;
+  podcastItem: PodcastItem;
 }
