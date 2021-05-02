@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export const GET_ALL_PODCAST_EPISODES = gql`
   {
-    allPodcast {
+    allPodcast(sort: [{ streamingDateStr: DESC }]) {
       _id
       thumbnailURL
       title
