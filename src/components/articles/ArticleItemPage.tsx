@@ -9,12 +9,12 @@ export default function ArticleItemPage({
 }: ArticleItemPageProps): JSX.Element {
   const classes = useArticleItemPageStyles();
   return (
-    <section className={classes.root}>
+    <article className={classes.root}>
       <ImageTitle mainImageUrl={article.thumbnailURL} title={article.title} />
       <div className={classes.bodyContainer}>
         <ArticleMetadata article={article} />
         {article.body && <PortableTextPresenterProps body={article.body} />}
       </div>
-    </section>
+    </article>
   );
 }
