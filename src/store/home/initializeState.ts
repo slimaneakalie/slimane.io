@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "w59IW6sbzOE",
+    title:
+      "كيف تختار كتبا للقراءة - How to choose books to read",
+  },
+  {
     id: "oKpUy9wSZxU",
     title:
       "العمل عن بعد، التعلم الذاتي، Open-source، الشركات الناشئة، السفر و تنظيم الوقت | مع إسماعيل غالو",
@@ -41,10 +46,6 @@ const latestVideos = [
     id: "rFRz_WVIg1s",
     title:
       "شنو تعلمت من الجامعة في المغرب بكل صراحة - What I've learned from college in Morocco (honestly)",
-  },
-  {
-    id: "kAjGmkyMJbM",
-    title: "eXtreme programming - البرمجة المتطرفة",
   },
 ];
 
