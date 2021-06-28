@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "tC5oI4DIvDY",
+    title:
+      "هل البيتكوين ممنوع في المغرب؟ - Is bitcoin banned in Morocco?",
+  },
+  {
     id: "w59IW6sbzOE",
     title:
       "كيف تختار كتبا للقراءة - How to choose books to read",
@@ -41,11 +46,6 @@ const latestVideos = [
     id: "1HCu8Js32-o",
     title:
       "في 8 مارس أميمة دحوم تتحدث عن التحرش الجنسي, تعدد الزوجات, ناقصات عقل و دين و الثقافة المغربية",
-  },
-  {
-    id: "rFRz_WVIg1s",
-    title:
-      "شنو تعلمت من الجامعة في المغرب بكل صراحة - What I've learned from college in Morocco (honestly)",
   },
 ];
 
