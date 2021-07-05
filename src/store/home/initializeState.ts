@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "_K4yL623sMg",
+    title:
+      "توقف عن تضييع الوقت على لينكد إن - Stop wasting time on LinkedIn",
+  },
+  {
     id: "tC5oI4DIvDY",
     title:
       "هل البيتكوين ممنوع في المغرب؟ - Is bitcoin banned in Morocco?",
@@ -41,11 +46,6 @@ const latestVideos = [
     id: "VzNDxZ01nk0",
     title:
       "التكوين المهني، العمل في جوجل، توازن الحياة و العمل، Cloud computing و TEDx | عبد الفتاح الصغيور",
-  },
-  {
-    id: "1HCu8Js32-o",
-    title:
-      "في 8 مارس أميمة دحوم تتحدث عن التحرش الجنسي, تعدد الزوجات, ناقصات عقل و دين و الثقافة المغربية",
   },
 ];
 
