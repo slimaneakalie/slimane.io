@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "esnOaaYi1M0",
+    title:
+      "ضحى العمراني: الحرية المالية، السفر، الدراسة في الخارج، تعلم اللغات، أهمية الأصدقاء",
+  },
+  {
     id: "_K4yL623sMg",
     title:
       "توقف عن تضييع الوقت على لينكد إن - Stop wasting time on LinkedIn",
@@ -41,11 +46,6 @@ const latestVideos = [
     id: "AXLG39cSZgE",
     title:
       "العمل في جوجل، مسابقات البرمجة، الجيتار، Golang, GraalVM, Rust, Java, قراءة الكتب | مع مهدي شراشر",
-  },
-  {
-    id: "VzNDxZ01nk0",
-    title:
-      "التكوين المهني، العمل في جوجل، توازن الحياة و العمل، Cloud computing و TEDx | عبد الفتاح الصغيور",
   },
 ];
 
