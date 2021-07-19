@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "HWmZm2MF7dc",
+    title:
+      "الراحة الجسدية ليست هي الغاية",
+  },
+  {
     id: "esnOaaYi1M0",
     title:
       "ضحى العمراني: الحرية المالية، السفر، الدراسة في الخارج، تعلم اللغات، أهمية الأصدقاء",
@@ -41,12 +46,7 @@ const latestVideos = [
     id: "oKpUy9wSZxU",
     title:
       "العمل عن بعد، التعلم الذاتي، Open-source، الشركات الناشئة، السفر و تنظيم الوقت | مع إسماعيل غالو",
-  },
-  {
-    id: "AXLG39cSZgE",
-    title:
-      "العمل في جوجل، مسابقات البرمجة، الجيتار، Golang, GraalVM, Rust, Java, قراءة الكتب | مع مهدي شراشر",
-  },
+  }
 ];
 
 const staticState: HomeState = {
