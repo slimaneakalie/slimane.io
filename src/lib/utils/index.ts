@@ -19,9 +19,17 @@ export function createVideoLink(videoId: string): string {
 }
 
 export function createVideoThumbnailLink(videoId: string): string {
-  return `http://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+  return `https://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
 }
 
 export function formatDate(date: Date): string {
   return date.toDateString().slice(4);
+}
+
+export function createBookHighlightsLink(bookId: string): string {
+  return `/books/${bookId}`;
+}
+
+export function createBookCoverLink(bookCoverImageName: string): string {
+  return `/book-3d-covers/${bookCoverImageName}.png`;
 }
