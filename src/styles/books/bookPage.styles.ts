@@ -17,6 +17,9 @@ export const useBooksPageStyles = makeStyles((theme) => ({
       width: "90%",
     },
   },
+  title: {
+    marginBottom: 30,
+  },
   booksCardsContainer: {
     display: "flex",
     flexFlow: "row wrap",
