@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Slimane Akalië</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
