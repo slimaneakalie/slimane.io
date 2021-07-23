@@ -1,7 +1,11 @@
+import { BlockMapType } from "react-notion";
+
 export interface Book {
-  highlightsNotionId: string;
   title: string;
-  coverImageName: string;
+  highlightsNotionPageId: string;
+  cover3dImageURL: string;
+  shortDescription: string | null;
+  highlightsNotionContent?: BlockMapType;
 }
 
 export interface BookCardProps {

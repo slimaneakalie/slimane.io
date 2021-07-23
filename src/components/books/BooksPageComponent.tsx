@@ -11,7 +11,7 @@ export default function BooksPageComponent(props: BooksPageProps): JSX.Element {
         <MainTitle className={classes.title}>My Book highlights</MainTitle>
         <div className={classes.booksCardsContainer}>
           {Object.values(props.books).map((book) => (
-            <BookCard book={book} key={book.highlightsNotionId} />
+            <BookCard book={book} key={book.highlightsNotionPageId} />
           ))}
         </div>
       </div>

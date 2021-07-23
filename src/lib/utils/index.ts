@@ -29,7 +29,3 @@ export function formatDate(date: Date): string {
 export function createBookHighlightsLink(bookId: string): string {
   return `/books/${bookId}`;
 }
-
-export function createBookCoverLink(bookCoverImageName: string): string {
-  return `/book-3d-covers/${bookCoverImageName}.png`;
-}

@@ -1,6 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { HomeState } from "../../types/home/store.home.types";
-import { BooksPageState } from "../../types/books/store.books.types";
+import {
+  BooksPageState,
+  SetBookItemStateAction,
+} from "../../types/books/store.books.types";
 
 const initialState: BooksPageState = {
   books: {},
@@ -19,9 +21,16 @@ const booksSlice = createSlice({
         ...action.payload,
       };
     },
+    setBookItemState(
+      state: BooksPageState,
+      action: PayloadAction<SetBookItemStateAction>
+    ) {
+      const { id, newState } = action.payload;
+      state.books[id] = newState;
+    },
   },
 });
 
-export const { setBooksState } = booksSlice.actions;
+export const { setBooksState, setBookItemState } = booksSlice.actions;
 
 export const booksRootReducer = booksSlice.reducer;

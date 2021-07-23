@@ -21,6 +21,6 @@ export default function BooksIndexPage(props: BooksPageState): JSX.Element {
 
 export async function getStaticProps() {
   return {
-    props: getBooksPageInitialState(),
+    props: await getBooksPageInitialState(),
   };
 }

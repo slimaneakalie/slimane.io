@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-export const useBooksPageStyles = makeStyles((theme) => ({
+export const useBooksPageStyles = makeStyles(() => ({
   root: {
     padding: "30px 0px",
     display: "flex",

@@ -7,3 +7,7 @@ export interface BooksMap {
 export interface BooksPageProps {
   books: BooksMap;
 }
+
+export interface BookItemPageProps {
+  book: Book;
+}
