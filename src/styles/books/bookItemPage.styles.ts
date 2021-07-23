@@ -19,6 +19,7 @@ export const useBooksItemPageStyles = makeStyles(() => ({
   },
   highlightContent: {
     marginLeft: 13,
+    marginBottom: 50,
   },
   title: {
     fontWeight: "bold",

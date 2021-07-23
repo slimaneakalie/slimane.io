@@ -3,9 +3,7 @@ import "prismjs/themes/prism-tomorrow.css";
 
 import { BookItemPageProps } from "../../types/books/booksPage.types";
 import { NotionRenderer } from "react-notion";
-import ImageTitle from "../shared/ImageTitle";
 import { useBooksItemPageStyles } from "../../styles/books/bookItemPage.styles";
-import BookCard from "./BookCard";
 import { Typography } from "@material-ui/core";
 
 export default function BookItemPage(props: BookItemPageProps): JSX.Element {
