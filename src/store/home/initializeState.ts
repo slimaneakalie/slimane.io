@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "85gwIFDZm78",
+    title:
+      "أحمد لكسايس: الأمن المعلوماتي، الإسلام و العلم، العملات المشفرة، الأنترنت المظلم و الحروب السيبرانية",
+  },
+  {
     id: "HWmZm2MF7dc",
     title:
       "الراحة الجسدية ليست هي الغاية",
@@ -42,11 +47,6 @@ const latestVideos = [
     title:
       "كيف تختار كتبا للقراءة - How to choose books to read",
   },
-  {
-    id: "oKpUy9wSZxU",
-    title:
-      "العمل عن بعد، التعلم الذاتي، Open-source، الشركات الناشئة، السفر و تنظيم الوقت | مع إسماعيل غالو",
-  }
 ];
 
 const staticState: HomeState = {
