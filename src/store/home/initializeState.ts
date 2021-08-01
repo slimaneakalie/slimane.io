@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "js51Hdo2tyg",
+    title:
+      "لا تفعل هذا لتربح المال على الأنترنت",
+  },
+  {
     id: "85gwIFDZm78",
     title:
       "أحمد لكسايس: الأمن المعلوماتي، الإسلام و العلم، العملات المشفرة، الأنترنت المظلم و الحروب السيبرانية",
@@ -41,11 +46,6 @@ const latestVideos = [
     id: "tC5oI4DIvDY",
     title:
       "هل البيتكوين ممنوع في المغرب؟ - Is bitcoin banned in Morocco?",
-  },
-  {
-    id: "w59IW6sbzOE",
-    title:
-      "كيف تختار كتبا للقراءة - How to choose books to read",
   },
 ];
 
