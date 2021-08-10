@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "OkiBHCyzATg",
+    title:
+      "إلياس باكوش: العمل في أمازون، الزواج، تصميم الأنظمة، الشهادات التقنية، توازن الحياة و العمل، الكتب",
+  },
+  {
     id: "js51Hdo2tyg",
     title:
       "لا تفعل هذا لتربح المال على الأنترنت",
@@ -41,11 +46,6 @@ const latestVideos = [
     id: "_K4yL623sMg",
     title:
       "توقف عن تضييع الوقت على لينكد إن - Stop wasting time on LinkedIn",
-  },
-  {
-    id: "tC5oI4DIvDY",
-    title:
-      "هل البيتكوين ممنوع في المغرب؟ - Is bitcoin banned in Morocco?",
   },
 ];
 
