@@ -9,6 +9,7 @@ export async function getHomeInitialState(): Promise<HomeState> {
     fetchLatestArticles(3),
     fetchLatestPodcast(),
   ]);
+  
   return {
     ...staticState,
     latestArticles: latestArticles,
@@ -54,6 +55,6 @@ const staticState: HomeState = {
   latestPodcast: null,
   allVideosExternalLink:
     "https://www.youtube.com/channel/UCAKherxCCvXWHyGaeQKy-Jw/videos",
-  presenterVideoId: "1sM54FPUagk",
+  presenterVideoId: "_K4yL623sMg",
   latestVideos: latestVideos,
 };
