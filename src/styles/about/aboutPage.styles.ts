@@ -19,7 +19,7 @@ export const useAboutPageStyles = makeStyles((theme) => ({
     justifyContent: "center",
     width: "20%",
     height: "100%",
-    "@media (max-width: 900px)": {
+    "@media (max-width: 1100px)": {
       width: "100%",
       marginBottom: 40,
     },
@@ -33,7 +33,7 @@ export const useAboutPageStyles = makeStyles((theme) => ({
     "@media (max-width: 1280px)": {
       width: "90%",
     },
-    "@media (max-width: 900px)": {
+    "@media (max-width: 1100px)": {
       flexDirection: "column-reverse",
     },
   },
@@ -49,7 +49,7 @@ export const useAboutPageStyles = makeStyles((theme) => ({
     flexDirection: "column",
     paddingRight: 40,
     paddingLeft: 35,
-    "@media (max-width: 900px)": {
+    "@media (max-width: 1100px)": {
       width: "100%",
       alignItems: "center",
       padding: 0,
@@ -63,7 +63,7 @@ export const useAboutPageStyles = makeStyles((theme) => ({
     "& > a": {
       margin: 20,
     },
-    "@media (max-width: 730px)": {
+    "@media (max-width: 900px)": {
       flexDirection: "column",
       alignItems: "flex-start",
       "& > a": {

@@ -3,6 +3,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 import MainTitle from "../src/components/shared/MainTitle";
 import { useAboutPageStyles } from "../src/styles/about/aboutPage.styles";
@@ -18,6 +19,11 @@ export default function About(): JSX.Element {
       label: "Linkedin",
     },
     {
+      link: "https://twitter.com/slimaneakalie",
+      icon: <TwitterIcon />,
+      label: "Twitter",
+    },
+    {
       link: "https://github.com/slimaneakalie",
       icon: <GitHubIcon />,
       label: "Github",
@@ -28,7 +34,7 @@ export default function About(): JSX.Element {
       label: "Email",
     },
     {
-      link: "https://drive.google.com/file/d/1B8fWvGiTJHohwq9HmlTTB3vhTdoCjuWh/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1MWt5dUd6WQphKf3mKu6F3zf6QIo9kNKW/view",
       icon: <ListAltIcon />,
       label: "Resume",
     },
@@ -51,7 +57,7 @@ export default function About(): JSX.Element {
           </p>
           <div className={classes.iconLinksContainer}>
             {iconLinks.map((iconLink) => (
-              <IconLink {...iconLink} />
+              <IconLink key={iconLink.label} {...iconLink} />
             ))}
           </div>
         </div>
