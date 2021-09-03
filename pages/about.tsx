@@ -34,7 +34,7 @@ export default function About(): JSX.Element {
       label: "Email",
     },
     {
-      link: "https://drive.google.com/file/d/1cG3IABuTMUWVVdLTAW70GQ_Vp1N4_Ly4/view",
+      link: "https://drive.google.com/file/d/1KrES9hbpD2OLnscRKuHj0L-sJEYLJ2C1/view",
       icon: <ListAltIcon />,
       label: "Resume",
     },
