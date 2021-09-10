@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "Q4wtbSNKudw",
+    title:
+      "سلمى مستعد: جامعة الأخوين، الشركات الناشئة، الشباب و السياسة، قانون الجذب، الشغف، التوازن، القراءة",
+  },
+  {
     id: "ThCxZHVvViw",
     title:
       "كيف أتحكم في وقتي - How I control my time and how you can control yours",
@@ -42,11 +47,6 @@ const latestVideos = [
     id: "HWmZm2MF7dc",
     title:
       "الراحة الجسدية ليست هي الغاية",
-  },
-  {
-    id: "esnOaaYi1M0",
-    title:
-      "ضحى العمراني: الحرية المالية، السفر، الدراسة في الخارج، تعلم اللغات، أهمية الأصدقاء",
   },
 ];
 
