@@ -33,11 +33,6 @@ export default function About(): JSX.Element {
       icon: <MailOutlineIcon />,
       label: "Email",
     },
-    {
-      link: "https://drive.google.com/file/d/15L2BNWWo3T3eC2iB3xvq4bbW_0llFbqm/view",
-      icon: <ListAltIcon />,
-      label: "Resume",
-    },
   ];
   return (
     <section className={classes.root}>
