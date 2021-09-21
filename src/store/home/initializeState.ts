@@ -55,6 +55,6 @@ const staticState: HomeState = {
   latestPodcast: null,
   allVideosExternalLink:
     "https://www.youtube.com/channel/UCAKherxCCvXWHyGaeQKy-Jw/videos",
-  presenterVideoId: "_K4yL623sMg",
+  presenterVideoId: "1sM54FPUagk",
   latestVideos: latestVideos,
 };
