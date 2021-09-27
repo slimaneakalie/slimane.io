@@ -21,14 +21,6 @@ export default function PodcastItemPageComponent({
         imgFilterClassName={classes.imageTitle}
       />
       <div className={classes.bodyContainer}>
-        <MainTitle>English description</MainTitle>
-        <p className={classes.description}>{podcastItem.englishDescription}</p>
-
-        <MainTitle>Arabic description</MainTitle>
-        <p className={clsx(classes.description, classes.arabicText)}>
-          {podcastItem.arabicDescription}
-        </p>
-
         <MainTitle>Video version</MainTitle>
         <div className={classes.videoContainer}>
           <YoutubeEmbed embedId={podcastItem.videoId} />
@@ -39,6 +31,15 @@ export default function PodcastItemPageComponent({
           podcastEmbedUrl={podcastEmbedUrl}
           className={classes.podcastEmbed}
         />
+        
+        <MainTitle>About the podcast</MainTitle>
+        <p className={classes.description}>{podcastItem.englishDescription}</p>
+
+        <MainTitle>حول البودكاست</MainTitle>
+        <p className={clsx(classes.description, classes.arabicText)}>
+          {podcastItem.arabicDescription}
+        </p>
+
 
         <WhereToListenContainer />
       </div>
