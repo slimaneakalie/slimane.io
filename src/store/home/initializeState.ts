@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "JlKd9cy_VW4",
+    title:
+      "How to write clean code ",
+  },
+  {
     id: "Q4wtbSNKudw",
     title:
       "سلمى مستعد: جامعة الأخوين، الشركات الناشئة، الشباب و السياسة، قانون الجذب، الشغف، التوازن، القراءة",
@@ -42,11 +47,6 @@ const latestVideos = [
     id: "85gwIFDZm78",
     title:
       "أحمد لكسايس: الأمن المعلوماتي، الإسلام و العلم، العملات المشفرة، الأنترنت المظلم و الحروب السيبرانية",
-  },
-  {
-    id: "HWmZm2MF7dc",
-    title:
-      "الراحة الجسدية ليست هي الغاية",
   },
 ];
 
