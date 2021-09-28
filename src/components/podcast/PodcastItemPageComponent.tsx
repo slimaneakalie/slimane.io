@@ -32,6 +32,7 @@ export default function PodcastItemPageComponent({
           className={classes.podcastEmbed}
         />
         <WhereToListenContainer />
+        <br /> <br />
         
         <MainTitle>About the podcast</MainTitle>
         <p className={classes.description}>{podcastItem.englishDescription}</p>
