@@ -31,6 +31,7 @@ export default function PodcastItemPageComponent({
           podcastEmbedUrl={podcastEmbedUrl}
           className={classes.podcastEmbed}
         />
+        <WhereToListenContainer />
         
         <MainTitle>About the podcast</MainTitle>
         <p className={classes.description}>{podcastItem.englishDescription}</p>
@@ -39,9 +40,6 @@ export default function PodcastItemPageComponent({
         <p className={clsx(classes.description, classes.arabicText)}>
           {podcastItem.arabicDescription}
         </p>
-
-
-        <WhereToListenContainer />
       </div>
     </section>
   );
