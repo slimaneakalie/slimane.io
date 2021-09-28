@@ -34,10 +34,10 @@ export default function PodcastItemPageComponent({
         <WhereToListenContainer />
         <br /> <br />
         
-        <MainTitle>About the podcast</MainTitle>
+        <MainTitle>About this podcast</MainTitle>
         <p className={classes.description}>{podcastItem.englishDescription}</p>
 
-        <MainTitle>حول البودكاست</MainTitle>
+        <MainTitle>حول هذا البودكاست</MainTitle>
         <p className={clsx(classes.description, classes.arabicText)}>
           {podcastItem.arabicDescription}
         </p>
