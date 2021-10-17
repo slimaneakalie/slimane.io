@@ -17,6 +17,10 @@ export const useArticleCardStyles = makeStyles((theme) => ({
   media: {
     height: 100,
     width: "100%",
+    filter: 'grayscale(100%)',
+    "&:hover": {
+      filter: 'grayscale(0%)',
+    }
   },
   content: {
     width: "100%",

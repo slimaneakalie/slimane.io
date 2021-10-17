@@ -2,11 +2,22 @@ import { Typography } from "@material-ui/core";
 import { useWebsitePresenterStyles } from "../../styles/home/websitePresenter.styles";
 import YoutubeEmbed from "./YoutubeEmbed";
 import { WebsitePresenterProps } from "../../types/home/websitePresenter.types";
+import Typewriter from 'typewriter-effect'
+
 
 export default function WebsitePresenter({
   videoId,
 }: WebsitePresenterProps): JSX.Element {
   const classes = useWebsitePresenterStyles();
+  const typeWriterOptions = {
+    loop: true,
+    autoStart: true,
+    wrapperClassName: classes.typewriter,
+    skipAddStyles: true,
+    delay: 50,
+    strings: ['software engineer.', 'part-time Youtuber.', 'podcast host.']
+  }
+
   return (
     <section className={classes.root}>
       <div className={classes.container}>
@@ -20,11 +31,10 @@ export default function WebsitePresenter({
             className={classes.paragraph}
           >
             <div className={classes.selfPresentation}>
-              This is Slimane, I'm a software engineer, part-time Youtuber and
-              podcast host.
+              This is Slimane, I'm a <Typewriter options={typeWriterOptions} />
             </div>
             <div>
-              In this website I share whatever I learn or build and my thoughts
+              In this website I share whatever I create and my thoughts
               on various topics.
             </div>
           </Typography>

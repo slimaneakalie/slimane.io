@@ -54,6 +54,12 @@ export const useWebsitePresenterStyles = makeStyles((theme) => ({
   },
   selfPresentation: {
     marginBottom: 25,
+    '& > div': {
+      display: 'inline',
+    }
+  },
+  typewriter: {
+    display: 'inline',
   },
   videoContainer: {},
 }));
