@@ -19,11 +19,6 @@ export default function About(): JSX.Element {
       label: "Linkedin",
     },
     {
-      link: "https://twitter.com/slimaneakalie",
-      icon: <TwitterIcon />,
-      label: "Twitter",
-    },
-    {
       link: "https://github.com/slimaneakalie",
       icon: <GitHubIcon />,
       label: "Github",
