@@ -13,9 +13,8 @@ export default function WebsitePresenter({
     loop: true,
     autoStart: true,
     wrapperClassName: classes.typewriter,
-    skipAddStyles: true,
     delay: 50,
-    strings: ['software.engineer', 'part-time.youtuber', 'podcast.host']
+    strings: ['software.engineer ⌨️', 'part-time.youtuber 🎬', 'podcast.host 🎙️']
   }
 
   return (
