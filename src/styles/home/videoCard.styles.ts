@@ -31,6 +31,10 @@ export const useVideoCardStyles = makeStyles((theme) => ({
     "@media (max-width: 280px)": {
       height: 101,
     },
+    filter: 'grayscale(100%)',
+    "&:hover": {
+      filter: 'grayscale(0%)',
+    }
   },
   "@keyframes videoTransition": {
     "0%": {
