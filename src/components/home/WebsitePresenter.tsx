@@ -15,7 +15,7 @@ export default function WebsitePresenter({
     wrapperClassName: classes.typewriter,
     skipAddStyles: true,
     delay: 50,
-    strings: ['software engineer.', 'part-time Youtuber.', 'podcast host.']
+    strings: ['software.engineer', 'part-time.youtuber', 'podcast.host']
   }
 
   return (
@@ -31,11 +31,11 @@ export default function WebsitePresenter({
             className={classes.paragraph}
           >
             <div className={classes.selfPresentation}>
-              This is Slimane, I'm a <Typewriter options={typeWriterOptions} />
+              This is Slimane, I'm a (<Typewriter options={typeWriterOptions} />);
             </div>
-            <div>
-              In this website I share whatever I create and my thoughts
-              on various topics.
+            <div className={classes.websiteComment}>
+              /* In this website I share whatever I create and my thoughts
+              on various topics. */
             </div>
           </Typography>
         </div>
