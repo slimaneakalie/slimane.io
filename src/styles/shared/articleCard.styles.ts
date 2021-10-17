@@ -8,6 +8,10 @@ export const useArticleCardStyles = makeStyles((theme) => ({
       width: "90%",
     },
     animation: `$articleTransition 1s ${theme.transitions.easing.easeInOut}`,
+    filter: 'grayscale(100%)',
+    "&:hover": {
+      filter: 'grayscale(0%)',
+    }
   },
   container: {
     display: "flex",
@@ -17,10 +21,6 @@ export const useArticleCardStyles = makeStyles((theme) => ({
   media: {
     height: 100,
     width: "100%",
-    filter: 'grayscale(100%)',
-    "&:hover": {
-      filter: 'grayscale(0%)',
-    }
   },
   content: {
     width: "100%",
