@@ -63,6 +63,7 @@ export const useWebsitePresenterStyles = makeStyles((theme) => ({
   },
   typewriter: {
     display: 'inline',
+    color: 'blue',
   },
   videoContainer: {},
 }));
