@@ -7,6 +7,7 @@ const initialState: HomeState = {
   allVideosExternalLink: "",
   presenterVideoId: "",
   latestPodcast: null,
+  presenterVideoStart: 0,
 };
 
 const homeSlice = createSlice({
