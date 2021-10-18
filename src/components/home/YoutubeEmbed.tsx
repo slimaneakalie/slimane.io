@@ -9,9 +9,9 @@ export default function YoutubeEmbed({
   videoStart,
   autoPlay,
 }: YoutubeEmbedProps) {
-  let embedLink = `https://www.youtube.com/embed/${embedId}?modestbranding=1&autoplay=1&start=${videoStart}`;
+  let embedLink = `https://www.youtube.com/embed/${embedId}?modestbranding=1`;
   if (autoPlay) {
-    embedLink += "&autoplay=1&mute=1";
+    embedLink += `&autoplay=1&mute=1&start=${videoStart}`;
   }
 
   const classes = useYoutubeEmbedStyles();
