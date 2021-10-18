@@ -13,6 +13,9 @@ export const useVideoCardStyles = makeStyles((theme) => ({
   media: {
     height: 155,
     width: "auto",
+    "&:hover" : {
+      border: "2px solid #8145A7",
+    },
     "@media (max-width: 1024px)": {
       height: 128,
     },
