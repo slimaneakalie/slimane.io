@@ -8,4 +8,5 @@ export interface HomeState {
   allVideosExternalLink: string;
   latestPodcast: PodcastItem | null;
   presenterVideoId: string;
+  presenterVideoStart: number;
 }
