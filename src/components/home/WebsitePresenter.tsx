@@ -18,6 +18,7 @@ export default function WebsitePresenter({
       "software.engineer ⌨️",
       "part-time.youtuber 🎬",
       "podcast.host 🎙️",
+      "book.lover 📚",
     ],
   };
 
