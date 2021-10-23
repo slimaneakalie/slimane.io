@@ -23,11 +23,6 @@ export default function About(): JSX.Element {
       icon: <GitHubIcon />,
       label: "Github",
     },
-    {
-      link: "mailto:slimaneakalia@gmail.com",
-      icon: <MailOutlineIcon />,
-      label: "Email",
-    },
   ];
   return (
     <section className={classes.root}>
