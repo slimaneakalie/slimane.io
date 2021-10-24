@@ -38,6 +38,7 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
     fontSize: 24,
     lineHeight: 1.8,
     textAlign: "justify",
+    whiteSpace: "pre-wrap",
   },
   arabicText: {
     direction: "rtl",

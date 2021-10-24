@@ -35,11 +35,11 @@ export default function PodcastItemPageComponent({
         <br /> <br />
 
         <MainTitle>About this podcast</MainTitle>
-        <p className={classes.description}>{podcastItem.englishDescription.replace("\n", "<br/>")}</p>
+        <p className={classes.description}>{podcastItem.englishDescription}</p>
 
         <MainTitle>حول هذا البودكاست</MainTitle>
         <p className={clsx(classes.description, classes.arabicText)}>
-          {podcastItem.arabicDescription.replace("\n", "<br/>")}
+          {podcastItem.arabicDescription}
         </p>
       </div>
     </section>
