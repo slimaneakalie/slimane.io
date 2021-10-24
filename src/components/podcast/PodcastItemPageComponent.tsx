@@ -33,7 +33,7 @@ export default function PodcastItemPageComponent({
         />
         <WhereToListenContainer />
         <br /> <br />
-        
+
         <MainTitle>About this podcast</MainTitle>
         <p className={classes.description}>{podcastItem.englishDescription}</p>
 
