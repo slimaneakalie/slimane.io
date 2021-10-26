@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+   {
+    id: "3h4EgfubQiU",
+    title:
+      "عبد العزيز الروي: العمل في جوجل، البرمجة التنافسية، شبكات التواصل، التسيير، مقابلات توظيف المبرمجين",
+  },
   {
     id: "JlKd9cy_VW4",
     title:
@@ -42,11 +47,6 @@ const latestVideos = [
     id: "js51Hdo2tyg",
     title:
       "لا تفعل هذا لتربح المال على الأنترنت",
-  },
-  {
-    id: "85gwIFDZm78",
-    title:
-      "أحمد لكسايس: الأمن المعلوماتي، الإسلام و العلم، العملات المشفرة، الأنترنت المظلم و الحروب السيبرانية",
   },
 ];
 
