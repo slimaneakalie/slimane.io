@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
    {
+    id: "P7i8xKn9nqY",
+    title:
+      "منصف عيساوي: PHP, الإشتغال بفرنسا, البرمجة B2B, الشهادات التقنية, تعلم الجيتار",
+  },
+  {
     id: "3h4EgfubQiU",
     title:
       "عبد العزيز الروي: العمل في جوجل، البرمجة التنافسية، شبكات التواصل، التسيير، مقابلات توظيف المبرمجين",
@@ -42,11 +47,6 @@ const latestVideos = [
     id: "OkiBHCyzATg",
     title:
       "إلياس باكوش: العمل في أمازون، الزواج، تصميم الأنظمة، الشهادات التقنية، توازن الحياة و العمل، الكتب",
-  },
-  {
-    id: "js51Hdo2tyg",
-    title:
-      "لا تفعل هذا لتربح المال على الأنترنت",
   },
 ];
 
