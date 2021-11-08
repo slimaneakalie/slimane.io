@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
    {
+     id: "-z-LGm4o5iI",
+     title:
+      "سارة القرمودي: الشركات الناشئة، الفشل، scrum master، المرض النفسي، المال و السعادة، B2B vs B2C",
+   },
+   {
     id: "P7i8xKn9nqY",
     title:
       "منصف عيساوي: PHP, الإشتغال بفرنسا, البرمجة B2B, الشهادات التقنية, تعلم الجيتار",
@@ -42,11 +47,6 @@ const latestVideos = [
     id: "ThCxZHVvViw",
     title:
       "كيف أتحكم في وقتي - How I control my time and how you can control yours",
-  },
-  {
-    id: "OkiBHCyzATg",
-    title:
-      "إلياس باكوش: العمل في أمازون، الزواج، تصميم الأنظمة، الشهادات التقنية، توازن الحياة و العمل، الكتب",
   },
 ];
 
