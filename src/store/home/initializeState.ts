@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
    {
+    id: "3N8sJi3EV00",
+    title:
+      "كوثر بنحمو: co-working، جامعة الأخوين، AISEC، أهمية المشاركة في السياسة، العمل في تركيا",
+   },
+   {
      id: "-z-LGm4o5iI",
      title:
       "سارة القرمودي: الشركات الناشئة، الفشل، scrum master، المرض النفسي، المال و السعادة، B2B vs B2C",
@@ -42,11 +47,6 @@ const latestVideos = [
     id: "Q4wtbSNKudw",
     title:
       "سلمى مستعد: جامعة الأخوين، الشركات الناشئة، الشباب و السياسة، قانون الجذب، الشغف، التوازن، القراءة",
-  },
-  {
-    id: "ThCxZHVvViw",
-    title:
-      "كيف أتحكم في وقتي - How I control my time and how you can control yours",
   },
 ];
 
