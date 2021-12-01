@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+    {
+      id: "nACQBYPSUxc",
+      title:
+        "كيف تربح المال من التضخم",
+    },
    {
     id: "3N8sJi3EV00",
     title:
@@ -42,11 +47,6 @@ const latestVideos = [
     id: "JlKd9cy_VW4",
     title:
       "How to write clean code ",
-  },
-  {
-    id: "Q4wtbSNKudw",
-    title:
-      "سلمى مستعد: جامعة الأخوين، الشركات الناشئة، الشباب و السياسة، قانون الجذب، الشغف، التوازن، القراءة",
   },
 ];
 
