@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
     {
+      id: "FZg6HoAFttQ",
+      title:
+        "ماهي NFTs",
+    },
+    {
       id: "nACQBYPSUxc",
       title:
         "كيف تربح المال من التضخم",
@@ -42,11 +47,6 @@ const latestVideos = [
     id: "3h4EgfubQiU",
     title:
       "عبد العزيز الروي: العمل في جوجل، البرمجة التنافسية، شبكات التواصل، التسيير، مقابلات توظيف المبرمجين",
-  },
-  {
-    id: "JlKd9cy_VW4",
-    title:
-      "How to write clean code ",
   },
 ];
 
