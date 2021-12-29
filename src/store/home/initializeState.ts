@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
     {
+      id: "N0W9XvN_r50",
+      title: "عفاف الرماني: البحث العلمي، جواز التلقيح، المثلية الجنسية، التطبيع، الإعدام، الشباب و السياسة، السفر",
+    },
+    {
       id: "FZg6HoAFttQ",
       title:
         "ماهي NFTs",
@@ -42,11 +46,6 @@ const latestVideos = [
     id: "P7i8xKn9nqY",
     title:
       "منصف عيساوي: PHP, الإشتغال بفرنسا, البرمجة B2B, الشهادات التقنية, تعلم الجيتار",
-  },
-  {
-    id: "3h4EgfubQiU",
-    title:
-      "عبد العزيز الروي: العمل في جوجل، البرمجة التنافسية، شبكات التواصل، التسيير، مقابلات توظيف المبرمجين",
   },
 ];
 
