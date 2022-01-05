@@ -1,4 +1,5 @@
 import React from "react";
+import PortableTextPresenterProps from "../../lib/sanity.io/PortableTextPresenter";
 import { ArticleItemPageProps } from "../../types/articles/articleItemPage.types";
 import { useArticleItemPageStyles } from "../../styles/articles/articleItemPage.styles";
 import ImageTitle from "../shared/ImageTitle";
@@ -14,9 +15,8 @@ export default function ArticleItemPage({
       <ImageTitle mainImageUrl={article.thumbnailURL} title={article.title} />
       <div className={classes.bodyContainer}>
         <ArticleMetadata article={article} />
-        {article.bodyMarkdown && (
-          <MDXRemote {...article.bodyMarkdown} />
-        )}
+        {article.body && <PortableTextPresenterProps body={article.body} />}
+        {article.bodyMarkdown && <MDXRemote {...article.bodyMarkdown} />}
       </div>
     </article>
   );

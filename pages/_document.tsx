@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css"
+            href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css"
           />
         </Head>
         <body>
