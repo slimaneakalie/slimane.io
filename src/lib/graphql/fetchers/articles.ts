@@ -11,6 +11,7 @@ import {
   mapResponseToArticlesMap,
 } from "../mappers/articles.mappers";
 import { StaticPath } from "../../../types/shared/next.types";
+import {serialize} from "next-mdx-remote/serialize";
 
 export async function fetchPageArticles(): Promise<ArticlesMap> {
   const response = await executeGraphqlQuery<ArticlesGraphqlResponse>(
@@ -30,7 +31,15 @@ export async function fetchArticleCompleteData(
   );
 
   if (response && response.data.allPost.length > 0) {
-    return mapArticleElement(response?.data.allPost[0]);
+    const article = { ...response?.data.allPost[0] };
+    if (article.bodyMarkdown) {
+      const mdxOptions = {
+        remarkPlugins: [require('remark-prism')],
+      }
+      article.bodyMarkdown = await serialize(article.bodyMarkdown as string, { mdxOptions })
+    }
+
+    return mapArticleElement(article);
   }
 }
 

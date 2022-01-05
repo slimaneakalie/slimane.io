@@ -16,5 +16,27 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
     "@media (max-width: 900px)": {
       width: "90%",
     },
+    "& img": {
+      maxWidth: "100%",
+    },
+    "& blockquote": {
+      fontWeight: "bold",
+      padding: "5px 19px 1px 16px",
+      borderLeft: "8px solid #1b4d9e",
+      lineHeight: 1.6,
+      position: "relative",
+      background: "#EDEDED",
+      "&::before": {
+        content: "\\201C",
+        color: "#78C0A8",
+        fontSize: "4em",
+        position: "absolute",
+        left: "10px",
+        top: "-10px",
+      },
+      "&::after": {
+        content: '',
+      },
+    },
   },
 }));

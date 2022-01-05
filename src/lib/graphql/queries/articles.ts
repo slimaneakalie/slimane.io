@@ -42,6 +42,7 @@ export const GET_ARTICLE_DATA = gql`
       readingTimeInMinute
       _createdAt
       bodyRaw
+      bodyMarkdown
     }
   }
 `;
