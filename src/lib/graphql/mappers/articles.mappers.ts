@@ -29,7 +29,7 @@ export function mapArticleElement(element: ArticleResponseElement): Article {
     shortDescription: element.excerpt,
     readingTimeInMinute: element.readingTimeInMinute,
     body: element.bodyRaw || {},
-    bodyMarkdown: element.bodyMarkdown ? element.bodyMarkdown as MDXRemoteSerializeResult : undefined,
+    bodyMarkdown: element.bodyMarkdown ? element.bodyMarkdown as MDXRemoteSerializeResult : null,
     author: element.author || null,
     tags: element.tags || null,
     publishingDateStr: formatDate(new Date(element._createdAt)),

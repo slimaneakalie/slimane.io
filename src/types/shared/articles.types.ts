@@ -19,7 +19,7 @@ export interface Article {
   author: Author | null;
   tags: Tag[] | null;
   body?: object;
-  bodyMarkdown?: MDXRemoteSerializeResult;
+  bodyMarkdown: MDXRemoteSerializeResult | null;
 }
 
 export interface ArticlesMap {
