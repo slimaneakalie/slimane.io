@@ -5,6 +5,7 @@ import {
 import { Article, ArticlesMap } from "../../../types/shared/articles.types";
 import { ApolloQueryResult } from "@apollo/client/core/types";
 import { formatDate } from "../../utils";
+import {MDXRemoteSerializeResult} from "next-mdx-remote/dist/types";
 
 export function mapResponseToArticlesMap(
   response?: ApolloQueryResult<ArticlesGraphqlResponse>
@@ -28,7 +29,7 @@ export function mapArticleElement(element: ArticleResponseElement): Article {
     shortDescription: element.excerpt,
     readingTimeInMinute: element.readingTimeInMinute,
     body: element.bodyRaw || {},
-    bodyMarkdown: element.bodyMarkdown || "",
+    bodyMarkdown: element.bodyMarkdown ? element.bodyMarkdown as MDXRemoteSerializeResult : undefined,
     author: element.author || null,
     tags: element.tags || null,
     publishingDateStr: formatDate(new Date(element._createdAt)),
