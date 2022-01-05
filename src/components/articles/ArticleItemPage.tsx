@@ -15,7 +15,7 @@ export default function ArticleItemPage({
       <ImageTitle mainImageUrl={article.thumbnailURL} title={article.title} />
       <div className={classes.bodyContainer}>
         <ArticleMetadata article={article} />
-        {article.body && <PortableTextPresenterProps body={article.body} />}
+        {article.body && Object.keys(article.body).length > 0 && <PortableTextPresenterProps body={article.body} />}
         {article.bodyMarkdown && <MDXRemote {...article.bodyMarkdown} />}
       </div>
     </article>
