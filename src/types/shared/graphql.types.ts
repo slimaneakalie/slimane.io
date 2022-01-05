@@ -1,5 +1,6 @@
 import { Article } from "./articles.types";
 import { PodcastItem } from "../podcast/podcast.types";
+import {MDXRemoteSerializeResult} from "next-mdx-remote/dist/types";
 
 export interface ArticlesGraphqlResponse {
   allPost: ArticleResponseElement[];
@@ -21,6 +22,7 @@ export interface ArticleResponseElement {
   author: Article["author"];
   tags: Article["tags"];
   bodyRaw?: object;
+  bodyMarkdown?: string | MDXRemoteSerializeResult;
 }
 
 export interface AllPodcastsGraphqlResponse {

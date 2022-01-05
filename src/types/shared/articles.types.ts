@@ -1,3 +1,5 @@
+import {MDXRemoteSerializeResult} from "next-mdx-remote/dist/types";
+
 interface Author {
   name: string;
   contactLink: string;
@@ -17,6 +19,7 @@ export interface Article {
   author: Author | null;
   tags: Tag[] | null;
   body?: object;
+  bodyMarkdown?: MDXRemoteSerializeResult;
 }
 
 export interface ArticlesMap {

@@ -12,8 +12,6 @@ import {
 } from "../../../types/shared/graphql.types";
 import { mapResponseToPodcastMap } from "../mappers/podcast.mappers";
 import { StaticPath } from "../../../types/shared/next.types";
-import { GET_ARTICLE_DATA } from "../queries/articles";
-import { mapArticleElement } from "../mappers/articles.mappers";
 
 export async function fetchPagePodcastEpisodes(): Promise<PodcastMap> {
   const response = await executeGraphqlQuery<AllPodcastsGraphqlResponse>(

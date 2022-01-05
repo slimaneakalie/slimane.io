@@ -28,6 +28,7 @@ export function mapArticleElement(element: ArticleResponseElement): Article {
     shortDescription: element.excerpt,
     readingTimeInMinute: element.readingTimeInMinute,
     body: element.bodyRaw || {},
+    bodyMarkdown: element.bodyMarkdown || "",
     author: element.author || null,
     tags: element.tags || null,
     publishingDateStr: formatDate(new Date(element._createdAt)),

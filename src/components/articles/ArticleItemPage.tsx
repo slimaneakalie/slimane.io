@@ -1,8 +1,9 @@
+import React from "react";
 import { ArticleItemPageProps } from "../../types/articles/articleItemPage.types";
-import PortableTextPresenterProps from "../../lib/sanity.io/PortableTextPresenter";
 import { useArticleItemPageStyles } from "../../styles/articles/articleItemPage.styles";
 import ImageTitle from "../shared/ImageTitle";
 import ArticleMetadata from "./ArticleMetadata";
+import { MDXRemote } from "next-mdx-remote";
 
 export default function ArticleItemPage({
   article,
@@ -13,7 +14,9 @@ export default function ArticleItemPage({
       <ImageTitle mainImageUrl={article.thumbnailURL} title={article.title} />
       <div className={classes.bodyContainer}>
         <ArticleMetadata article={article} />
-        {article.body && <PortableTextPresenterProps body={article.body} />}
+        {article.bodyMarkdown && (
+          <MDXRemote {...article.bodyMarkdown} />
+        )}
       </div>
     </article>
   );

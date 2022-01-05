@@ -15,8 +15,6 @@ import {
 } from "../mappers/books.mappers";
 import { StaticPath } from "../../../types/shared/next.types";
 import { Book } from "../../../types/books/bookCard.types";
-import { GET_ARTICLE_DATA } from "../queries/articles";
-import { mapArticleElement } from "../mappers/articles.mappers";
 import { fetchHighlightsNotionContent } from "../../notion/fetchers/books";
 
 export async function fetchPageBooks(): Promise<BooksMap> {
