@@ -33,8 +33,10 @@ export async function fetchArticleCompleteData(
   if (response && response.data.allPost.length > 0) {
     const article = { ...response?.data.allPost[0] };
     if (article.bodyMarkdown) {
-      article.bodyMarkdown = await serialize(article.bodyMarkdown as string)
-      // article.bodyMarkdown = await serialize("I **love** using")
+      const mdxOptions = {
+        remarkPlugins: [require('remark-prism')],
+      }
+      article.bodyMarkdown = await serialize(article.bodyMarkdown as string, { mdxOptions })
     }
 
     return mapArticleElement(article);
