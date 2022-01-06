@@ -1,7 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useArticleMetadataStyles = makeStyles((theme) => ({
-  root: {},
+  root: {
+    textAlign: "left",
+  },
   authorLabel: {
     fontStyle: "italic",
     marginRight: 6,
