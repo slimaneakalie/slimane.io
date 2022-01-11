@@ -18,6 +18,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+   {
+      id: "CrlJFImCFmY",
+      title: "دروس قاسية من 2021",
+    },
     {
       id: "N0W9XvN_r50",
       title: "عفاف الرماني: البحث العلمي، جواز التلقيح، المثلية الجنسية، التطبيع، الإعدام، الشباب و السياسة، السفر",
@@ -42,11 +46,6 @@ const latestVideos = [
      title:
       "سارة القرمودي: الشركات الناشئة، الفشل، scrum master، المرض النفسي، المال و السعادة، B2B vs B2C",
    },
-   {
-    id: "P7i8xKn9nqY",
-    title:
-      "منصف عيساوي: PHP, الإشتغال بفرنسا, البرمجة B2B, الشهادات التقنية, تعلم الجيتار",
-  },
 ];
 
 const staticState: HomeState = {
