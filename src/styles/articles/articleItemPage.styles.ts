@@ -22,7 +22,7 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
     "& blockquote": {
       fontWeight: "bold",
       padding: "5px 19px 1px 16px",
-      borderLeft: "8px solid #1b4d9e",
+      borderLeft: "8px solid #8145A7",
       lineHeight: 1.6,
       position: "relative",
       background: "#EDEDED",
