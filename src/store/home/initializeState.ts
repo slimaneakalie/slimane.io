@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
    {
+     id: "fMmjagEoAtA",
+     title:
+      "قيمة البيتكوين تتراجع بشكل مهول، تعرف لماذا؟ و كيف تحمي نفسك؟",
+   },
+   {
       id: "CrlJFImCFmY",
       title: "دروس قاسية من 2021",
     },
@@ -40,11 +45,6 @@ const latestVideos = [
     id: "3N8sJi3EV00",
     title:
       "كوثر بنحمو: co-working، جامعة الأخوين، AISEC، أهمية المشاركة في السياسة، العمل في تركيا",
-   },
-   {
-     id: "-z-LGm4o5iI",
-     title:
-      "سارة القرمودي: الشركات الناشئة، الفشل، scrum master، المرض النفسي، المال و السعادة، B2B vs B2C",
    },
 ];
 
