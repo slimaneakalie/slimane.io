@@ -27,7 +27,10 @@ export default function ArticleItemPage({
         {article.bodyMarkdown && <MDXRemote {...article.bodyMarkdown} />}
       </div>
 
-      <CommentsPanel {...commentsProps} />
+      <div className={classes.bodyContainer}>
+        <CommentsPanel {...commentsProps} />
+      </div>
+      
     </article>
   );
 }
