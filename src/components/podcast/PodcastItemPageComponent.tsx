@@ -7,12 +7,23 @@ import { createPodcastEmbedLink } from "../../lib/utils";
 import ImageTitle from "../shared/ImageTitle";
 import WhereToListenContainer from "../../containers/shared/whereToListen.container";
 import clsx from "clsx";
+import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
+import CommentsPanel from "../shared/CommentsPanel";
 
 export default function PodcastItemPageComponent({
   podcastItem,
 }: PodcastItemPageProps): JSX.Element {
   const classes = usePodcastItemPageStyles();
   const podcastEmbedUrl = createPodcastEmbedLink(podcastItem.audioId);
+
+  const commentsProps: CommentsPanelProps = {
+    mediaSlugID: podcastItem._id,
+    mediaTitle: podcastItem.title,
+    mediaTypeSlug: "podcast",
+  };
+
+  console.log("classes.bodyContainer: ", classes.bodyContainer)
+
   return (
     <section className={classes.root}>
       <ImageTitle
@@ -25,7 +36,6 @@ export default function PodcastItemPageComponent({
         <div className={classes.videoContainer}>
           <YoutubeEmbed embedId={podcastItem.videoId} />
         </div>
-
         <MainTitle>Audio version</MainTitle>
         <PodcastEmbed
           podcastEmbedUrl={podcastEmbedUrl}
@@ -33,14 +43,14 @@ export default function PodcastItemPageComponent({
         />
         <WhereToListenContainer />
         <br /> <br />
-
         <MainTitle>About this podcast</MainTitle>
         <p className={classes.description}>{podcastItem.englishDescription}</p>
-
         <MainTitle>حول هذا البودكاست</MainTitle>
         <p className={clsx(classes.description, classes.arabicText)}>
           {podcastItem.arabicDescription}
         </p>
+
+        <CommentsPanel {...commentsProps} />
       </div>
     </section>
   );

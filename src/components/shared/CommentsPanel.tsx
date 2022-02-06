@@ -1,4 +1,5 @@
 import { DiscussionEmbed } from "disqus-react";
+import { useCommentsPanelStyles } from "../../styles/shared/commentsPanel.styles";
 import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
 
 export default function CommentsPanel(props: CommentsPanelProps) {
@@ -8,7 +9,7 @@ export default function CommentsPanel(props: CommentsPanelProps) {
     props.mediaTypeSlug +
     "/" +
     props.mediaSlugID;
-    
+
   const disqusConfig = {
     url,
     identifier: props.mediaSlugID,
@@ -17,5 +18,13 @@ export default function CommentsPanel(props: CommentsPanelProps) {
 
   const disqusShortname = "https-www-slimane-io";
 
-  return <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />;
+  const className = props.className ? props.className : useCommentsPanelStyles().defaultClassName
+  
+  console.log("props.className: ", props.className)
+
+  return (
+    <div className={className}>
+      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />;
+    </div>
+  );
 }

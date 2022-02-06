@@ -16,21 +16,19 @@ export default function ArticleItemPage({
     mediaSlugID: article.id,
     mediaTitle: article.title,
     mediaTypeSlug: "articles",
-  }
+  };
 
   return (
     <article className={classes.root}>
       <ImageTitle mainImageUrl={article.thumbnailURL} title={article.title} />
       <div className={classes.bodyContainer}>
         <ArticleMetadata article={article} />
-        {article.body && Object.keys(article.body).length > 0 && <PortableTextPresenterProps body={article.body} />}
+        {article.body && Object.keys(article.body).length > 0 && (
+          <PortableTextPresenterProps body={article.body} />
+        )}
         {article.bodyMarkdown && <MDXRemote {...article.bodyMarkdown} />}
       </div>
-
-      <div className={classes.bodyContainer}>
-        <CommentsPanel {...commentsProps} />
-      </div>
-      
+      <CommentsPanel {...commentsProps} className={classes.bodyContainer} />
     </article>
   );
 }
