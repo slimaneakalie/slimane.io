@@ -1,15 +1,23 @@
 import React from "react";
 import PortableTextPresenterProps from "../../lib/sanity.io/PortableTextPresenter";
 import { ArticleItemPageProps } from "../../types/articles/articleItemPage.types";
+import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
 import { useArticleItemPageStyles } from "../../styles/articles/articleItemPage.styles";
 import ImageTitle from "../shared/ImageTitle";
 import ArticleMetadata from "./ArticleMetadata";
 import { MDXRemote } from "next-mdx-remote";
+import CommentsPanel from "../shared/CommentsPanel";
 
 export default function ArticleItemPage({
   article,
 }: ArticleItemPageProps): JSX.Element {
   const classes = useArticleItemPageStyles();
+  const commentsProps: CommentsPanelProps = {
+    mediaSlugID: article.id,
+    mediaTitle: article.title,
+    mediaTypeSlug: "articles",
+  }
+
   return (
     <article className={classes.root}>
       <ImageTitle mainImageUrl={article.thumbnailURL} title={article.title} />
@@ -18,6 +26,8 @@ export default function ArticleItemPage({
         {article.body && Object.keys(article.body).length > 0 && <PortableTextPresenterProps body={article.body} />}
         {article.bodyMarkdown && <MDXRemote {...article.bodyMarkdown} />}
       </div>
+
+      <CommentsPanel {...commentsProps} />
     </article>
   );
 }
