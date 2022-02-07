@@ -22,7 +22,6 @@ export default function PodcastItemPageComponent({
     mediaTypeSlug: "podcast",
   };
 
-  console.log("classes.bodyContainer: ", classes.bodyContainer)
 
   return (
     <section className={classes.root}>
