@@ -20,8 +20,6 @@ export default function CommentsPanel(props: CommentsPanelProps) {
 
   const className = props.className ? props.className : useCommentsPanelStyles().defaultClassName
   
-  console.log("props.className: ", props.className)
-
   return (
     <div className={className}>
       <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />;
