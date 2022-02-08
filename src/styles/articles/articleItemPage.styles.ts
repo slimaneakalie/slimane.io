@@ -20,7 +20,6 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
       maxWidth: "100%",
     },
     "& blockquote": {
-      fontWeight: "bold",
       padding: "5px 19px 1px 16px",
       borderLeft: "8px solid #8145A7",
       lineHeight: 1.6,
