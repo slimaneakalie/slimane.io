@@ -18,34 +18,32 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
-   {
-     id: "fMmjagEoAtA",
-     title:
-      "قيمة البيتكوين تتراجع بشكل مهول، تعرف لماذا؟ و كيف تحمي نفسك؟",
-   },
-   {
-      id: "CrlJFImCFmY",
-      title: "دروس قاسية من 2021",
-    },
-    {
-      id: "N0W9XvN_r50",
-      title: "عفاف الرماني: البحث العلمي، جواز التلقيح، المثلية الجنسية، التطبيع، الإعدام، الشباب و السياسة، السفر",
-    },
-    {
-      id: "FZg6HoAFttQ",
-      title:
-        "ماهي NFTs",
-    },
-    {
-      id: "nACQBYPSUxc",
-      title:
-        "كيف تربح المال من التضخم",
-    },
-   {
-    id: "3N8sJi3EV00",
+  {
+    id: "4G_Lt_VxVQo",
     title:
-      "كوثر بنحمو: co-working، جامعة الأخوين، AISEC، أهمية المشاركة في السياسة، العمل في تركيا",
-   },
+      "يوسف العزيزي: برمجة التطبيقات، open source, Geeks BlaBla, التدوين، Neuralink, Touch typing",
+  },
+  {
+    id: "fMmjagEoAtA",
+    title: "قيمة البيتكوين تتراجع بشكل مهول، تعرف لماذا؟ و كيف تحمي نفسك؟",
+  },
+  {
+    id: "CrlJFImCFmY",
+    title: "دروس قاسية من 2021",
+  },
+  {
+    id: "N0W9XvN_r50",
+    title:
+      "عفاف الرماني: البحث العلمي، جواز التلقيح، المثلية الجنسية، التطبيع، الإعدام، الشباب و السياسة، السفر",
+  },
+  {
+    id: "FZg6HoAFttQ",
+    title: "ماهي NFTs",
+  },
+  {
+    id: "nACQBYPSUxc",
+    title: "كيف تربح المال من التضخم",
+  },
 ];
 
 const staticState: HomeState = {
