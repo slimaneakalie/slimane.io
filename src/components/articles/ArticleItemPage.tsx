@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import PortableTextPresenterProps from "../../lib/sanity.io/PortableTextPresenter";
 import { ArticleItemPageProps } from "../../types/articles/articleItemPage.types";
 import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
@@ -20,10 +19,6 @@ export default function ArticleItemPage({
   };
 
   return (
-    <>
-    <Head>
-      <link rel="preload" as="image" href={article.thumbnailURL}/>
-    </Head>
     <article className={classes.root}>
       <ImageTitle mainImageUrl={article.thumbnailURL} title={article.title} />
       <div className={classes.bodyContainer}>
@@ -35,6 +30,5 @@ export default function ArticleItemPage({
       </div>
       <CommentsPanel {...commentsProps} className={classes.bodyContainer} />
     </article>
-    </>
   );
 }
