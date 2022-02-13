@@ -30,15 +30,16 @@ export default function About(): JSX.Element {
         <div className={classes.textContainer}>
           <MainTitle>About me</MainTitle>
           <p className={classes.text}>
-            My name is Slimane Akalië, I'm a full-time software engineer and
-            part-time content creator.
+            My name is Slimane Akalië, I'm a humain being from <a href="https://en.wikipedia.org/wiki/Ifrane" target="_blank">Ifrane</a>.
             <br />
-            Most of my engineering work is related to web products. For content
-            creation, I'm interested in the intersection of three main topics:
-            productivity, software engineering, and entrepreneurship. <br />
+            These days, I'm focusing mainly on software engineering, and on the side, I create content online.
             <br />
-            Other than that, I like to read books, exercise, play soccer, and
-            pick up new skills.
+            For the software engineering part, I work mainly on the backend and dabble sometimes with the frontend.
+            <br />
+            For the content, I'm curious about the intersection of two topics:
+            software engineering and finance.
+            <br />
+            Other than that, I like to read books, exercise, and play soccer.
           </p>
           <div className={classes.iconLinksContainer}>
             {iconLinks.map((iconLink) => (
