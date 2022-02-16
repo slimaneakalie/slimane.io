@@ -10,9 +10,12 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
   bodyContainer: {
     width: 900,
     marginTop: 20,
-    fontSize: 20,
+    fontSize: 19,
     lineHeight: 1.8,
     textAlign: "justify",
+    "& .remark-highlight": {
+      fontSize: 16
+    },
     "@media (max-width: 900px)": {
       width: "90%",
     },
