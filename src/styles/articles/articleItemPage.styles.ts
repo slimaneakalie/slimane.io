@@ -21,6 +21,7 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
     },
     "& img": {
       maxWidth: "100%",
+      border: "2px solid #8145A7"
     },
     "& blockquote": {
       padding: "5px 19px 1px 16px",
