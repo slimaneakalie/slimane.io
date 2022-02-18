@@ -9,7 +9,7 @@ export default function PodcastPageComponent({
   const classes = usePodcastPageStyles();
   return (
     <section className={classes.root}>
-      <MainTitle>PODCAST</MainTitle>
+      <MainTitle>Kass Atay Podcast</MainTitle>
       <div className={classes.cardsContainer}>
         {podcastPageEpisodes &&
           Object.keys(podcastPageEpisodes).map((key) => (

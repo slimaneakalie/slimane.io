@@ -22,7 +22,6 @@ export default function PodcastItemPageComponent({
     mediaTypeSlug: "podcast",
   };
 
-
   return (
     <section className={classes.root}>
       <ImageTitle
@@ -48,7 +47,6 @@ export default function PodcastItemPageComponent({
         <p className={clsx(classes.description, classes.arabicText)}>
           {podcastItem.arabicDescription}
         </p>
-
         <CommentsPanel {...commentsProps} />
       </div>
     </section>
