@@ -14,14 +14,20 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
     lineHeight: 1.8,
     textAlign: "justify",
     "& .remark-highlight": {
-      fontSize: 16
+      fontSize: 16,
     },
     "@media (max-width: 900px)": {
       width: "90%",
     },
+    "& p > code": {
+      backgroundColor: "#272822",
+      borderRadius: 5,
+      color: "white",
+      padding: "3px 5px",
+    },
     "& img": {
       maxWidth: "100%",
-      border: "2px solid #8145A7"
+      border: "2px solid #8145A7",
     },
     "& blockquote": {
       padding: "5px 19px 1px 16px",
@@ -38,7 +44,7 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
         top: "-10px",
       },
       "&::after": {
-        content: '',
+        content: "",
       },
     },
   },
