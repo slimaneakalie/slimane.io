@@ -17,4 +17,21 @@ export const useYoutubeEmbedStyles = makeStyles((theme) => ({
       position: "absolute",
     },
   },
+
+  progressBarContainer: {
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 0,
+    color: "#FF0C00"
+  },
+
+  videoContainer: {
+    position: "absolute",
+    width: "100%",
+    zIndex: 1,
+  }
 }));
