@@ -25,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="preload" as="image" href="/slimane.png"/>
         <link rel="preload" as="image" href="/podcast.png"/>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="description" content="The official website of Slimane Akalië"/>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

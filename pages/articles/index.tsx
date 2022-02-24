@@ -16,6 +16,7 @@ export default function Articles(props: ArticlesState): JSX.Element {
     <>
       <Head>
         <title>Articles | Slimane Akalië</title>
+        <meta name="description" content="Articles by Slimane Akalië"/>
       </Head>
       <ArticlesPageContainer />
     </>

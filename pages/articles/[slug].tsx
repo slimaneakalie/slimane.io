@@ -31,6 +31,7 @@ export default function ArticleItem(props: Article): JSX.Element {
         <meta property="og:title" content={props.title} />
         <meta property="og:image" content={props.thumbnailURL} />
         <meta property="og:description" content={props.shortDescription} />
+        <meta name="description" content={props.shortDescription} />
       </Head>
       <ArticleItemPageContainer article={props} />
     </>

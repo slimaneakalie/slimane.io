@@ -28,6 +28,7 @@ export default function PodcastItemPage(props: PodcastItem): JSX.Element {
     <>
       <Head>
         <title>{props.title} | Slimane Akalië</title>
+        <meta name="description" content={props.excerpt}/>
       </Head>
       <PodcastItemPageContainer podcastItem={props} />
     </>

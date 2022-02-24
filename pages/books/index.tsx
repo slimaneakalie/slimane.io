@@ -13,6 +13,7 @@ export default function BooksIndexPage(props: BooksPageState): JSX.Element {
     <>
       <Head>
         <title>Book highlights | Slimane Akalië</title>
+        <meta name="description" content="Book highlights by Slimane Akalië"/>
       </Head>
       <BooksPageContainer />
     </>

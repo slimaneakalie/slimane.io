@@ -3,12 +3,13 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import TwitterIcon from '@material-ui/icons/Twitter';
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 import MainTitle from "../src/components/shared/MainTitle";
 import { useAboutPageStyles } from "../src/styles/about/aboutPage.styles";
 import { IconLinkProps } from "../src/types/about/iconLink.types";
 import { IconLink } from "../src/components/about/IconLink";
+import Head from "next/head";
 
 export default function About(): JSX.Element {
   const classes = useAboutPageStyles();
@@ -25,37 +26,51 @@ export default function About(): JSX.Element {
     },
   ];
   return (
-    <section className={classes.root}>
-      <div className={classes.mainContainer}>
-        <div className={classes.textContainer}>
-          <MainTitle>About me</MainTitle>
-          <p className={classes.text}>
-            My name is Slimane Akalië, I'm a humain being from <a href="https://en.wikipedia.org/wiki/Ifrane" target="_blank">Ifrane</a>.
-            <br />
-            These days, I'm focusing mainly on software engineering, and on the side, I create content online.
-            <br />
-            For the software engineering part, I work mainly on the backend and dabble sometimes with the frontend.
-            <br />
-            For the content, I'm curious about the intersection of two topics:
-            software engineering and finance.
-            <br />
-            Other than that, I like to read books, exercise, and play soccer.
-          </p>
-          <div className={classes.iconLinksContainer}>
-            {iconLinks.map((iconLink) => (
-              <IconLink key={iconLink.label} {...iconLink} />
-            ))}
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="About Slimane Akalië"
+        />
+      </Head>
+      <section className={classes.root}>
+        <div className={classes.mainContainer}>
+          <div className={classes.textContainer}>
+            <MainTitle>About me</MainTitle>
+            <p className={classes.text}>
+              My name is Slimane Akalië, I'm a humain being from{" "}
+              <a href="https://en.wikipedia.org/wiki/Ifrane" target="_blank">
+                Ifrane
+              </a>
+              .
+              <br />
+              These days, I'm focusing mainly on software engineering, and on
+              the side, I create content online.
+              <br />
+              For the software engineering part, I work mainly on the backend
+              and dabble sometimes with the frontend.
+              <br />
+              For the content, I'm curious about the intersection of two topics:
+              software engineering and finance.
+              <br />
+              Other than that, I like to read books, exercise, and play soccer.
+            </p>
+            <div className={classes.iconLinksContainer}>
+              {iconLinks.map((iconLink) => (
+                <IconLink key={iconLink.label} {...iconLink} />
+              ))}
+            </div>
+          </div>
+          <div className={classes.avatarContainer}>
+            <Avatar
+              alt={"Slimane Akalië"}
+              title={"Slimane Akalië"}
+              src={"/slimane.png"}
+              className={classes.avatar}
+            />
           </div>
         </div>
-        <div className={classes.avatarContainer}>
-          <Avatar
-            alt={"Slimane Akalië"}
-            title={"Slimane Akalië"}
-            src={"/slimane.png"}
-            className={classes.avatar}
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

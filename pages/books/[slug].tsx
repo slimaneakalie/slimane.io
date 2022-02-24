@@ -34,6 +34,7 @@ export default function BookHighlightsItem(props: Book): JSX.Element {
           property="og:description"
           content={props.shortDescription || ""}
         />
+        <meta name="description" content={props.title}/>
       </Head>
       <BookItemPageContainer book={props} />
     </>
