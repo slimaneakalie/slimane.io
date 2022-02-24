@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build && next-sitemap && next export",
     "start": "next start"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "graphql": "^15.5.0",
     "next": "^10.2.3",
     "next-mdx-remote": "^3.0.8",
+    "next-sitemap": "^2.5.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-notion": "^0.9.3",
