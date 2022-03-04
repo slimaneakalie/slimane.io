@@ -5,13 +5,14 @@ import YoutubeEmbed from "../home/YoutubeEmbed";
 import PodcastEmbed from "../shared/PodcastEmbed";
 import { createPodcastEmbedLink } from "../../lib/utils";
 import ImageTitle from "../shared/ImageTitle";
-import WhereToListenContainer from "../../containers/shared/whereToListen.container";
 import clsx from "clsx";
 import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
 import CommentsPanel from "../shared/CommentsPanel";
+import PodcastPlatformsPageDisplay from "./PodcastPlatformsPageDisplay";
 
 export default function PodcastItemPageComponent({
   podcastItem,
+  audioPlatforms,
 }: PodcastItemPageProps): JSX.Element {
   const classes = usePodcastItemPageStyles();
   const podcastEmbedUrl = createPodcastEmbedLink(podcastItem.audioId);
@@ -30,16 +31,17 @@ export default function PodcastItemPageComponent({
         imgFilterClassName={classes.imageTitle}
       />
       <div className={classes.bodyContainer}>
-        <MainTitle>Video version</MainTitle>
         <div className={classes.videoContainer}>
-          <YoutubeEmbed embedId={podcastItem.videoId} />
+          <div className={classes.youtubeContainer}>
+            <YoutubeEmbed embedId={podcastItem.videoId} />
+          </div>
+
+          <PodcastPlatformsPageDisplay audioPlatforms={audioPlatforms} className={classes.platformsContainer}/>
         </div>
-        <MainTitle>Audio version</MainTitle>
         <PodcastEmbed
           podcastEmbedUrl={podcastEmbedUrl}
           className={classes.podcastEmbed}
         />
-        <WhereToListenContainer />
         <br /> <br />
         <MainTitle>About this podcast</MainTitle>
         <p className={classes.description}>{podcastItem.englishDescription}</p>

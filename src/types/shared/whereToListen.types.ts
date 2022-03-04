@@ -1,11 +1,12 @@
-export interface AudioPlatforms {
+export interface AudioPlatform {
   name: string;
   url: string;
   iconPath: string;
+  largeIconPath: string;
 }
 
 export interface WhereToListenProps {
-  audioPlatforms: AudioPlatforms[];
+  audioPlatforms: AudioPlatform[];
   className?: string;
 }
 
