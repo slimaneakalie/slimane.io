@@ -15,9 +15,12 @@ export const usePodcastPlatformsPageDisplayStyles = makeStyles((theme) => ({
     "@media (max-width: 700px)": {
       gridTemplateColumns: "repeat(2, 1fr)",
     },
+    "@media (max-width: 500px)": {
+      gridTemplateColumns: "repeat(1, 1fr)",
+    },
   },
   platformElement: {
-    
+    textAlign: "center",
   },
   platformImage: {
     borderRadius: 12,

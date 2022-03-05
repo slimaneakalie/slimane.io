@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { usePodcastPlatformsPageDisplayStyles } from "../../styles/podcast/podcastPlatformsDisplay.styles";
 import { PodcastPlatformsPageDisplayProps } from "../../types/podcast/components.types";
-import { AudioPlatform } from "../../types/shared/whereToListen.types";
 
 export default function PodcastPlatformsPageDisplay({
   audioPlatforms,
