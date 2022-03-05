@@ -16,7 +16,6 @@ export default function PodcastPlatformsPageDisplay({
   return (
     <div className={rootClassName}>
       {audioPlatforms.map((platform) => (
-        <div>
           <a
             href={platform.url}
             className={classes.platformElement}
@@ -30,7 +29,6 @@ export default function PodcastPlatformsPageDisplay({
               className={classes.platformImage}
             />
           </a>
-        </div>
       ))}
     </div>
   );
