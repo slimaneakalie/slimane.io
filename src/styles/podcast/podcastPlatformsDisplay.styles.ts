@@ -25,7 +25,6 @@ export const usePodcastPlatformsPageDisplayStyles = makeStyles((theme) => ({
   platformImage: {
     borderRadius: 12,
     "&:hover": {
-      outline: "2px solid #8145A7",
       filter: "brightness(80%)",
     }
   }
