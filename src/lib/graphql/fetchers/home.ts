@@ -10,7 +10,6 @@ import {
 import { mapResponseToArticlesMap } from "../mappers/articles.mappers";
 import { ArticlesMap } from "../../../types/shared/articles.types";
 import { PodcastItem } from "../../../types/podcast/podcast.types";
-import { GET_PODCAST_DATA } from "../queries/podcast";
 
 export async function fetchLatestArticles(n: number): Promise<ArticlesMap> {
   const response = await executeGraphqlQuery<ArticlesGraphqlResponse>(

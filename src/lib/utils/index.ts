@@ -11,7 +11,7 @@ export function createPodcastLink(podcastId: string): string {
 }
 
 export function createPodcastEmbedLink(podcastId: string): string {
-  return `https://anchor.fm/kass-atay-podcast/embed/episodes/${podcastId}`;
+  return `https://open.spotify.com/embed/episode/${podcastId}?theme=0`
 }
 
 export function createVideoLink(videoId: string): string {
