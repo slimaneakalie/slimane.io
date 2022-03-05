@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {
   CardActionArea,
   CardContent,
@@ -20,10 +19,6 @@ export default function ArticleCard({
   const articleLink = createArticleLink(article.id);
 
   return (
-    <>
-    <Head>
-      <link rel="preload" as="image" href={article.thumbnailURL}/>
-    </Head>
     <Card className={clsx(classes.root, className)} raised={true}>
       <LinkWrapper href={articleLink} isExternal={false}>
         <CardActionArea className={classes.container}>
@@ -51,6 +46,5 @@ export default function ArticleCard({
         </CardActionArea>
       </LinkWrapper>
     </Card>
-    </>
   );
 }

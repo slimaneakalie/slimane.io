@@ -1,5 +1,5 @@
 import {
-  AudioPlatforms,
+  AudioPlatform,
   WhereToListenContainerProps,
 } from "../../types/shared/whereToListen.types";
 import { useSelector } from "react-redux";
@@ -12,7 +12,7 @@ export default function WhereToListenContainer({
 }: WhereToListenContainerProps): JSX.Element {
   const audioPlatforms = useSelector(
     selectSharedStateField("audioPlatforms")
-  ) as AudioPlatforms[];
+  ) as AudioPlatform[];
 
   return (
     <WhereToListen audioPlatforms={audioPlatforms} className={className} />

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://slimane.io
+
+# Sitemaps
+Sitemap: https://slimane.io/sitemap.xml

@@ -25,9 +25,26 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
   },
   videoContainer: {
     margin: "35px 0px 45px 0px",
-    width: "50%",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexDirection: "row",
+    width: "100%",
+    "@media (max-width: 900px)": {
+      flexDirection: "column",
+    },
+  },
+  platformsContainer: {
+    width: "55%",
     "@media (max-width: 900px)": {
       width: "100%",
+    },
+  },
+  youtubeContainer: {
+    width: "40%",
+    "@media (max-width: 900px)": {
+      width: "100%",
+      marginBottom: 40,
     },
   },
   podcastEmbed: {
@@ -43,4 +60,19 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
   arabicText: {
     direction: "rtl",
   },
+  descriptionContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    flexDirection: "row",
+    "& > div": {
+      width: "47%",
+      "@media (max-width: 900px)": {
+        width: "100%",
+      },
+    },
+    "@media (max-width: 900px)": {
+      flexDirection: "column",
+    },
+  }
 }));

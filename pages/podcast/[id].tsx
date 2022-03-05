@@ -30,7 +30,7 @@ export default function PodcastItemPage(props: PodcastItem): JSX.Element {
         <title>{props.title} | Slimane Akalië</title>
         <meta name="description" content={props.excerpt}/>
       </Head>
-      <PodcastItemPageContainer podcastItem={props} />
+      <PodcastItemPageContainer podcastItem={props} audioPlatforms={[]} />
     </>
   );
 }

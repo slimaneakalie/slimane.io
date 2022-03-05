@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { PodcastCardProps } from "../../types/podcast/components.types";
 import {
   Card,
@@ -18,10 +17,6 @@ export default function PodcastCard({
   const classes = usePodcastCardStyles();
   const podcastLink = createPodcastLink(podcastCardData._id);
   return (
-    <>
-    <Head>
-      <link rel="preload" as="image" href={podcastCardData.thumbnailURL}/>
-    </Head>
     <Card className={clsx(classes.root, className)} raised={true}>
       <LinkWrapper href={podcastLink} isExternal={false}>
         <CardActionArea className={classes.container}>
@@ -58,6 +53,5 @@ export default function PodcastCard({
         </CardActionArea>
       </LinkWrapper>
     </Card>
-    </>
   );
 }

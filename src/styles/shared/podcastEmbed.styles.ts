@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const usePodcastEmbedStyles = makeStyles((theme) => ({
   root: {
-    width: 1280,
     height: 161,
     position: "relative",
     "@media (max-width: 1280px)": {

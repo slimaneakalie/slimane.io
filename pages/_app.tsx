@@ -24,6 +24,17 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Slimane Akalië</title>
         <link rel="preload" as="image" href="/slimane.png"/>
         <link rel="preload" as="image" href="/podcast.png"/>
+        <link rel="preload" as="image" href="/apple-podcasts-large.png"/>
+        <link rel="preload" as="image" href="/deezer-large.png"/>
+        <link rel="preload" as="image" href="/google-podcasts-large.png"/>
+        <link rel="preload" as="image" href="/spotify-large.png"/>
+        <link rel="preload" as="image" href="/youtube-large.png"/>
+        <link rel="preload" as="image" href="/apple-podcasts.png"/>
+        <link rel="preload" as="image" href="/deezer.png"/>
+        <link rel="preload" as="image" href="/google-podcasts.png"/>
+        <link rel="preload" as="image" href="/spotify.png"/>
+        <link rel="preload" as="image" href="/youtube.png"/>
+
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="description" content="The official website of Slimane Akalië"/>
         <meta
