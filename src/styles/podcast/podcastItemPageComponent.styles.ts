@@ -23,7 +23,6 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
       paddingLeft: 0,
     },
   },
-
   videoContainer: {
     margin: "35px 0px 45px 0px",
     display: "flex",
@@ -45,6 +44,7 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
     width: "40%",
     "@media (max-width: 900px)": {
       width: "100%",
+      marginBottom: 40,
     },
   },
   podcastEmbed: {
@@ -60,4 +60,19 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
   arabicText: {
     direction: "rtl",
   },
+  descriptionContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    flexDirection: "row",
+    "& > div": {
+      width: "47%",
+      "@media (max-width: 900px)": {
+        width: "100%",
+      },
+    },
+    "@media (max-width: 900px)": {
+      flexDirection: "column",
+    },
+  }
 }));

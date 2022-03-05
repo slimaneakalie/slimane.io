@@ -36,19 +36,33 @@ export default function PodcastItemPageComponent({
             <YoutubeEmbed embedId={podcastItem.videoId} />
           </div>
 
-          <PodcastPlatformsPageDisplay audioPlatforms={audioPlatforms} className={classes.platformsContainer}/>
+          <PodcastPlatformsPageDisplay
+            audioPlatforms={audioPlatforms}
+            className={classes.platformsContainer}
+          />
         </div>
         <PodcastEmbed
           podcastEmbedUrl={podcastEmbedUrl}
           className={classes.podcastEmbed}
         />
-        <br /> <br />
-        <MainTitle>About this podcast</MainTitle>
-        <p className={classes.description}>{podcastItem.englishDescription}</p>
-        <MainTitle>حول هذا البودكاست</MainTitle>
-        <p className={clsx(classes.description, classes.arabicText)}>
-          {podcastItem.arabicDescription}
-        </p>
+
+        <div className={classes.descriptionContainer}>
+          <div>
+            <MainTitle>About this podcast</MainTitle>
+            <p className={classes.description}>
+              {podcastItem.englishDescription}
+            </p>
+          </div>
+
+          <div>
+            <MainTitle className={classes.arabicText}>
+              حول هذا البودكاست
+            </MainTitle>
+            <p className={clsx(classes.description, classes.arabicText)}>
+              {podcastItem.arabicDescription}
+            </p>
+          </div>
+        </div>
         <CommentsPanel {...commentsProps} />
       </div>
     </section>

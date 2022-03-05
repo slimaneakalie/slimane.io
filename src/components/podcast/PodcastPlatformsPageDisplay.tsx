@@ -10,23 +10,28 @@ export default function PodcastPlatformsPageDisplay({
   const classes = usePodcastPlatformsPageDisplayStyles();
   let rootClassName = classes.root;
   if (className) {
-    rootClassName = clsx(classes.root, className)
+    rootClassName = clsx(classes.root, className);
   }
 
-  return <div className={rootClassName}>
-    {audioPlatforms.map((platform) => (
-        <a
-          href={platform.url}
-          className={classes.platformElement}
-          key={platform.name}
-          target={"_blank"}
-        >
-          <img
-            src={platform.largeIconPath}
-            title={platform.name}
-            alt={platform.name}
-          />
-        </a>
+  return (
+    <div className={rootClassName}>
+      {audioPlatforms.map((platform) => (
+        <div>
+          <a
+            href={platform.url}
+            className={classes.platformElement}
+            key={platform.name}
+            target={"_blank"}
+          >
+            <img
+              src={platform.largeIconPath}
+              title={platform.name}
+              alt={platform.name}
+              className={classes.platformImage}
+            />
+          </a>
+        </div>
       ))}
-  </div>
+    </div>
+  );
 }
