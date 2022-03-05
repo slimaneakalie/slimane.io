@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const usePodcastEmbedStyles = makeStyles((theme) => ({
   root: {
-    height: 161,
+    height: 232,
     position: "relative",
     "@media (max-width: 1280px)": {
       width: "100%",
@@ -11,7 +11,7 @@ export const usePodcastEmbedStyles = makeStyles((theme) => ({
   progressBarContainer: {
     position: "absolute",
     width: "100%",
-    height: 150,
+    height: 232,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -21,5 +21,7 @@ export const usePodcastEmbedStyles = makeStyles((theme) => ({
     position: "absolute",
     width: "100%",
     zIndex: 1,
+    borderRadius: 12,
+    height: 232,
   }
 }));
