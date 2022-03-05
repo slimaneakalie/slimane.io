@@ -23,7 +23,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Slimane Akalië</title>
         <link rel="preload" as="image" href="/slimane.png"/>
-        <link rel="preload" as="image" href="/podcast.png"/>
         <link rel="preload" as="image" href="/apple-podcasts-large.png"/>
         <link rel="preload" as="image" href="/deezer-large.png"/>
         <link rel="preload" as="image" href="/google-podcasts-large.png"/>

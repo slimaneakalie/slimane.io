@@ -4,11 +4,11 @@ import MainTitle from "../shared/MainTitle";
 import YoutubeEmbed from "../home/YoutubeEmbed";
 import PodcastEmbed from "../shared/PodcastEmbed";
 import { createPodcastEmbedLink } from "../../lib/utils";
-import ImageTitle from "../shared/ImageTitle";
 import clsx from "clsx";
 import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
 import CommentsPanel from "../shared/CommentsPanel";
 import PodcastPlatformsPageDisplay from "./PodcastPlatformsPageDisplay";
+import { Typography } from "@material-ui/core";
 
 export default function PodcastItemPageComponent({
   podcastItem,
@@ -25,11 +25,11 @@ export default function PodcastItemPageComponent({
 
   return (
     <section className={classes.root}>
-      <ImageTitle
-        mainImageUrl={"/podcast.png"}
-        title={podcastItem.title}
-        imgFilterClassName={classes.imageTitle}
-      />
+      <div className={classes.titleContainer}>
+        <Typography variant="h2" component="h1" className={classes.title}>
+          {podcastItem.title}
+        </Typography>
+      </div>
       <div className={classes.bodyContainer}>
         <div className={classes.videoContainer}>
           <div className={classes.youtubeContainer}>
