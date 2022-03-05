@@ -24,6 +24,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css"
           />
+          <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet"/>
         </Head>
         <body>
           <Main />

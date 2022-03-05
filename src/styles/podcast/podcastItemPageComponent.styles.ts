@@ -72,6 +72,10 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
   },
   arabicText: {
     direction: "rtl",
+    fontFamily: "Tajawal",
+    "& > *" :{
+      fontFamily: "Tajawal",
+    }
   },
   descriptionContainer: {
     display: "flex",
