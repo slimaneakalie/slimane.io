@@ -19,6 +19,14 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "_rJq3fRkSag",
+    title: "كيف تصبح مبرمجا محترف بالتفصيل - The Clean Coder",
+  },
+  {
+    id: "_nUFrezkh14",
+    title: "أمين شوقي: موقع البطولة، Docker, Golang, Scalability, TDD, العمل عن بعد، الإجتماعات، الزواج، النجاح",
+  },
+  {
     id: "4G_Lt_VxVQo",
     title:
       "يوسف العزيزي: برمجة التطبيقات، open source, Geeks BlaBla, التدوين، Neuralink, Touch typing",
@@ -35,14 +43,6 @@ const latestVideos = [
     id: "N0W9XvN_r50",
     title:
       "عفاف الرماني: البحث العلمي، جواز التلقيح، المثلية الجنسية، التطبيع، الإعدام، الشباب و السياسة، السفر",
-  },
-  {
-    id: "FZg6HoAFttQ",
-    title: "ماهي NFTs",
-  },
-  {
-    id: "nACQBYPSUxc",
-    title: "كيف تربح المال من التضخم",
   },
 ];
 
