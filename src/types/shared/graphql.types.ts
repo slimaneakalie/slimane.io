@@ -21,6 +21,7 @@ export interface ArticleResponseElement {
   _createdAt: string;
   author: Article["author"];
   tags: Article["tags"];
+  textOrientation?: string;
   bodyRaw?: object;
   bodyMarkdown?: string | MDXRemoteSerializeResult;
 }

@@ -19,6 +19,7 @@ export interface Article {
   author: Author | null;
   tags: Tag[] | null;
   body?: object;
+  textOrientation?: string;
   bodyMarkdown: MDXRemoteSerializeResult | null;
 }
 

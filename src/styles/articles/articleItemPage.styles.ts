@@ -8,9 +8,10 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
     flexDirection: "column",
   },
   bodyContainer: {
+    fontFamily: "Tajawal",
     width: 900,
     marginTop: 20,
-    fontSize: 19,
+    fontSize: 20,
     lineHeight: 1.8,
     textAlign: "justify",
     "& .remark-highlight": {

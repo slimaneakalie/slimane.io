@@ -7,6 +7,7 @@ import ImageTitle from "../shared/ImageTitle";
 import ArticleMetadata from "./ArticleMetadata";
 import { MDXRemote } from "next-mdx-remote";
 import CommentsPanel from "../shared/CommentsPanel";
+import { Direction } from "@material-ui/core";
 
 export default function ArticleItemPage({
   article,
@@ -18,10 +19,12 @@ export default function ArticleItemPage({
     mediaTypeSlug: "articles",
   };
 
+  const direction = article.textOrientation as Direction;
+
   return (
     <article className={classes.root}>
       <ImageTitle mainImageUrl={article.thumbnailURL} title={article.title} />
-      <div className={classes.bodyContainer}>
+      <div className={classes.bodyContainer} style={{ direction }}>
         <ArticleMetadata article={article} />
         {article.body && Object.keys(article.body).length > 0 && (
           <PortableTextPresenterProps body={article.body} />

@@ -32,6 +32,7 @@ export function mapArticleElement(element: ArticleResponseElement): Article {
     bodyMarkdown: element.bodyMarkdown ? element.bodyMarkdown as MDXRemoteSerializeResult : null,
     author: element.author || null,
     tags: element.tags || null,
+    textOrientation: element.textOrientation || "ltr",
     publishingDateStr: formatDate(new Date(element._createdAt)),
   };
 }

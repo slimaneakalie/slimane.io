@@ -43,5 +43,6 @@ export const useImageTitleStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     textAlign: "center",
     fontSize: "3rem",
+    fontFamily: "Tajawal",
   },
 }));
