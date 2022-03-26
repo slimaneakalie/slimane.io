@@ -24,6 +24,7 @@ export const GET_ARTICLE_DATA = gql`
     allPost(where: { slug: { current: { eq: $slug } } }, limit: 1, offset: 0) {
       title
       excerpt
+      textOrientation
       slug {
         current
       }

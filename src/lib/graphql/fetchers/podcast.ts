@@ -6,7 +6,6 @@ import {
   GET_PODCAST_DATA,
 } from "../queries/podcast";
 import {
-  ArticlesGraphqlResponse,
   AllPodcastsGraphqlResponse,
   PodcastGraphqlResponse,
 } from "../../../types/shared/graphql.types";
