@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+   {
+    id: "W0GzhzOuHnA",
+    title:
+      "دنيا بلعناب: برمجة تطبيقات الآيفون، السفر، المغامرة، التكاثر، القراءة، العمل في أوروبا، تعريف النجاح",
+  },
   {
     id: "_rJq3fRkSag",
     title: "كيف تصبح مبرمجا محترف بالتفصيل - The Clean Coder",
@@ -38,11 +43,6 @@ const latestVideos = [
   {
     id: "CrlJFImCFmY",
     title: "دروس قاسية من 2021",
-  },
-  {
-    id: "N0W9XvN_r50",
-    title:
-      "عفاف الرماني: البحث العلمي، جواز التلقيح، المثلية الجنسية، التطبيع، الإعدام، الشباب و السياسة، السفر",
   },
 ];
 
