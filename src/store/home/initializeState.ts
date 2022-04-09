@@ -18,6 +18,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+  {
+    id: "IjzzqFmVSY4",
+    title: "وصال إدبلا: الحرية، التطبيع، الصحافة في المغرب، برلمان شعب، القضية الفلسطينية، الأزمة مع الجزائر",
+  },
    {
     id: "W0GzhzOuHnA",
     title:
@@ -39,10 +43,6 @@ const latestVideos = [
   {
     id: "fMmjagEoAtA",
     title: "قيمة البيتكوين تتراجع بشكل مهول، تعرف لماذا؟ و كيف تحمي نفسك؟",
-  },
-  {
-    id: "CrlJFImCFmY",
-    title: "دروس قاسية من 2021",
   },
 ];
 
