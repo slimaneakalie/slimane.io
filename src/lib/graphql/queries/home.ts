@@ -5,6 +5,7 @@ export const GET_LATEST_N_ARTICLES = gql`
     allPost(sort: [{ _createdAt: DESC }], limit: $n, offset: 0) {
       title
       excerpt
+      textOrientation
       slug {
         current
       }

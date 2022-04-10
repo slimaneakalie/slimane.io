@@ -39,10 +39,10 @@ export const useImageTitleStyles = makeStyles((theme) => ({
       width: "90%",
     },
   },
-  title: {
+  title: (props: ImageTitleProps) => ({
     fontWeight: "bold",
     textAlign: "center",
     fontSize: "3rem",
-    fontFamily: "Tajawal",
-  },
+    fontFamily: props.isArabicTitle ? "Tajawal": "inherit"
+  }),
 }));

@@ -1,4 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
+import { isArabicArticle } from "../../lib/utils";
+import { Article } from "../../types/shared/articles.types";
 
 export const useArticleCardStyles = makeStyles((theme) => ({
   root: {
@@ -11,7 +13,7 @@ export const useArticleCardStyles = makeStyles((theme) => ({
     filter: 'grayscale(100%)',
     "&:hover": {
       filter: 'grayscale(0%)',
-    }
+    },
   },
   container: {
     display: "flex",
@@ -29,6 +31,13 @@ export const useArticleCardStyles = makeStyles((theme) => ({
     color: "gray",
     fontSize: "0.8rem",
   },
+  title: (article: Article) => ({
+    fontFamily: isArabicArticle(article) ? "Tajawal" : "inherit",
+  }),
+  shortDescription: (article: Article) => ({
+    fontFamily: isArabicArticle(article) ? "Tajawal" : "inherit",
+  }),
+
   "@keyframes articleTransition": {
     "0%": {
       opacity: 0,

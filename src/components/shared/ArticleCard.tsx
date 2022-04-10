@@ -15,7 +15,7 @@ export default function ArticleCard({
   article,
   className,
 }: ArticleCardProps): JSX.Element {
-  const classes = useArticleCardStyles();
+  const classes = useArticleCardStyles(article);
   const articleLink = createArticleLink(article.id);
 
   return (
@@ -28,10 +28,10 @@ export default function ArticleCard({
             title={article.title}
           />
           <CardContent className={classes.content}>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
               {article.title}
             </Typography>
-            <Typography gutterBottom variant="subtitle1" component="p">
+            <Typography gutterBottom variant="subtitle1" component="p" className={classes.shortDescription}>
               {article.shortDescription}
             </Typography>
             <Typography

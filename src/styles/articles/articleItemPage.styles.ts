@@ -1,4 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { Direction, makeStyles } from "@material-ui/core/styles";
+import { isArabicArticle } from "../../lib/utils";
+import { Article } from "../../types/shared/articles.types";
 
 export const useArticleItemPageStyles = makeStyles((theme) => ({
   root: {
@@ -7,11 +9,12 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
   },
-  bodyContainer: {
-    fontFamily: "Tajawal",
+  bodyContainer: (article: Article) => ({
+    direction: article.textOrientation as Direction,
     width: 900,
     marginTop: 20,
     fontSize: 20,
+    fontFamily: isArabicArticle(article) ? "Tajawal" : "inherit",
     lineHeight: 1.8,
     textAlign: "justify",
     "& .remark-highlight": {
@@ -48,5 +51,5 @@ export const useArticleItemPageStyles = makeStyles((theme) => ({
         content: "",
       },
     },
-  },
+  }),
 }));

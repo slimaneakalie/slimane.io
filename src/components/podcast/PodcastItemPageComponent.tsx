@@ -9,6 +9,7 @@ import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
 import CommentsPanel from "../shared/CommentsPanel";
 import PodcastPlatformsPageDisplay from "./PodcastPlatformsPageDisplay";
 import { Typography } from "@material-ui/core";
+import ItemPageTitle from "../shared/ItemPageTitle";
 
 export default function PodcastItemPageComponent({
   podcastItem,
@@ -25,11 +26,7 @@ export default function PodcastItemPageComponent({
 
   return (
     <section className={classes.root}>
-      <div className={classes.titleContainer}>
-        <Typography variant="h2" component="h1" className={classes.title}>
-          {podcastItem.title}
-        </Typography>
-      </div>
+      <ItemPageTitle>{podcastItem.title}</ItemPageTitle>
       <div className={classes.bodyContainer}>
         <div className={classes.videoContainer}>
           <div className={classes.youtubeContainer}>

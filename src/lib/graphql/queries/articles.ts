@@ -5,6 +5,7 @@ export const GET_PAGE_ARTICLES = gql`
     allPost(sort: [{ _createdAt: DESC }]) {
       title
       excerpt
+      textOrientation
       slug {
         current
       }
