@@ -10,7 +10,6 @@ export const useBooksItemPageStyles = makeStyles(() => ({
   bodyContainer: {
     width: 1230,
     marginTop: 20,
-    fontSize: 20,
     lineHeight: 1.8,
     textAlign: "left",
     "@media (max-width: 1230px)": {
@@ -20,13 +19,8 @@ export const useBooksItemPageStyles = makeStyles(() => ({
   highlightContent: {
     marginLeft: 13,
     marginBottom: 50,
-  },
-  title: {
-    fontWeight: "bold",
-    textAlign: "center",
-    fontSize: "3rem",
-    width: "fit-content",
-    color: "#8145A7",
-    marginBottom: 50,
+    "& > main": {
+      fontSize: 20,
+    }
   },
 }));

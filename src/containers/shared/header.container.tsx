@@ -12,13 +12,13 @@ const navbarProps: HeaderProps = {
       label: "Articles",
       link: "/articles",
     },
-//     {
-//       label: "Books",
-//       link: "/books",
-//     },
     {
       label: "Podcast",
       link: "/podcast",
+    },
+    {
+      label: "Book Highlights",
+      link: "/highlights",
     },
     {
       label: "Videos",

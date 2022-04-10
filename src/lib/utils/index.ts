@@ -1,3 +1,6 @@
+import { EffectCallback } from "react";
+import { Article } from "../../types/shared/articles.types";
+
 export function isClient(): boolean {
   return typeof window !== "undefined";
 }
@@ -27,5 +30,15 @@ export function formatDate(date: Date): string {
 }
 
 export function createBookHighlightsLink(bookId: string): string {
-  return `/books/${bookId}`;
+  return `/highlights/${bookId}`;
+}
+
+export function isArabicArticle(article: Article) {
+  return article.textOrientation === 'rtl';
+}
+
+export function loadImageEffect(src: string, setState: (s: string) => void) {
+  const img = new Image();
+  img.src = src;
+  img.onload = () => setState(src);
 }

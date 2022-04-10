@@ -7,22 +7,6 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
   },
-  titleContainer: {
-    width: 1280,
-    height: 200,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    "@media (max-width: 1280px)": {
-      width: "90%",
-      margin: "50px 0px",
-    },
-  },
-  title: {
-    fontWeight: "bold",
-    textAlign: "center",
-    fontSize: "3rem",
-  },
   bodyContainer: {
     margin: "40px 0px",
     width: 1280,
