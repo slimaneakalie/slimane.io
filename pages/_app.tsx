@@ -23,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Slimane Akalië</title>
         <link rel="preload" as="image" href="/slimane.png"/>
+        <link rel="preload" as="image" href="/book.png"/>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="description" content="The official website of Slimane Akalië"/>
         <meta
