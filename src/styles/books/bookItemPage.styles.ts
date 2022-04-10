@@ -16,11 +16,37 @@ export const useBooksItemPageStyles = makeStyles(() => ({
       width: "90%",
     },
   },
-  highlightContent: {
+  highlightContainer: {
     marginLeft: 13,
     marginBottom: 50,
+    display: "flex",
+    flexDirection: "row",
+    "@media (max-width: 900px)": {
+      flexDirection: "column",
+    },
+  },
+  highlightContent: {
+    maxWidth: "60%",
+    "& > *": {
+      width: "100%",
+    },
     "& > main": {
       fontSize: 20,
-    }
+    },
+    "@media (max-width: 900px)": {
+      maxWidth: "100%",
+    },
+  },
+  coverContainer: {
+    textAlign: "center",
+    "@media (max-width: 1230px)": {
+      maxWidth: "90%",
+    },
+  },
+
+  cover: {
+    transform: "rotate(-18deg)",
+    height: 300,
+    width: "auto",
   },
 }));

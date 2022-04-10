@@ -18,7 +18,6 @@ export default function WebsitePresenter({
       "human.being 👨",
       "software.engineer ⌨️",
       "podcast.host 🎙️",
-      "part-time.youtuber 🎬",
       "part-time.writer ✍️",
       "book.lover 📚",
     ],
