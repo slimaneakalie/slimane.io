@@ -6,9 +6,10 @@ import {
   Typography,
 } from "@material-ui/core";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
-import { createPodcastLink } from "../../lib/utils";
+import { createPodcastLink, loadImageEffect } from "../../lib/utils";
 import { usePodcastCardStyles } from "../../styles/podcast/podcastCard.styles";
 import clsx from "clsx";
+import { useState, useEffect } from "react";
 
 export default function PodcastCard({
   podcastCardData,
@@ -16,13 +17,17 @@ export default function PodcastCard({
 }: PodcastCardProps): JSX.Element {
   const classes = usePodcastCardStyles();
   const podcastLink = createPodcastLink(podcastCardData._id);
+
+  const [podcastImg, setPodcastImg] = useState("/podcast.png");
+  useEffect(() => loadImageEffect(podcastCardData.thumbnailURL, setPodcastImg), [podcastImg])
+
   return (
     <Card className={clsx(classes.root, className)} raised={true}>
       <LinkWrapper href={podcastLink} isExternal={false}>
         <CardActionArea className={classes.container}>
           <img
             alt={podcastCardData.title}
-            src={podcastCardData.thumbnailURL}
+            src={podcastImg}
             className={classes.media}
           />
           <CardContent className={classes.content}>

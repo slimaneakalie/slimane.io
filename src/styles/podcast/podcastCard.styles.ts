@@ -7,7 +7,6 @@ export const usePodcastCardStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     justifyContent: "flex-start",
-    // flexDirection: "column",
   },
   media: {
     height: 125,

@@ -7,9 +7,10 @@ import {
 } from "@material-ui/core";
 import { useArticleCardStyles } from "../../styles/shared/articleCard.styles";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
-import { createArticleLink } from "../../lib/utils";
+import { createArticleLink, loadImageEffect } from "../../lib/utils";
 import { ArticleCardProps } from "../../types/shared/articleCard.types";
 import clsx from "clsx";
+import { useEffect, useState } from "react";
 
 export default function ArticleCard({
   article,
@@ -18,13 +19,16 @@ export default function ArticleCard({
   const classes = useArticleCardStyles(article);
   const articleLink = createArticleLink(article.id);
 
+  const [articleImg, setArticleImg] = useState("/article.png");
+  useEffect(() => loadImageEffect(article.thumbnailURL, setArticleImg), [articleImg])
+
   return (
     <Card className={clsx(classes.root, className)} raised={true}>
       <LinkWrapper href={articleLink} isExternal={false}>
         <CardActionArea className={classes.container}>
           <CardMedia
             className={classes.media}
-            image={article.thumbnailURL}
+            image={articleImg}
             title={article.title}
           />
           <CardContent className={classes.content}>
