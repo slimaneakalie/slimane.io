@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "bkxykh0GWB8",
+    title: "أحمد العزابي: العمل عن بعد، الإستثمار في المغرب، إنشاء شركة، السعادة، التدوين، الإنتاجية، القراءة",
+  },
+  {
     id: "IjzzqFmVSY4",
     title: "وصال إدبلا: الحرية، التطبيع، الصحافة في المغرب، برلمان شعب، القضية الفلسطينية، الأزمة مع الجزائر",
   },
@@ -39,10 +43,6 @@ const latestVideos = [
     id: "4G_Lt_VxVQo",
     title:
       "يوسف العزيزي: برمجة التطبيقات، open source, Geeks BlaBla, التدوين، Neuralink, Touch typing",
-  },
-  {
-    id: "fMmjagEoAtA",
-    title: "قيمة البيتكوين تتراجع بشكل مهول، تعرف لماذا؟ و كيف تحمي نفسك؟",
   },
 ];
 
