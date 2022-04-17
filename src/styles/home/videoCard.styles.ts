@@ -15,7 +15,7 @@ export const useVideoCardStyles = makeStyles((theme) => ({
     width: "auto",
     filter: 'grayscale(100%)',
     "&:hover" : {
-      filter: "grayscale(0%) brightness(80%)",
+      filter: "grayscale(0%)",
     },
     "@media (max-width: 1024px)": {
       height: 128,
