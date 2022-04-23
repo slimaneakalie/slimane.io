@@ -7,6 +7,8 @@ import { useBooksItemPageStyles } from "../../styles/books/bookItemPage.styles";
 import ItemPageTitle from "../shared/ItemPageTitle";
 import { loadImageEffect } from "../../lib/utils";
 import { useEffect, useState } from "react";
+import {CommentsPanelProps} from "../../types/shared/commentsPanel.types";
+import CommentsPanel from "../shared/CommentsPanel";
 
 export default function BookItemPage(props: BookItemPageProps): JSX.Element {
   const { book } = props;
@@ -14,6 +16,12 @@ export default function BookItemPage(props: BookItemPageProps): JSX.Element {
 
   const [bookImg, setBookImg] = useState("/book.png");
   useEffect(() => loadImageEffect(book.cover3dImageURL, setBookImg), [bookImg]);
+
+  const commentsProps: CommentsPanelProps = {
+    mediaSlugID: book.highlightsNotionPageId,
+    mediaTitle: book.title,
+    mediaTypeSlug: "book",
+  };
 
   return (
     <div className={classes.root}>
@@ -29,6 +37,7 @@ export default function BookItemPage(props: BookItemPageProps): JSX.Element {
             </div>
           </div>
         )}
+        <CommentsPanel {...commentsProps} />
       </div>
     </div>
   );

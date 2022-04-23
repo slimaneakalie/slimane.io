@@ -23,15 +23,11 @@ export interface ArticleResponseElement {
   tags: Article["tags"];
   textOrientation?: string;
   bodyRaw?: object;
-  bodyMarkdown?: string | MDXRemoteSerializeResult;
+  bodyMarkdown?: string | MDXRemoteSerializeResult;
 }
 
-export interface AllPodcastsGraphqlResponse {
+export interface PodcastsGraphqlResponse {
   allPodcast: PodcastItem[];
-}
-
-export interface PodcastGraphqlResponse {
-  Podcast: PodcastItem;
 }
 
 export interface BooksGraphqlResponse {

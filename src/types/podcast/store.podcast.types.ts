@@ -5,6 +5,6 @@ export interface PodcastState {
 }
 
 export interface SetPodcastItemStateAction {
-  id: string;
+  slug: string;
   newState: PodcastItem;
 }

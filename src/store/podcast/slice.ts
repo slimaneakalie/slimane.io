@@ -22,8 +22,8 @@ const podcastSlice = createSlice({
       state: PodcastState,
       action: PayloadAction<SetPodcastItemStateAction>
     ) {
-      const { id, newState } = action.payload;
-      state.pagePodcastEpisodes[id] = newState;
+      const { slug, newState } = action.payload;
+      state.pagePodcastEpisodes[slug] = newState;
     },
   },
 });

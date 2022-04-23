@@ -4,7 +4,7 @@ import {
 } from "../queries/home";
 import { executeGraphqlQuery } from "../client";
 import {
-  AllPodcastsGraphqlResponse,
+  PodcastsGraphqlResponse,
   ArticlesGraphqlResponse,
 } from "../../../types/shared/graphql.types";
 import { mapResponseToArticlesMap } from "../mappers/articles.mappers";
@@ -21,7 +21,7 @@ export async function fetchLatestArticles(n: number): Promise<ArticlesMap> {
 }
 
 export async function fetchLatestPodcast(): Promise<PodcastItem | null> {
-  const response = await executeGraphqlQuery<AllPodcastsGraphqlResponse>(
+  const response = await executeGraphqlQuery<PodcastsGraphqlResponse>(
     GET_LATEST_PODCAST_EPISODE,
     {}
   );

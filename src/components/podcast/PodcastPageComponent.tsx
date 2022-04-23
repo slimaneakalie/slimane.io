@@ -14,7 +14,7 @@ export default function PodcastPageComponent({
         {podcastPageEpisodes &&
           Object.keys(podcastPageEpisodes).map((key) => (
             <PodcastCard
-              key={podcastPageEpisodes[key]._id}
+              key={podcastPageEpisodes[key].slug.current}
               podcastCardData={podcastPageEpisodes[key]}
               className={classes.podcastCard}
             />

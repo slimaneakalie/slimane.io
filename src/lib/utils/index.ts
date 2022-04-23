@@ -9,8 +9,8 @@ export function createArticleLink(articleId: string): string {
   return `/articles/${articleId}`;
 }
 
-export function createPodcastLink(podcastId: string): string {
-  return `/podcast/${podcastId}`;
+export function createPodcastLink(podcastSlug: string): string {
+  return `/podcast/${podcastSlug}`;
 }
 
 export function createPodcastEmbedLink(podcastId: string): string {

@@ -5,7 +5,7 @@ import { setPodcastItemState } from "../../src/store/podcast/slice";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import {
-  fetchAllPodcastIds,
+  fetchAllPodcastSlugs,
   fetchPodcastCompleteData,
 } from "../../src/lib/graphql/fetchers/podcast";
 import { PodcastItem } from "../../src/types/podcast/podcast.types";
@@ -13,9 +13,9 @@ import PodcastItemPageContainer from "../../src/containers/podcast/podcastItemPa
 
 export default function PodcastItemPage(props: PodcastItem): JSX.Element {
   const router = useRouter();
-  const { id } = router.query;
+  const { slug } = router.query;
   const action = {
-    id: id as string,
+    slug: slug as string,
     newState: props,
   };
 
@@ -36,15 +36,15 @@ export default function PodcastItemPage(props: PodcastItem): JSX.Element {
 }
 
 export async function getStaticProps(context: GetStaticPropsContext<any>) {
-  const id = context.params.id as string;
+  const slug = context.params.slug as string;
   return {
-    props: await fetchPodcastCompleteData(id),
+    props: await fetchPodcastCompleteData(slug),
   };
 }
 
 export async function getStaticPaths() {
   return {
     fallback: false,
-    paths: await fetchAllPodcastIds(),
+    paths: await fetchAllPodcastSlugs(),
   };
 }
