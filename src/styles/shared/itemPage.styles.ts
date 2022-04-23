@@ -10,11 +10,15 @@ export const useItemPageTitleStyles = makeStyles((theme) => ({
     "@media (max-width: 1280px)": {
       width: "90%",
       margin: "50px 0px",
+      height: 100,
     },
   },
   title: {
     fontWeight: "bold",
     textAlign: "center",
     fontSize: "3rem",
+    "@media (max-width: 900px)": {
+      fontSize: "2rem",
+    },
   },
 }));
