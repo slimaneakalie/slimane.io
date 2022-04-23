@@ -16,7 +16,7 @@ export default function PodcastCard({
   className,
 }: PodcastCardProps): JSX.Element {
   const classes = usePodcastCardStyles();
-  const podcastLink = createPodcastLink(podcastCardData._id);
+  const podcastLink = createPodcastLink(podcastCardData.slug.current);
 
   const [podcastImg, setPodcastImg] = useState("/podcast.png");
   useEffect(() => loadImageEffect(podcastCardData.thumbnailURL, setPodcastImg), [podcastImg])

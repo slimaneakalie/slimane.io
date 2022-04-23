@@ -3,7 +3,9 @@ import { gql } from "@apollo/client";
 export const GET_ALL_PODCAST_EPISODES = gql`
   {
     allPodcast(sort: [{ streamingDateStr: DESC }]) {
-      _id
+      slug {
+        current
+      }
       thumbnailURL
       title
       excerpt
@@ -12,18 +14,19 @@ export const GET_ALL_PODCAST_EPISODES = gql`
   }
 `;
 
-export const GET_ALL_PODCAST_IDS = gql`
+export const GET_ALL_PODCAST_SLUGS = gql`
   {
     allPodcast {
-      _id
+      slug {
+        current
+      }
     }
   }
 `;
 
 export const GET_PODCAST_DATA = gql`
-  query getPodcastData($id: ID!) {
-    Podcast(id: $id) {
-      _id
+  query getPodcastData($slug: String) {
+    allPodcast(where: { slug: { current: { eq: $slug } } }, limit: 1, offset: 0) {
       thumbnailURL
       title
       excerpt

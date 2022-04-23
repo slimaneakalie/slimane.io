@@ -1,5 +1,7 @@
 export interface PodcastItem {
-  _id: string;
+  slug: {
+    current: string;
+  };
   thumbnailURL: string;
   title: string;
   excerpt: string;

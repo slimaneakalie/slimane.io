@@ -19,7 +19,7 @@ export default function PodcastItemPageComponent({
   const podcastEmbedUrl = createPodcastEmbedLink(podcastItem.audioId);
 
   const commentsProps: CommentsPanelProps = {
-    mediaSlugID: podcastItem._id,
+    mediaSlugID: podcastItem.slug.current,
     mediaTitle: podcastItem.title,
     mediaTypeSlug: "podcast",
   };

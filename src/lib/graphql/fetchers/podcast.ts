@@ -2,18 +2,17 @@ import { executeGraphqlQuery } from "../client";
 import { PodcastItem, PodcastMap } from "../../../types/podcast/podcast.types";
 import {
   GET_ALL_PODCAST_EPISODES,
-  GET_ALL_PODCAST_IDS,
+  GET_ALL_PODCAST_SLUGS,
   GET_PODCAST_DATA,
 } from "../queries/podcast";
 import {
-  AllPodcastsGraphqlResponse,
-  PodcastGraphqlResponse,
+  PodcastsGraphqlResponse,
 } from "../../../types/shared/graphql.types";
 import { mapResponseToPodcastMap } from "../mappers/podcast.mappers";
 import { StaticPath } from "../../../types/shared/next.types";
 
 export async function fetchPagePodcastEpisodes(): Promise<PodcastMap> {
-  const response = await executeGraphqlQuery<AllPodcastsGraphqlResponse>(
+  const response = await executeGraphqlQuery<PodcastsGraphqlResponse>(
     GET_ALL_PODCAST_EPISODES,
     {}
   );
@@ -21,29 +20,34 @@ export async function fetchPagePodcastEpisodes(): Promise<PodcastMap> {
   return mapResponseToPodcastMap(response);
 }
 
-export async function fetchAllPodcastIds(): Promise<StaticPath[]> {
-  const response = await executeGraphqlQuery<AllPodcastsGraphqlResponse>(
-    GET_ALL_PODCAST_IDS,
+export async function fetchAllPodcastSlugs(): Promise<StaticPath[]> {
+  const response = await executeGraphqlQuery<PodcastsGraphqlResponse>(
+    GET_ALL_PODCAST_SLUGS,
     {}
   );
 
-  const ids: StaticPath[] = [];
+  const slugs: StaticPath[] = [];
 
   response?.data.allPodcast?.forEach((podcast) => {
-    ids.push({ params: { id: podcast._id } });
+    slugs.push({ params: { slug: podcast.slug.current } });
   });
-  return ids;
+
+  return slugs;
 }
 
 export async function fetchPodcastCompleteData(
-  id: string
+    slug: string
 ): Promise<PodcastItem | undefined> {
-  const response = await executeGraphqlQuery<PodcastGraphqlResponse>(
+  const response = await executeGraphqlQuery<PodcastsGraphqlResponse>(
     GET_PODCAST_DATA,
     {
-      id,
+      slug,
     }
   );
 
-  return response?.data.Podcast;
+
+  if (response && response.data.allPodcast.length > 0) {
+    const podcast = { ...response?.data.allPodcast[0] };
+    return podcast;
+  }
 }
