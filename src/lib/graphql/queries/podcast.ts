@@ -27,6 +27,10 @@ export const GET_ALL_PODCAST_SLUGS = gql`
 export const GET_PODCAST_DATA = gql`
   query getPodcastData($slug: String) {
     allPodcast(where: { slug: { current: { eq: $slug } } }, limit: 1, offset: 0) {
+      _id
+      slug {
+        current
+      }
       thumbnailURL
       title
       excerpt

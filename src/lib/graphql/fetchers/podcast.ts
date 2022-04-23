@@ -46,8 +46,8 @@ export async function fetchPodcastCompleteData(
   );
 
 
-  if (response && response.data.allPodcast.length > 0) {
-    const podcast = { ...response?.data.allPodcast[0] };
+  if (response && response?.data?.allPodcast?.length > 0) {
+    const podcast = { ...response.data.allPodcast[0] };
     return podcast;
   }
 }
