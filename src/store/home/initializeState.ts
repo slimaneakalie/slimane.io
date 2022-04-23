@@ -18,6 +18,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+   {
+    id: "uGiPcl-7BHE",
+    title:
+      "عدنان عديوي: اختيار الهوية، النموذج التنموي، ريادة الأعمال الإجتماعية، هجرة الأدمغة، MCISE، التعليم",
+  },
   {
     id: "bkxykh0GWB8",
     title: "أحمد العزابي: العمل عن بعد، الإستثمار في المغرب، إنشاء شركة، السعادة، التدوين، الإنتاجية، القراءة",
@@ -38,11 +43,6 @@ const latestVideos = [
   {
     id: "_nUFrezkh14",
     title: "أمين شوقي: موقع البطولة، Docker, Golang, Scalability, TDD, العمل عن بعد، الإجتماعات، الزواج، النجاح",
-  },
-  {
-    id: "4G_Lt_VxVQo",
-    title:
-      "يوسف العزيزي: برمجة التطبيقات، open source, Geeks BlaBla, التدوين، Neuralink, Touch typing",
   },
 ];
 
