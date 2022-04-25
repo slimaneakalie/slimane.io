@@ -26,17 +26,24 @@ export default function BookItemPage(props: BookItemPageProps): JSX.Element {
   return (
     <div className={classes.root}>
       <div className={classes.bodyContainer}>
-        <ItemPageTitle>{book.title}</ItemPageTitle>
+        <ItemPageTitle>My highlights from {book.title}</ItemPageTitle>
         {book.highlightsNotionContent && (
           <div className={classes.highlightContainer}>
             <div className={classes.coverContainer}>
               <img src={bookImg} title={book.title} className={classes.cover}/>
             </div>
             <div className={classes.highlightContent}>
+              <div className={classes.noteContainer}>
+                <span>Note:</span> Click on the section title or the arrow ► to see the full content.
+              </div>
               <NotionRenderer blockMap={book.highlightsNotionContent} />
             </div>
           </div>
         )}
+        <div className={classes.disclaimerContainer}>
+          <span>Disclaimer:</span>{" "}
+          I don't always agree with the content of the book, the purpose of sharing my highlights is to help you decide whether to buy the book or not.
+        </div>
         <CommentsPanel {...commentsProps} />
       </div>
     </div>
