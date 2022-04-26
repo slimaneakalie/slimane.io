@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 
 export const useBooksItemPageStyles = makeStyles(() => ({
   root: {
@@ -42,7 +42,7 @@ export const useBooksItemPageStyles = makeStyles(() => ({
       maxWidth: "90%",
     },
   },
-  noteContainer:{
+  noteContainer: {
     fontSize: 17,
     marginBottom: 10,
     "@media (max-width: 900px)": {
@@ -50,11 +50,10 @@ export const useBooksItemPageStyles = makeStyles(() => ({
     },
     "& > span": {
       fontWeight: "bold",
-    }
+    },
   },
-  disclaimerContainer:{
+  disclaimerContainer: {
     fontSize: 17,
-    textDecoration: "underline",
     margin: "35px 10px 35px 10px",
     "@media (max-width: 900px)": {
       fontSize: 16,
@@ -62,7 +61,7 @@ export const useBooksItemPageStyles = makeStyles(() => ({
     },
     "& > span": {
       fontWeight: "bold",
-    }
+    },
   },
   cover: {
     transform: "rotate(-18deg)",

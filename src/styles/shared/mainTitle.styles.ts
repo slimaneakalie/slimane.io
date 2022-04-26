@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 
-export const useMainTitleStyles = makeStyles((theme) => ({
+export const useMainTitleStyles = makeStyles(() => ({
   title: {
     fontWeight: "bold",
   },

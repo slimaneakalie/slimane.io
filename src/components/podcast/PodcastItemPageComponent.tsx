@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
 import CommentsPanel from "../shared/CommentsPanel";
 import PodcastPlatformsPageDisplay from "./PodcastPlatformsPageDisplay";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import ItemPageTitle from "../shared/ItemPageTitle";
 
 export default function PodcastItemPageComponent({

@@ -42,3 +42,10 @@ export function loadImageEffect(src: string, setState: (s: string) => void) {
   img.src = src;
   img.onload = () => setState(src);
 }
+
+export function shuffle(input: any[]): any[]{
+  const shuffled = [...input]
+  shuffled.sort(() => Math.random() - 0.5);
+
+  return shuffled;
+}

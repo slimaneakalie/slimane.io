@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 
-export const useArticlesPageStyles = makeStyles((theme) => ({
+export const useArticlesPageStyles = makeStyles(() => ({
   root: {
     display: "flex",
     alignItems: "center",

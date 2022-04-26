@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { YoutubeEmbedProps } from "../../types/home/youtubeEmbed.types";
 import { useYoutubeEmbedStyles } from "../../styles/home/youtubeEmbed.styles";
 import clsx from "clsx";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import CircularProgress from "@mui/material/CircularProgress";
 
 export default function YoutubeEmbed({
   embedId,
@@ -19,7 +19,7 @@ export default function YoutubeEmbed({
   return (
     <div className={clsx(classes.root, className)}>
       <div className={classes.progressBarContainer}>
-        <CircularProgress color="inherit"/>
+        <CircularProgress color="inherit" />
       </div>
       <iframe
         width={"100%"}

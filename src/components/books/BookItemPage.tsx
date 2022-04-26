@@ -7,11 +7,12 @@ import { useBooksItemPageStyles } from "../../styles/books/bookItemPage.styles";
 import ItemPageTitle from "../shared/ItemPageTitle";
 import { loadImageEffect } from "../../lib/utils";
 import { useEffect, useState } from "react";
-import {CommentsPanelProps} from "../../types/shared/commentsPanel.types";
+import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
 import CommentsPanel from "../shared/CommentsPanel";
+import BooksSlider from "./BooksSlider";
 
 export default function BookItemPage(props: BookItemPageProps): JSX.Element {
-  const { book } = props;
+  const { book, otherBooks } = props;
   const classes = useBooksItemPageStyles();
 
   const [bookImg, setBookImg] = useState("/book.png");
@@ -30,20 +31,28 @@ export default function BookItemPage(props: BookItemPageProps): JSX.Element {
         {book.highlightsNotionContent && (
           <div className={classes.highlightContainer}>
             <div className={classes.coverContainer}>
-              <img src={bookImg} title={book.title} className={classes.cover}/>
+              <img
+                src={bookImg}
+                title={book.title}
+                alt={book.title}
+                className={classes.cover}
+              />
             </div>
             <div className={classes.highlightContent}>
               <div className={classes.noteContainer}>
-                <span>Note:</span> Click on the section title or the arrow ► to see the full content.
+                <span>Note:</span> Click on the section title or the arrow ► to
+                see the full content.
               </div>
               <NotionRenderer blockMap={book.highlightsNotionContent} />
             </div>
           </div>
         )}
         <div className={classes.disclaimerContainer}>
-          <span>Disclaimer:</span>{" "}
-          I don't always agree with the content of the book, the purpose of sharing my highlights is to help you decide whether to buy the book or not.
+          <span>Disclaimer:</span> I don't always agree with the content of the
+          book, the purpose of sharing my highlights is to help you decide
+          whether to buy the book or not.
         </div>
+        <BooksSlider books={otherBooks} />
         <CommentsPanel {...commentsProps} />
       </div>
     </div>

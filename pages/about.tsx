@@ -1,9 +1,6 @@
-import { Avatar } from "@material-ui/core";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import ListAltIcon from "@material-ui/icons/ListAlt";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import { Avatar } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 import MainTitle from "../src/components/shared/MainTitle";
 import { useAboutPageStyles } from "../src/styles/about/aboutPage.styles";
@@ -28,10 +25,7 @@ export default function About(): JSX.Element {
   return (
     <>
       <Head>
-        <meta
-          name="description"
-          content="About Slimane Akalië"
-        />
+        <meta name="description" content="About Slimane Akalië" />
       </Head>
       <section className={classes.root}>
         <div className={classes.mainContainer}>
@@ -50,8 +44,8 @@ export default function About(): JSX.Element {
               For the software engineering part, I work mainly on the backend
               and dabble sometimes with the frontend.
               <br />
-              For the content part, I'm curious about the intersection of two topics:
-              software engineering and finance.
+              For the content part, I'm curious about the intersection of two
+              topics: software engineering and finance.
               <br />
               Other than that, I like to read books, exercise, and play soccer.
             </p>

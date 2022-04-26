@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import { useImageTitleStyles } from "../../styles/shared/ImageTitle.styles";
 import { ImageTitleProps } from "../../types/shared/imageTitle.types";
 import clsx from "clsx";

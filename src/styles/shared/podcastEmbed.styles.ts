@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 
-export const usePodcastEmbedStyles = makeStyles((theme) => ({
+export const usePodcastEmbedStyles = makeStyles(() => ({
   root: {
     height: 232,
     position: "relative",
@@ -23,5 +23,5 @@ export const usePodcastEmbedStyles = makeStyles((theme) => ({
     zIndex: 1,
     borderRadius: 12,
     height: 232,
-  }
+  },
 }));

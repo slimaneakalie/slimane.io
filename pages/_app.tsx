@@ -1,31 +1,37 @@
 import React from "react";
 import { AppProps } from "next/app";
 import Head from "next/head";
-import { CssBaseline, ThemeProvider } from "@material-ui/core";
+import { CacheProvider, EmotionCache } from "@emotion/react";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 import { Provider as StoreProvider } from "react-redux";
 
 import theme from "../src/theme";
 import Header from "../src/containers/shared/header.container";
 import Footer from "../src/components/shared/Footer";
 import store from "../src/store";
+import createEmotionCache from "../src/lib/ssr/createEmotionCache";
 
-export default function App({ Component, pageProps }: AppProps) {
-  React.useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector("#jss-server-side");
-    if (jssStyles) {
-      jssStyles.parentElement?.removeChild(jssStyles);
-    }
-  }, []);
+interface MyAppProps extends AppProps {
+  emotionCache?: EmotionCache;
+}
 
+const clientSideEmotionCache = createEmotionCache();
+
+export default function App(props: MyAppProps) {
+  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
-    <>
+    <CacheProvider value={emotionCache}>
       <Head>
         <title>Slimane Akalië</title>
-        <link rel="preload" as="image" href="/slimane.png"/>
-        <link rel="preload" as="image" href="/book.png"/>
+        <link rel="preload" as="image" href="/slimane.png" />
+        <link rel="preload" as="image" href="/book.png" />
+        <link rel="stylesheet" href="/global.css" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta name="description" content="The official website of Slimane Akalië"/>
+        <meta
+          name="description"
+          content="The official website of Slimane Akalië"
+        />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
@@ -39,6 +45,6 @@ export default function App({ Component, pageProps }: AppProps) {
           <Footer />
         </StoreProvider>
       </ThemeProvider>
-    </>
+    </CacheProvider>
   );
 }

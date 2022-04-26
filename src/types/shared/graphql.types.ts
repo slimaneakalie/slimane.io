@@ -1,6 +1,6 @@
 import { Article } from "./articles.types";
 import { PodcastItem } from "../podcast/podcast.types";
-import {MDXRemoteSerializeResult} from "next-mdx-remote/dist/types";
+import { MDXRemoteSerializeResult } from "next-mdx-remote/dist/types";
 
 export interface ArticlesGraphqlResponse {
   allPost: ArticleResponseElement[];
@@ -31,13 +31,13 @@ export interface PodcastsGraphqlResponse {
 }
 
 export interface BooksGraphqlResponse {
-  allBook: BookGraphqlResponseElement[];
+  books: BookGraphqlResponseElement[];
+  otherBooks: BookGraphqlResponseElement[];
 }
 
 export interface BookGraphqlResponseElement {
   title: string;
   highlightsNotionPageId: string;
-  shortDescription?: string;
   cover3dImage: {
     asset: {
       url: string;

@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import { useWebsitePresenterStyles } from "../../styles/home/websitePresenter.styles";
 import YoutubeEmbed from "./YoutubeEmbed";
 import { WebsitePresenterProps } from "../../types/home/websitePresenter.types";
@@ -36,7 +36,8 @@ export default function WebsitePresenter({
             className={classes.paragraph}
           >
             <div className={classes.selfPresentation}>
-              This is Slimane, I'm a (<Typewriter options={typeWriterOptions} />);
+              This is Slimane, I'm a (<Typewriter options={typeWriterOptions} />
+              );
             </div>
             <div className={classes.websiteComment}>
               /* In this website I share whatever I create and my thoughts on
@@ -45,7 +46,12 @@ export default function WebsitePresenter({
           </Typography>
         </div>
         <div>
-          <YoutubeEmbed embedId={videoId} videoStart={videoStart} autoPlay={true} className={classes.videoContainer} />
+          <YoutubeEmbed
+            embedId={videoId}
+            videoStart={videoStart}
+            autoPlay={true}
+            className={classes.videoContainer}
+          />
         </div>
       </div>
     </section>

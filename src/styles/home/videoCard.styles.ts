@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 
-export const useVideoCardStyles = makeStyles((theme) => ({
+export const useVideoCardStyles = makeStyles((theme: any) => ({
   root: {
     marginTop: 20,
     animation: `$videoTransition 1s ${theme.transitions.easing.easeInOut}`,
@@ -13,8 +13,8 @@ export const useVideoCardStyles = makeStyles((theme) => ({
   media: {
     height: 155,
     width: "auto",
-    filter: 'grayscale(100%)',
-    "&:hover" : {
+    filter: "grayscale(100%)",
+    "&:hover": {
       filter: "grayscale(0%)",
     },
     "@media (max-width: 1024px)": {

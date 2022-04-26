@@ -1,7 +1,7 @@
 import { PodcastEmbedProps } from "../../types/shared/podcastEmbed.types";
 import { usePodcastEmbedStyles } from "../../styles/shared/podcastEmbed.styles";
 import clsx from "clsx";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import CircularProgress from "@mui/material/CircularProgress";
 
 export default function PodcastEmbed({
   podcastEmbedUrl,
@@ -13,7 +13,7 @@ export default function PodcastEmbed({
       <div className={classes.progressBarContainer}>
         <CircularProgress color="primary" />
       </div>
-      
+
       <iframe
         src={podcastEmbedUrl}
         className={classes.podcastContainer}

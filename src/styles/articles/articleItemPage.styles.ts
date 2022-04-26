@@ -1,8 +1,8 @@
-import { Direction, makeStyles } from "@material-ui/core/styles";
+import { Direction, makeStyles } from "@mui/material/styles";
 import { isArabicArticle } from "../../lib/utils";
 import { Article } from "../../types/shared/articles.types";
 
-export const useArticleItemPageStyles = makeStyles((theme) => ({
+export const useArticleItemPageStyles = makeStyles(() => ({
   root: {
     display: "flex",
     alignItems: "center",

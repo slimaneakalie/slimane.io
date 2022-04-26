@@ -1,7 +1,7 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 import { ImageTitleProps } from "../../types/shared/imageTitle.types";
 
-export const useImageTitleStyles = makeStyles((theme) => ({
+export const useImageTitleStyles = makeStyles(() => ({
   root: {
     width: "100%",
     height: 500,
@@ -43,6 +43,6 @@ export const useImageTitleStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     textAlign: "center",
     fontSize: "3rem",
-    fontFamily: props.isArabicTitle ? "Tajawal": "inherit"
+    fontFamily: props.isArabicTitle ? "Tajawal" : "inherit",
   }),
 }));

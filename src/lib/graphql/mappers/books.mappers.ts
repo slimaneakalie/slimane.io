@@ -11,9 +11,12 @@ export function mapResponseToBooksMap(
 ): BooksMap {
   const booksMap: BooksMap = {};
   if (response) {
-    const books = response.data.allBook;
+    const books = response.data.books;
     books?.forEach((book) => {
-      booksMap[book.highlightsNotionPageId] = mapBookResponseElement(book);
+      booksMap[book.highlightsNotionPageId] = {
+        book: mapBookResponseElement(book),
+        otherBooks: [],
+      };
     });
   }
 
@@ -27,6 +30,5 @@ export function mapBookResponseElement(
     title: bookGraphql.title,
     highlightsNotionPageId: bookGraphql.highlightsNotionPageId,
     cover3dImageURL: bookGraphql.cover3dImage.asset.url,
-    shortDescription: bookGraphql.shortDescription || null,
   };
 }

@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import { WhereToListenProps } from "../../types/shared/whereToListen.types";
 import { useWhereToListenStyles } from "../../styles/shared/whereToListen.styles";
 import clsx from "clsx";

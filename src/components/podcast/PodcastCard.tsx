@@ -1,10 +1,5 @@
 import { PodcastCardProps } from "../../types/podcast/components.types";
-import {
-  Card,
-  CardActionArea,
-  CardContent,
-  Typography,
-} from "@material-ui/core";
+import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import { createPodcastLink, loadImageEffect } from "../../lib/utils";
 import { usePodcastCardStyles } from "../../styles/podcast/podcastCard.styles";
@@ -19,7 +14,10 @@ export default function PodcastCard({
   const podcastLink = createPodcastLink(podcastCardData.slug.current);
 
   const [podcastImg, setPodcastImg] = useState("/podcast.png");
-  useEffect(() => loadImageEffect(podcastCardData.thumbnailURL, setPodcastImg), [podcastImg])
+  useEffect(
+    () => loadImageEffect(podcastCardData.thumbnailURL, setPodcastImg),
+    [podcastImg]
+  );
 
   return (
     <Card className={clsx(classes.root, className)} raised={true}>

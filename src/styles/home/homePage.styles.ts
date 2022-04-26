@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 
-export const useHomePageStyles = makeStyles((theme) => ({
+export const useHomePageStyles = makeStyles((theme: any) => ({
   updatesSection: {
     backgroundColor: theme.palette.secondary.main,
     display: "flex",

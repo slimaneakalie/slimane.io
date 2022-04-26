@@ -7,7 +7,7 @@ import {
   Drawer,
   MenuItem,
   Link as MaterialLink,
-} from "@material-ui/core";
+} from "@mui/material";
 import MenuIcon from "@material-ui/icons/Menu";
 
 import { useHeaderStyles } from "../../styles/shared/header.styles";

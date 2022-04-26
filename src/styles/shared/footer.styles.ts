@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 
-export const useFooterStyles = makeStyles((theme) => ({
+export const useFooterStyles = makeStyles(() => ({
   root: {
     marginTop: "auto",
     height: 50,

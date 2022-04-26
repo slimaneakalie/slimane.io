@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { Book } from "../../src/types/books/bookCard.types";
+import { Book, BookPageData } from "../../src/types/books/bookCard.types";
 import {
   fetchAllBooksSlugs,
   fetchBookHighlightsFullData,
@@ -11,7 +11,7 @@ import {
 import { setBookItemState } from "../../src/store/books/slice";
 import BookItemPageContainer from "../../src/containers/books/bookItemPage.container";
 
-export default function BookHighlightsItem(props: Book): JSX.Element {
+export default function BookHighlightsItem(props: BookPageData): JSX.Element {
   const router = useRouter();
   const { slug } = router.query;
   const action = {
@@ -24,19 +24,20 @@ export default function BookHighlightsItem(props: Book): JSX.Element {
     dispatch(setBookItemState(action));
   }, []);
 
+  console.log("props: ", props);
+
+  const { book, otherBooks } = props;
+
   return (
     <>
       <Head>
-        <title>{props.title} | Slimane Akalië</title>
-        <meta property="og:title" content={props.title} />
-        <meta property="og:image" content={props.cover3dImageURL} />
-        <meta
-          property="og:description"
-          content={props.shortDescription || ""}
-        />
-        <meta name="description" content={props.title}/>
+        <title>{book.title} | Slimane Akalië</title>
+        <meta property="og:title" content={book.title} />
+        <meta property="og:image" content={book.cover3dImageURL} />
+        <meta property="og:description" content={book.title} />
+        <meta name="description" content={book.title} />
       </Head>
-      <BookItemPageContainer book={props} />
+      <BookItemPageContainer book={book} otherBooks={otherBooks} />
     </>
   );
 }

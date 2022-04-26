@@ -1,8 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/material/styles";
 import { isArabicArticle } from "../../lib/utils";
 import { Article } from "../../types/shared/articles.types";
 
-export const useArticleCardStyles = makeStyles((theme) => ({
+export const useArticleCardStyles = makeStyles((theme: any) => ({
   root: {
     width: "90%",
     marginTop: 20,
@@ -10,9 +10,9 @@ export const useArticleCardStyles = makeStyles((theme) => ({
       width: "90%",
     },
     animation: `$articleTransition 1s ${theme.transitions.easing.easeInOut}`,
-    filter: 'grayscale(100%)',
+    filter: "grayscale(100%)",
     "&:hover": {
-      filter: 'grayscale(0%)',
+      filter: "grayscale(0%)",
     },
   },
   container: {
