@@ -37,11 +37,14 @@ export default function WebsitePresenter({
             className={classes.paragraph}
           >
             <div className={classes.selfPresentation}>
-              This is Slimane, I`&apos;m a (<Typewriter options={typeWriterOptions} />
+              This is Slimane, I&apos;m a (
+              <Typewriter options={typeWriterOptions} />
               );
             </div>
             <div className={classes.websiteComment}>
-              {"/* In this website I share whatever I create and my thoughts on various topics. My money .. I mean my opinions are my own. */"}
+              {
+                "/* In this website I share whatever I create and my thoughts on various topics. My money .. I mean my opinions are my own. */"
+              }
             </div>
           </Typography>
         </div>
