@@ -1,7 +1,7 @@
+import * as React from "react";
 import { BooksSliderProps } from "../../types/books/booksPage.types";
 import { Tabs, Tab, Box } from "@mui/material";
 import { ChangeEvent, useState } from "react";
-import * as React from "react";
 
 export default function BooksSlider(
   props: BooksSliderProps

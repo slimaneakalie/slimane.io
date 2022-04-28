@@ -1,3 +1,4 @@
+import * as React from "react";
 import { MainTitleProps } from "../../types/shared/MainTitle.types";
 import { Divider, Typography } from "@mui/material";
 import { useMainTitleStyles } from "../../styles/shared/mainTitle.styles";

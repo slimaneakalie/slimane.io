@@ -1,3 +1,4 @@
+import * as React from "react";
 import MainTitle from "../shared/MainTitle";
 import { BooksPageProps } from "../../types/books/booksPage.types";
 import BookCard from "./BookCard";

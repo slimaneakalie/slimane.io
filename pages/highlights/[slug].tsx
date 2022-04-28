@@ -24,8 +24,6 @@ export default function BookHighlightsItem(props: BookPageData): JSX.Element {
     dispatch(setBookItemState(action));
   }, []);
 
-  console.log("props: ", props);
-
   const { book, otherBooks } = props;
 
   return (

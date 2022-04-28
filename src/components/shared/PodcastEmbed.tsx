@@ -1,3 +1,4 @@
+import * as React from "react";
 import { PodcastEmbedProps } from "../../types/shared/podcastEmbed.types";
 import { usePodcastEmbedStyles } from "../../styles/shared/podcastEmbed.styles";
 import clsx from "clsx";

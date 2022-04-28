@@ -1,3 +1,4 @@
+import * as React from "react";
 import WebsitePresenter from "../../containers/home/websitePresenter.container";
 import RecentArticles from "../../containers/home/recentArticles.container";
 import RecentVideos from "../../containers/home/recentVideos.container";

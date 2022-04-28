@@ -18,7 +18,7 @@ export interface Article {
   publishingDateStr: string;
   author: Author | null;
   tags: Tag[] | null;
-  body?: object;
+  body?: Record<string, unknown>;
   textOrientation?: string;
   bodyMarkdown: MDXRemoteSerializeResult | null;
 }

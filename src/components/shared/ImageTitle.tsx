@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Typography } from "@mui/material";
 import { useImageTitleStyles } from "../../styles/shared/ImageTitle.styles";
 import { ImageTitleProps } from "../../types/shared/imageTitle.types";
@@ -5,7 +6,8 @@ import clsx from "clsx";
 
 export default function ImageTitle(props: ImageTitleProps): JSX.Element {
   const classes = useImageTitleStyles(props);
-  let { title, imgFilterClassName } = props;
+  const { title } = props;
+  let { imgFilterClassName } = props;
   if (!imgFilterClassName) {
     imgFilterClassName = classes.imageBackgroundFilter;
   }

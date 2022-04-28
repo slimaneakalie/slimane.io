@@ -35,6 +35,7 @@ export default function Header({ links }: HeaderProps): JSX.Element {
         <a
           className={classes.link}
           href={isExternal ? link : undefined}
+          rel="noreferrer"
           target={isExternal ? "_blank" : undefined}
         >
           <Button color={"inherit"} className={classes.menuButton}>
@@ -52,6 +53,7 @@ export default function Header({ links }: HeaderProps): JSX.Element {
             className: classes.link,
             href: isExternal ? link : undefined,
             target: isExternal ? "_blank" : undefined,
+            rel: isExternal ? "noreferrer" : undefined,
           }}
         >
           <MenuItem className={classes.menuDrawerItem}>{label}</MenuItem>

@@ -1,3 +1,4 @@
+import * as React from "react";
 import { BookCardProps } from "../../types/books/bookCard.types";
 import { useBooksCardStyles } from "../../styles/books/bookCard.styles";
 import { createBookHighlightsLink, loadImageEffect } from "../../lib/utils";

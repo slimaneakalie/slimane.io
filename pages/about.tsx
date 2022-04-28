@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Avatar } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -33,20 +34,24 @@ export default function About(): JSX.Element {
             <MainTitle>About me</MainTitle>
             <p className={classes.text}>
               My name is Slimane Akalië (
-              <span className={classes.arabicText}>سليمان أقليع</span>), I'm a
+              <span className={classes.arabicText}>سليمان أقليع</span>), I am a
               humain being from{" "}
-              <a href="https://en.wikipedia.org/wiki/Ifrane" target="_blank">
+              <a
+                href="https://en.wikipedia.org/wiki/Ifrane"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Ifrane
               </a>
               .
               <br />
-              These days, I'm focusing mainly on software engineering, and on
+              These days, I am focusing mainly on software engineering, and on
               the side, I make videos and podcasts. Sometimes I write articles.
               <br />
               For the software engineering part, I work mainly on the backend
               and dabble sometimes with the frontend.
               <br />
-              For the content part, I'm curious about the intersection of two
+              For the content part, I am curious about the intersection of two
               topics: software engineering and finance.
               <br />
               Other than that, I like to read books, exercise, and play soccer.

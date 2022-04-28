@@ -13,7 +13,7 @@ const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
 
 export async function executeGraphqlQuery<T>(
   query: DocumentNode,
-  variables: object
+  variables: Record<string, unknown>
 ): Promise<ApolloQueryResult<T> | undefined> {
   try {
     const response = await client.query({

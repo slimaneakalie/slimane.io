@@ -1,3 +1,4 @@
+import * as React from "react";
 import { PodcastCardProps } from "../../types/podcast/components.types";
 import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";

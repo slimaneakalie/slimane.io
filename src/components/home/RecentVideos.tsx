@@ -1,3 +1,4 @@
+import * as React from "react";
 import { RecentVideosProps } from "../../types/home/recentVideos.types";
 import { Divider, Typography } from "@mui/material";
 import { PrimaryButton } from "../shared/PrimaryButton";

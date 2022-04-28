@@ -1,4 +1,4 @@
-import Head from "next/head";
+import * as React from "react";
 import { CardActionArea, Card } from "@mui/material";
 import {
   createVideoLink,

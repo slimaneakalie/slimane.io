@@ -1,6 +1,7 @@
 import "react-notion/src/styles.css";
 import "prismjs/themes/prism-tomorrow.css";
 
+import * as React from "react";
 import { BookItemPageProps } from "../../types/books/booksPage.types";
 import { NotionRenderer } from "react-notion-x";
 import { useBooksItemPageStyles } from "../../styles/books/bookItemPage.styles";
@@ -52,7 +53,7 @@ export default function BookItemPage(props: BookItemPageProps): JSX.Element {
           </div>
         )}
         <div className={classes.disclaimerContainer}>
-          <span>Disclaimer:</span> I don't always agree with the content of the
+          <span>Disclaimer:</span> I don`&apos;t always agree with the content of the
           book, the purpose of sharing my highlights is to help you decide
           whether to buy the book or not.
         </div>

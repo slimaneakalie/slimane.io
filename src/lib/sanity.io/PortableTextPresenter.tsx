@@ -1,3 +1,4 @@
+import * as React from "react";
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "@sanity/client";
 
@@ -16,16 +17,18 @@ interface serializersCodeProps {
 }
 
 interface PortableTextPresenterProps {
-  body: object;
+  body: Record<string, unknown>;
 }
 
 const serializers = {
   types: {
-    code: (props: serializersCodeProps) => (
-      <pre data-language={props.node.language}>
-        <code>{props.node.code}</code>
-      </pre>
-    ),
+    code: function CodeBlock(props: serializersCodeProps) {
+      return (
+        <pre data-language={props.node.language}>
+          <code>{props.node.code}</code>
+        </pre>
+      );
+    },
   },
 };
 

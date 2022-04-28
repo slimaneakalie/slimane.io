@@ -1,3 +1,4 @@
+import * as React from "react";
 import { DiscussionEmbed } from "disqus-react";
 import { useCommentsPanelStyles } from "../../styles/shared/commentsPanel.styles";
 import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
@@ -18,8 +19,10 @@ export default function CommentsPanel(props: CommentsPanelProps) {
 
   const disqusShortname = "https-www-slimane-io";
 
-  const className = props.className ? props.className : useCommentsPanelStyles().defaultClassName
-  
+  const className = props.className
+    ? props.className
+    : useCommentsPanelStyles().defaultClassName;
+
   return (
     <div className={className}>
       <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />;
