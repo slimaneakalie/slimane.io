@@ -2,7 +2,7 @@ import "react-notion/src/styles.css";
 import "prismjs/themes/prism-tomorrow.css";
 
 import { BookItemPageProps } from "../../types/books/booksPage.types";
-import { NotionRenderer } from "react-notion";
+import { NotionRenderer } from "react-notion-x";
 import { useBooksItemPageStyles } from "../../styles/books/bookItemPage.styles";
 import ItemPageTitle from "../shared/ItemPageTitle";
 import { loadImageEffect } from "../../lib/utils";
@@ -43,7 +43,11 @@ export default function BookItemPage(props: BookItemPageProps): JSX.Element {
                 <span>Note:</span> Click on the section title or the arrow ► to
                 see the full content.
               </div>
-              <NotionRenderer blockMap={book.highlightsNotionContent} />
+              <NotionRenderer
+                recordMap={book.highlightsNotionContent}
+                fullPage={false}
+                darkMode={false}
+              />
             </div>
           </div>
         )}

@@ -16,6 +16,8 @@ import Footer from "../src/components/shared/Footer";
 import store from "../src/store";
 import createEmotionCache from "../src/lib/ssr/createEmotionCache";
 
+import "react-notion-x/src/styles.css";
+
 interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
