@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const useHeaderStyles = makeStyles((theme) => ({
+export const useHeaderStyles = makeStyles(() => ({
   appBar: {
     padding: "30px 0px",
     display: "flex",

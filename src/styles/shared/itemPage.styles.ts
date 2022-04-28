@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const useItemPageTitleStyles = makeStyles((theme) => ({
+export const useItemPageTitleStyles = makeStyles(() => ({
   container: {
     width: 1280,
     height: 200,

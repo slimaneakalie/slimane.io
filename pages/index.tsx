@@ -1,3 +1,4 @@
+import * as React from "react";
 import HomePageContainer from "../src/containers/home/homePage.container";
 import { NextPageContext } from "next";
 import { HomeState } from "../src/types/home/store.home.types";

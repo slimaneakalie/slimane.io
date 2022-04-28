@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const useCommentsPanelStyles = makeStyles((theme) => ({
+export const useCommentsPanelStyles = makeStyles(() => ({
   defaultClassName: {
     width: "100%",
   },

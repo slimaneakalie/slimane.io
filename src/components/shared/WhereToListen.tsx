@@ -1,4 +1,5 @@
-import { Typography } from "@material-ui/core";
+import * as React from "react";
+import { Typography } from "@mui/material";
 import { WhereToListenProps } from "../../types/shared/whereToListen.types";
 import { useWhereToListenStyles } from "../../styles/shared/whereToListen.styles";
 import clsx from "clsx";
@@ -19,6 +20,7 @@ export default function WhereToListen({
           className={classes.audioPlatformsLink}
           key={platform.name}
           target={"_blank"}
+          rel="noreferrer"
         >
           <img
             src={platform.iconPath}

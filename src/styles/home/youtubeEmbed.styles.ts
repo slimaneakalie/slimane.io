@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const useYoutubeEmbedStyles = makeStyles((theme) => ({
+export const useYoutubeEmbedStyles = makeStyles(() => ({
   root: {
     overflow: "hidden",
     position: "relative",
@@ -26,12 +26,12 @@ export const useYoutubeEmbedStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     zIndex: 0,
-    color: "#FF0C00"
+    color: "#FF0C00",
   },
 
   videoContainer: {
     position: "absolute",
     width: "100%",
     zIndex: 1,
-  }
+  },
 }));

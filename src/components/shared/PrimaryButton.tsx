@@ -1,4 +1,5 @@
-import { Button, ButtonProps, LinkBaseProps } from "@material-ui/core";
+import * as React from "react";
+import { Button, ButtonProps, LinkBaseProps } from "@mui/material";
 import { usePrimaryButtonStyles } from "../../styles/shared/primaryButton.styles";
 import clsx from "clsx";
 

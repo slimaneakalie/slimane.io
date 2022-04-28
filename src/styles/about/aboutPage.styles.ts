@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const useAboutPageStyles = makeStyles((theme) => ({
+export const useAboutPageStyles = makeStyles(() => ({
   root: {
     display: "flex",
     alignItems: "center",
@@ -70,5 +70,8 @@ export const useAboutPageStyles = makeStyles((theme) => ({
         marginLeft: 0,
       },
     },
+  },
+  arabicText: {
+    fontFamily: "Tajawal",
   },
 }));

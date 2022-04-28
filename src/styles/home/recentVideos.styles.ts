@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const useRecentVideosStyles = makeStyles((theme) => ({
+export const useRecentVideosStyles = makeStyles(() => ({
   root: {
     display: "flex",
     alignItems: "center",

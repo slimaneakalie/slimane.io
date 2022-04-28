@@ -1,13 +1,15 @@
-import { BlockMapType } from "react-notion";
+import * as notion from "notion-client";
+import { ExtendedRecordMap } from "notion-types";
+
+const notionAPI = new notion.NotionAPI();
 
 export async function fetchHighlightsNotionContent(
   notionId: string
-): Promise<BlockMapType | undefined> {
-  const apiLink = `https://notion-api.splitbee.io/v1/page/${notionId}`;
+): Promise<ExtendedRecordMap | undefined> {
   try {
-    const notionData = await fetch(apiLink).then((res) => res.json());
-    return notionData;
+    const recordMap = await notionAPI.getPage(notionId);
+    return recordMap;
   } catch (error) {
-    console.log("Error fetching notion page", apiLink, error);
+    console.log("Error fetching notion page", notionId, error);
   }
 }

@@ -1,8 +1,8 @@
-import { Divider, Typography } from "@material-ui/core";
+import * as React from "react";
+import { Divider, Typography } from "@mui/material";
 import { useArticleMetadataStyles } from "../../styles/articles/articleMetadata.styles";
 import { ArticleMetadataProps } from "../../types/articles/articleItemPage.types";
 import { Tag } from "../../types/shared/articles.types";
-import { map } from "rxjs/operators";
 
 export default function ArticleMetadata({
   article,
@@ -18,6 +18,7 @@ export default function ArticleMetadata({
         <a
           href={article.author?.contactLink}
           target={"_blank"}
+          rel="noreferrer"
           className={classes.link}
         >
           {article.author?.name}

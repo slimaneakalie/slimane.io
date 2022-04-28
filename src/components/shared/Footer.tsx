@@ -1,5 +1,6 @@
 import { useFooterStyles } from "../../styles/shared/footer.styles";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import * as React from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Footer(): JSX.Element {
   const classes = useFooterStyles();
@@ -11,6 +12,7 @@ export default function Footer(): JSX.Element {
         <a
           href={"https://github.com/slimaneakalie/slimane.io"}
           target={"_blank"}
+          rel="noreferrer"
           className={classes.githubLink}
         >
           <GitHubIcon />

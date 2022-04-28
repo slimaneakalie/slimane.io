@@ -1,7 +1,7 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import React from "react";
 
-export const useWebsitePresenterStyles = makeStyles((theme) => ({
+export const useWebsitePresenterStyles = makeStyles((theme: any) => ({
   root: {
     display: "flex",
     alignItems: "center",
@@ -11,7 +11,7 @@ export const useWebsitePresenterStyles = makeStyles((theme) => ({
     },
   },
   websiteComment: {
-    color: "green"
+    color: "green",
   },
   container: {
     marginBottom: "3rem",
@@ -57,13 +57,13 @@ export const useWebsitePresenterStyles = makeStyles((theme) => ({
   },
   selfPresentation: {
     marginBottom: 25,
-    '& > div': {
-      display: 'inline',
-    }
+    "& > div": {
+      display: "inline",
+    },
   },
   typewriter: {
-    display: 'inline',
-    color: 'blue',
+    display: "inline",
+    color: "blue",
   },
   videoContainer: {},
 }));

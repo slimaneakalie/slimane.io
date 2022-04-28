@@ -1,3 +1,4 @@
+import * as React from "react";
 import { LatestPodcastProps } from "../../types/home/LatestPodcast";
 import { useLatestPodcastStyles } from "../../styles/home/latestPodcast.styles";
 import MainTitle from "../shared/MainTitle";

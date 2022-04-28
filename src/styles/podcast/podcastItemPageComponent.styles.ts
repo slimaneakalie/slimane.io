@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const usePodcastItemPageStyles = makeStyles((theme) => ({
+export const usePodcastItemPageStyles = makeStyles(() => ({
   root: {
     display: "flex",
     alignItems: "center",
@@ -57,9 +57,9 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
   arabicText: {
     direction: "rtl",
     fontFamily: "Tajawal",
-    "& > *" :{
+    "& > *": {
       fontFamily: "Tajawal",
-    }
+    },
   },
   descriptionContainer: {
     display: "flex",
@@ -75,5 +75,5 @@ export const usePodcastItemPageStyles = makeStyles((theme) => ({
     "@media (max-width: 900px)": {
       flexDirection: "column",
     },
-  }
+  },
 }));

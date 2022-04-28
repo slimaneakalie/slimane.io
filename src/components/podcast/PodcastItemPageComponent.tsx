@@ -1,3 +1,4 @@
+import * as React from "react";
 import { PodcastItemPageProps } from "../../types/podcast/components.types";
 import { usePodcastItemPageStyles } from "../../styles/podcast/podcastItemPageComponent.styles";
 import MainTitle from "../shared/MainTitle";
@@ -8,7 +9,7 @@ import clsx from "clsx";
 import { CommentsPanelProps } from "../../types/shared/commentsPanel.types";
 import CommentsPanel from "../shared/CommentsPanel";
 import PodcastPlatformsPageDisplay from "./PodcastPlatformsPageDisplay";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import ItemPageTitle from "../shared/ItemPageTitle";
 
 export default function PodcastItemPageComponent({

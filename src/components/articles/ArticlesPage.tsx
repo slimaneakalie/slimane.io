@@ -1,3 +1,4 @@
+import * as React from "react";
 import { ArticlesPageProps } from "../../types/articles/articlesPage.types";
 import ArticleCard from "../shared/ArticleCard";
 import { useArticlesPageStyles } from "../../styles/articles/articlesPage.styles";

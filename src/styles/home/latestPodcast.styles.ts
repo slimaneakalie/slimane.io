@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const useLatestPodcastStyles = makeStyles((theme) => ({
+export const useLatestPodcastStyles = makeStyles(() => ({
   root: {
     display: "flex",
     alignItems: "center",

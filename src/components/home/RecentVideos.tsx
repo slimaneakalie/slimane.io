@@ -1,9 +1,10 @@
+import * as React from "react";
 import { RecentVideosProps } from "../../types/home/recentVideos.types";
-import { Divider, Typography } from "@material-ui/core";
+import { Divider, Typography } from "@mui/material";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { useRecentVideosStyles } from "../../styles/home/recentVideos.styles";
 import VideoCard from "./VideoCard";
-import AddIcon from "@material-ui/icons/Add";
+import AddIcon from "@mui/icons-material/Add";
 import MainTitle from "../shared/MainTitle";
 
 export default function RecentVideos({

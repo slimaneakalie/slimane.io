@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const usePrimaryButtonStyles = makeStyles((theme) => ({
+export const usePrimaryButtonStyles = makeStyles(() => ({
   root: {
     backgroundColor: "#23848C",
     // textTransform: "none",

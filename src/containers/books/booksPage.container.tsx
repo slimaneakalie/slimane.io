@@ -5,5 +5,5 @@ import { selectBooksStateField } from "../../store/books/selectors";
 
 export default function BooksContainer(): JSX.Element {
   const books = useSelector(selectBooksStateField("books")) as BooksMap;
-  return <BooksPageComponent books={books} />;
+  return <BooksPageComponent booksMap={books} />;
 }

@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const useBooksCardStyles = makeStyles((theme) => ({
+export const useBooksCardStyles = makeStyles((theme: any) => ({
   root: {
     animation: `$videoTransition 1s ${theme.transitions.easing.easeInOut}`,
     "&:hover": {

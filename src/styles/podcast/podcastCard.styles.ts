@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const usePodcastCardStyles = makeStyles((theme) => ({
+export const usePodcastCardStyles = makeStyles((theme: any) => ({
   root: {
     animation: `$podcastTransition 1s ${theme.transitions.easing.easeInOut}`,
   },

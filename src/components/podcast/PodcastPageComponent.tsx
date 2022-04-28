@@ -1,3 +1,4 @@
+import * as React from "react";
 import PodcastCard from "./PodcastCard";
 import { PodcastPageProps } from "../../types/podcast/components.types";
 import { usePodcastPageStyles } from "../../styles/podcast/podcastPageComponent.styles";

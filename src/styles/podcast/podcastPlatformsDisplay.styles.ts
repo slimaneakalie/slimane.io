@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-export const usePodcastPlatformsPageDisplayStyles = makeStyles((theme) => ({
+export const usePodcastPlatformsPageDisplayStyles = makeStyles(() => ({
   root: {
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
@@ -26,6 +26,6 @@ export const usePodcastPlatformsPageDisplayStyles = makeStyles((theme) => ({
     borderRadius: 12,
     "&:hover": {
       filter: "brightness(80%)",
-    }
-  }
+    },
+  },
 }));
