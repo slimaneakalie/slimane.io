@@ -1,7 +1,6 @@
 import * as React from "react";
 import { BooksSliderProps } from "../../types/books/booksPage.types";
 import { Tabs, Tab, Box } from "@mui/material";
-import { ChangeEvent, useState } from "react";
 
 export default function BooksSlider(
   props: BooksSliderProps
@@ -11,28 +10,23 @@ export default function BooksSlider(
     return null;
   }
 
-  const [value, setValue] = useState(0);
+  return null;
 
-  const handleChange = (event: ChangeEvent, newValue: any) => {
-    setValue(newValue);
-  };
-
-  return (
-    <Box>
-      <Tabs
-        value={value}
-        variant="scrollable"
-        scrollButtons="auto"
-        aria-label="scrollable auto tabs example"
-      >
-        <Tab label="Item One" />
-        <Tab label="Item Two" />
-        <Tab label="Item Three" />
-        <Tab label="Item Four" />
-        <Tab label="Item Five" />
-        <Tab label="Item Six" />
-        <Tab label="Item Seven" />
-      </Tabs>
-    </Box>
-  );
+  // return (
+  //   <Box>
+  //     <Tabs
+  //       variant="scrollable"
+  //       scrollButtons="auto"
+  //       aria-label="scrollable auto tabs example"
+  //     >
+  //       <Tab label="Item One" />
+  //       <Tab label="Item Two" />
+  //       <Tab label="Item Three" />
+  //       <Tab label="Item Four" />
+  //       <Tab label="Item Five" />
+  //       <Tab label="Item Six" />
+  //       <Tab label="Item Seven" />
+  //     </Tabs>
+  //   </Box>
+  // );
 }
