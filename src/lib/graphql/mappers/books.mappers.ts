@@ -28,6 +28,7 @@ export function mapBookResponseElement(
 ): Book {
   return {
     title: bookGraphql.title,
+    slug: bookGraphql.slug.current,
     highlightsNotionPageId: bookGraphql.highlightsNotionPageId,
     cover3dImageURL: bookGraphql.cover3dImage.asset.url,
   };

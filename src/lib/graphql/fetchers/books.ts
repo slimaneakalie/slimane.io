@@ -33,7 +33,7 @@ export async function fetchAllBooksSlugs(): Promise<StaticPath[]> {
   const slugs: StaticPath[] = [];
 
   response?.data.books?.forEach((book) => {
-    slugs.push({ params: { slug: book.highlightsNotionPageId } });
+    slugs.push({ params: { slug: book.slug.current } });
   });
 
   return slugs;

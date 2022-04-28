@@ -38,6 +38,9 @@ export interface BooksGraphqlResponse {
 export interface BookGraphqlResponseElement {
   title: string;
   highlightsNotionPageId: string;
+  slug: {
+    current: string;
+  };
   cover3dImage: {
     asset: {
       url: string;

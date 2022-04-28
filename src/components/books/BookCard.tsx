@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export default function BookCard(props: BookCardProps) {
   const { book } = props;
   const classes = useBooksCardStyles();
-  const bookLink = createBookHighlightsLink(book.highlightsNotionPageId);
+  const bookLink = createBookHighlightsLink(book.slug);
 
   const [bookImg, setBookImg] = useState("/book.png");
   useEffect(() => loadImageEffect(book.cover3dImageURL, setBookImg), [bookImg]);

@@ -14,7 +14,7 @@ export function createPodcastLink(podcastSlug: string): string {
 }
 
 export function createPodcastEmbedLink(podcastId: string): string {
-  return `https://open.spotify.com/embed/episode/${podcastId}?theme=0`
+  return `https://open.spotify.com/embed/episode/${podcastId}?theme=0`;
 }
 
 export function createVideoLink(videoId: string): string {
@@ -29,12 +29,12 @@ export function formatDate(date: Date): string {
   return date.toDateString().slice(4);
 }
 
-export function createBookHighlightsLink(bookId: string): string {
-  return `/highlights/${bookId}`;
+export function createBookHighlightsLink(bookSlug: string): string {
+  return `/highlights/${bookSlug}`;
 }
 
 export function isArabicArticle(article: Article) {
-  return article.textOrientation === 'rtl';
+  return article.textOrientation === "rtl";
 }
 
 export function loadImageEffect(src: string, setState: (s: string) => void) {
@@ -43,8 +43,8 @@ export function loadImageEffect(src: string, setState: (s: string) => void) {
   img.onload = () => setState(src);
 }
 
-export function shuffle(input: any[]): any[]{
-  const shuffled = [...input]
+export function shuffle(input: any[]): any[] {
+  const shuffled = [...input];
   shuffled.sort(() => Math.random() - 0.5);
 
   return shuffled;

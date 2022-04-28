@@ -7,6 +7,7 @@ export interface BookPageData {
 
 export interface Book {
   title: string;
+  slug: string;
   highlightsNotionPageId: string;
   cover3dImageURL: string;
   highlightsNotionContent?: ExtendedRecordMap;
