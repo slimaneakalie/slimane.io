@@ -31,8 +31,8 @@ const generateClassName = createGenerateClassName({
 export default function App(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
-    <CacheProvider value={emotionCache}>
-      <StylesProvider generateClassName={generateClassName}>
+    <StylesProvider generateClassName={generateClassName}>
+      <CacheProvider value={emotionCache}>
         <Head>
           <title>Slimane Akalië</title>
           <link rel="preload" as="image" href="/slimane.png" />
@@ -56,7 +56,7 @@ export default function App(props: MyAppProps) {
             <Footer />
           </StoreProvider>
         </ThemeProvider>
-      </StylesProvider>
-    </CacheProvider>
+      </CacheProvider>
+    </StylesProvider>
   );
 }
