@@ -71,4 +71,7 @@ export const useAboutPageStyles = makeStyles(() => ({
       },
     },
   },
+  arabicText: {
+    fontFamily: "Tajawal",
+  },
 }));

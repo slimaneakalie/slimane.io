@@ -32,7 +32,9 @@ export default function About(): JSX.Element {
           <div className={classes.textContainer}>
             <MainTitle>About me</MainTitle>
             <p className={classes.text}>
-              My name is Slimane Akalië (سليمان أقليع), I'm a humain being from{" "}
+              My name is Slimane Akalië (
+              <span className={classes.arabicText}>سليمان أقليع</span>), I'm a
+              humain being from{" "}
               <a href="https://en.wikipedia.org/wiki/Ifrane" target="_blank">
                 Ifrane
               </a>
