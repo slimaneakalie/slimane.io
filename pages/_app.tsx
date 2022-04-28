@@ -2,11 +2,7 @@ import React from "react";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { CacheProvider, EmotionCache } from "@emotion/react";
-import {
-  StylesProvider,
-  createGenerateClassName,
-  ThemeProvider,
-} from "@mui/styles";
+import { ThemeProvider } from "@mui/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Provider as StoreProvider } from "react-redux";
 
@@ -24,39 +20,33 @@ interface MyAppProps extends AppProps {
 
 const clientSideEmotionCache = createEmotionCache();
 
-const generateClassName = createGenerateClassName({
-  productionPrefix: "c",
-});
-
 export default function App(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
-    <StylesProvider generateClassName={generateClassName}>
-      <CacheProvider value={emotionCache}>
-        <Head>
-          <title>Slimane Akalië</title>
-          <link rel="preload" as="image" href="/slimane.png" />
-          <link rel="preload" as="image" href="/book.png" />
-          <link rel="stylesheet" href="/global.css" />
-          <link rel="shortcut icon" href="/favicon.ico" />
-          <meta
-            name="description"
-            content="The official website of Slimane Akalië"
-          />
-          <meta
-            name="viewport"
-            content="minimum-scale=1, initial-scale=1, width=device-width"
-          />
-        </Head>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <StoreProvider store={store}>
-            <Header />
-            <Component {...pageProps} />
-            <Footer />
-          </StoreProvider>
-        </ThemeProvider>
-      </CacheProvider>
-    </StylesProvider>
+    <CacheProvider value={emotionCache}>
+      <Head>
+        <title>Slimane Akalië</title>
+        <link rel="preload" as="image" href="/slimane.png" />
+        <link rel="preload" as="image" href="/book.png" />
+        <link rel="stylesheet" href="/global.css" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="The official website of Slimane Akalië"
+        />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
+      </Head>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <StoreProvider store={store}>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </StoreProvider>
+      </ThemeProvider>
+    </CacheProvider>
   );
 }
