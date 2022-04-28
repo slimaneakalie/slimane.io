@@ -53,9 +53,9 @@ export default function BookItemPage(props: BookItemPageProps): JSX.Element {
           </div>
         )}
         <div className={classes.disclaimerContainer}>
-          <span>Disclaimer:</span> I don`&apos;t always agree with the content
-          of the book, the purpose of sharing my highlights is to help you
-          decide whether to buy the book or not.
+          <span>Disclaimer:</span> I don&apos;t always agree with the content of
+          the book, the purpose of sharing my highlights is to help you decide
+          whether to buy the book or not.
         </div>
         <BooksSlider books={otherBooks} />
         <CommentsPanel {...commentsProps} />

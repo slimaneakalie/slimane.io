@@ -9,7 +9,7 @@ export default function BooksPageComponent(props: BooksPageProps): JSX.Element {
   return (
     <section className={classes.root}>
       <div className={classes.container}>
-        <MainTitle className={classes.title}>Book Highlights</MainTitle>
+        <MainTitle className={classes.title}>My Book Highlights</MainTitle>
         <div className={classes.booksCardsContainer}>
           {Object.values(props.booksMap).map((bookData) => (
             <BookCard
