@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/material/styles";
+import { makeStyles } from "@mui/styles";
 
 export const useMainTitleStyles = makeStyles(() => ({
   title: {

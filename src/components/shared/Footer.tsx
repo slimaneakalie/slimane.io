@@ -1,5 +1,5 @@
 import { useFooterStyles } from "../../styles/shared/footer.styles";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Footer(): JSX.Element {
   const classes = useFooterStyles();

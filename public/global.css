@@ -1,8 +1,8 @@
 body {
-    min-height: "100vh";
-    position: "relative";
+    min-height: 100vh;
+    position: relative;
 }
 
 body > div {
-    padding-bottom: "50px"
-};
+    padding-bottom: 50px;
+}

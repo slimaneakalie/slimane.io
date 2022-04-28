@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/material/styles";
+import { makeStyles } from "@mui/styles";
 import { isArabicArticle } from "../../lib/utils";
 import { Article } from "../../types/shared/articles.types";
 

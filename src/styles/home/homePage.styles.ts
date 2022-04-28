@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/material/styles";
+import { makeStyles } from "@mui/styles";
 
 export const useHomePageStyles = makeStyles((theme: any) => ({
   updatesSection: {

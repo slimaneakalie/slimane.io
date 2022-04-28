@@ -8,7 +8,7 @@ import {
   MenuItem,
   Link as MaterialLink,
 } from "@mui/material";
-import MenuIcon from "@material-ui/icons/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 
 import { useHeaderStyles } from "../../styles/shared/header.styles";
 import { HeaderProps, HeaderState } from "../../types/home/header.types";
