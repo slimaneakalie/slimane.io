@@ -15,7 +15,7 @@ export default function PodcastPage(props: PodcastState): JSX.Element {
   return (
     <>
       <Head>
-        <title>Podcast | Slimane Akalië</title>
+        <title>Kass Atay Podcast | Slimane Akalië</title>
         <meta name="description" content="Kass Atay Podcast by Slimane Akalië"/>
         <link rel="preload" as="image" href="/apple-podcasts-large.png"/>
         <link rel="preload" as="image" href="/deezer-large.png"/>
