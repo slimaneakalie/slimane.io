@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
    {
+    id: "JJdRJR0EZBo",
+    title: "محمد أبوالليث: الفشل، Geeks BlaBla، OSS، Java، Spotify، متلازمة المحتال، السياسة، مسلسل المكتوب",
+   },
+   {
     id: "uGiPcl-7BHE",
     title:
       "عدنان عديوي: اختيار الهوية، النموذج التنموي، ريادة الأعمال الإجتماعية، هجرة الأدمغة، MCISE، التعليم",
@@ -39,10 +43,6 @@ const latestVideos = [
   {
     id: "_rJq3fRkSag",
     title: "كيف تصبح مبرمجا محترف بالتفصيل - The Clean Coder",
-  },
-  {
-    id: "_nUFrezkh14",
-    title: "أمين شوقي: موقع البطولة، Docker, Golang, Scalability, TDD, العمل عن بعد، الإجتماعات، الزواج، النجاح",
   },
 ];
 
