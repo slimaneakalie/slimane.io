@@ -18,6 +18,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+  {
+    id: "Ea9QLEaazvI",
+    title: "بدر بلاج: البيتكوين، ساتوشي، المال، التضخم، إيثيريوم، هيمنة الدولار، POW vs POS, Stablecoins, NFTs",
+  },
    {
     id: "JJdRJR0EZBo",
     title: "محمد أبوالليث: الفشل، Geeks BlaBla، OSS، Java، Spotify، متلازمة المحتال، السياسة، مسلسل المكتوب",
@@ -39,10 +43,6 @@ const latestVideos = [
     id: "W0GzhzOuHnA",
     title:
       "دنيا بلعناب: برمجة تطبيقات الآيفون، السفر، المغامرة، التكاثر، القراءة، العمل في أوروبا، تعريف النجاح",
-  },
-  {
-    id: "_rJq3fRkSag",
-    title: "كيف تصبح مبرمجا محترف بالتفصيل - The Clean Coder",
   },
 ];
 
