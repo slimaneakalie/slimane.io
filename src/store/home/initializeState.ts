@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "rH0NVA2my4E",
+    title: "ياسر طاهري: موسيقى الراب، Python, تعلم البرمجة، Open Source, الفلسفة الإغريقية، Secure code, الزواج",
+  },
+  {
     id: "O2JhdJHNu28",
     title: "غيثة منير: العيش في كاليفورنيا، الشركات الناشئة، الفروسية، اللغات، الأمن المعلوماتي، التوازن، الشغف",
   },
@@ -39,10 +43,6 @@ const latestVideos = [
     id: "uGiPcl-7BHE",
     title:
       "عدنان عديوي: اختيار الهوية، النموذج التنموي، ريادة الأعمال الإجتماعية، هجرة الأدمغة، MCISE، التعليم",
-  },
-  {
-    id: "bkxykh0GWB8",
-    title: "أحمد العزابي: العمل عن بعد، الإستثمار في المغرب، إنشاء شركة، السعادة، التدوين، الإنتاجية، القراءة",
   },
 ];
 
