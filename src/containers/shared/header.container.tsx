@@ -29,6 +29,11 @@ const navbarProps: HeaderProps = {
       label: "About",
       link: "/about",
     },
+    {
+      label: "Support",
+      link: "https://www.patreon.com/lectorem",
+      isExternal: true,
+    },
   ],
 };
 

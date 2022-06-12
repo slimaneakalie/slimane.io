@@ -110,7 +110,7 @@ export default function Header({ links }: HeaderProps): JSX.Element {
 
   // handle responsiveness
   const setResponsiveness = () => {
-    return isClient() && window.innerWidth < 1000
+    return isClient() && window.innerWidth < 1200
       ? setState((prevState) => ({ ...prevState, mobileView: true }))
       : setState((prevState) => ({ ...prevState, mobileView: false }));
   };
