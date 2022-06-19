@@ -10,6 +10,7 @@ import {
 } from "../../src/lib/graphql/fetchers/podcast";
 import { PodcastItem } from "../../src/types/podcast/podcast.types";
 import PodcastItemPageContainer from "../../src/containers/podcast/podcastItemPage.container";
+import { createVideoThumbnailLink } from "../../src/lib/utils";
 
 export default function PodcastItemPage(props: PodcastItem): JSX.Element {
   const router = useRouter();
@@ -28,6 +29,10 @@ export default function PodcastItemPage(props: PodcastItem): JSX.Element {
     <>
       <Head>
         <title>{props.title} | Slimane Akalië</title>
+        <meta property="og:title" content={props.title} />
+        <meta property="og:image" content={createVideoThumbnailLink(props.videoId)} />
+        <meta property="og:description" content={props.excerpt} />
+        <meta name="description" content={props.excerpt} />
         <meta name="description" content={props.excerpt}/>
       </Head>
       <PodcastItemPageContainer podcastItem={props} audioPlatforms={[]} />
