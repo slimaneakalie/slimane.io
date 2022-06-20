@@ -23,16 +23,21 @@ export default function PodcastItemPage(props: PodcastItem): JSX.Element {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setPodcastItemState(action));
-  }, []);
+  }, []);  
+
+  const imageLink = createVideoThumbnailLink(props.videoId);
+  const pageTitle = `${props.title} | Kass Atay Podcast`;
 
   return (
     <>
       <Head>
-        <title>{props.title} | Slimane Akalië</title>
-        <meta property="og:title" content={props.title} />
-        <meta property="og:image" content={createVideoThumbnailLink(props.videoId)} />
+        <title>{pageTitle}</title>
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:image" content={imageLink} />
         <meta property="og:description" content={props.excerpt} />
-        <meta name="description" content={props.excerpt} />
+        <meta property='twitter:title' content={pageTitle}/>
+        <meta property='twitter:image' content={imageLink}/>
+        <meta name="twitter:card" content="summary_large_image"/>
         <meta name="description" content={props.excerpt}/>
       </Head>
       <PodcastItemPageContainer podcastItem={props} audioPlatforms={[]} />
