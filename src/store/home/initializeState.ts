@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "gLGSQaSxdvs",
+    title:
+      "دعاء أحمدون: الذكاء الاصطناعي، الأقسام التحضيرية، الحجاب و النقاب، المثلية و التحول الجنسي، السياسة",
+  },
+  {
     id: "rH0NVA2my4E",
     title: "ياسر طاهري: موسيقى الراب، Python, تعلم البرمجة، Open Source, الفلسفة الإغريقية، Secure code, الزواج",
   },
@@ -39,11 +44,6 @@ const latestVideos = [
     id: "JJdRJR0EZBo",
     title: "محمد أبوالليث: الفشل، Geeks BlaBla، OSS، Java، Spotify، متلازمة المحتال، السياسة، مسلسل المكتوب",
    },
-   {
-    id: "uGiPcl-7BHE",
-    title:
-      "عدنان عديوي: اختيار الهوية، النموذج التنموي، ريادة الأعمال الإجتماعية، هجرة الأدمغة، MCISE، التعليم",
-  },
 ];
 
 const staticState: HomeState = {
