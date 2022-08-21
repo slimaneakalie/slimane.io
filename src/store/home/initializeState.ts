@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "0JI4aM6Eg1k",
+    title: "محمد الغيساني: YouCan، سيمولايف، سلطانة، الزواج، الفشل، إدارة الأعمال، العلاقات، الشغف، حب الوطن",
+  },
+  {
     id: "gLGSQaSxdvs",
     title:
       "دعاء أحمدون: الذكاء الاصطناعي، الأقسام التحضيرية، الحجاب و النقاب، المثلية و التحول الجنسي، السياسة",
@@ -40,10 +44,6 @@ const latestVideos = [
     id: "Ea9QLEaazvI",
     title: "بدر بلاج: البيتكوين، ساتوشي، المال، التضخم، إيثيريوم، هيمنة الدولار، POW vs POS, Stablecoins, NFTs",
   },
-   {
-    id: "JJdRJR0EZBo",
-    title: "محمد أبوالليث: الفشل، Geeks BlaBla، OSS، Java، Spotify، متلازمة المحتال، السياسة، مسلسل المكتوب",
-   },
 ];
 
 const staticState: HomeState = {
