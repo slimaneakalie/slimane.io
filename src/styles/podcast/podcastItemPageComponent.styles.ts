@@ -51,7 +51,6 @@ export const usePodcastItemPageStyles = makeStyles(() => ({
   description: {
     fontSize: 24,
     lineHeight: 1.8,
-    textAlign: "justify",
     whiteSpace: "pre-wrap",
   },
   arabicText: {
