@@ -31,10 +31,14 @@ export default function ArticleItem(props: Article): JSX.Element {
         <meta property="og:title" content={props.title} />
         <meta property="og:image" content={props.thumbnailURL} />
         <meta property="og:description" content={props.shortDescription} />
+        <meta name="description" content={props.shortDescription} />
+
+        <meta name="twitter:card" content="summary_large_image"/>
         <meta property='twitter:title' content={props.title}/>
         <meta property='twitter:image' content={props.thumbnailURL}/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="description" content={props.shortDescription} />
+        <meta name="twitter:creator" content="@cd_slimane"></meta>
+        <meta name="twitter:site" content="@cd_slimane"></meta>
+        <meta name="twitter:description" content={props.shortDescription}></meta>
       </Head>
       <ArticleItemPageContainer article={props} />
     </>
