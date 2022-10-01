@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "4LeiQ9gdlts",
+    title: "عبد الواحد الشبيهي — الهندسة، الماستر، هجرة الأدمغة، مفهوم الوطن، الزواج، صناعة المحتوى، التوازن",
+  },
+  {
     id: "-ELmGkZQNfc",
     title: "مهدي شراشر: أساسيات البرمجة، Golang، Rust، العمل في Meta، ليونيل ميسي، الزواج، الموسيقى، السعادة",
   },
@@ -39,10 +43,6 @@ const latestVideos = [
     id: "gLGSQaSxdvs",
     title:
       "دعاء أحمدون: الذكاء الاصطناعي، الأقسام التحضيرية، الحجاب و النقاب، المثلية و التحول الجنسي، السياسة",
-  },
-  {
-    id: "rH0NVA2my4E",
-    title: "ياسر طاهري: موسيقى الراب، Python, تعلم البرمجة، Open Source, الفلسفة الإغريقية، Secure code, الزواج",
   },
 ];
 
