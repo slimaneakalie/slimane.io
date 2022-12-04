@@ -19,7 +19,7 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
-    id: "ZDbcdWU57Wg",
+    id: "jjWf4D-Z2GA",
     title:
       "نهيلة مرزوق — إنتحار طبيب متدرب، الملكية البرلمانية، الحكومة الموازية، طلبة الطب، المناظرات، الهجرة",
   },
