@@ -41,7 +41,7 @@ export default function About(): JSX.Element {
             <p className={classes.text}>
               My name is Slimane Akalië (
               <span className={classes.arabicText}>سليمان أقليع</span>), I am a
-              humain being from{" "}
+              human being from{" "}
               <a
                 href="https://en.wikipedia.org/wiki/Ifrane"
                 target="_blank"
