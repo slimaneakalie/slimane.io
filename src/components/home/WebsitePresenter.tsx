@@ -16,8 +16,8 @@ export default function WebsitePresenter({
     wrapperClassName: classes.typewriter,
     delay: 50,
     strings: [
-      "human.being 👨",
-      "software.engineer ⌨️",
+      "human.being 😎",
+      "software.engineer 💻",
       "podcast.host 🎙️",
       "part-time.writer ✍️",
       "book.lover 📚",
