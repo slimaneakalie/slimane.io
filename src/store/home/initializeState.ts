@@ -44,6 +44,7 @@ const latestVideos = [
     id: "y0oCdZ2OGZI",
     title: "سليمان أقليع — كيف تنتج بودكاست احترافي بالتفصيل",
   },
+  
 ];
 
 const staticState: HomeState = {
