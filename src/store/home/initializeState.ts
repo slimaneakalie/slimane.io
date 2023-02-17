@@ -18,6 +18,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+   {
+    id: "jNTypmRsEes",
+    title: "نسيمة الشرفي — ريادة الأعمال و المقاولة،شركة Beauthé Skin   ،أكاديمية Zedenya  ،صناعة المحتوى، المال",
+  },
   {
     id: "KH5Ijt2RIzU",
     title:
@@ -39,10 +43,6 @@ const latestVideos = [
   {
     id: "qozfnKtjux0",
     title: "منير بنشملاد — العملات المشفرة، المالية اللامركزية، البيتكوين، إيثيريوم، إنشاء شركة، تمويل المشاريع",
-  },
-  {
-    id: "y0oCdZ2OGZI",
-    title: "سليمان أقليع — كيف تنتج بودكاست احترافي بالتفصيل",
   },
 ];
 
