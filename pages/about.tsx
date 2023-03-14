@@ -56,7 +56,7 @@ export default function About(): JSX.Element {
               <br />
               For software, I work mainly on the backend and dabble sometimes with the frontend.
               <br />
-              For podcasts, I'm curious about understanding people who disagree with me.
+              For podcasts, I am curious about understanding people who disagree with me.
               <br />
               Other than that, I like to read books, exercise, and play soccer.
             </p>
