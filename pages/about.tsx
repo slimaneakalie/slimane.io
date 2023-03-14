@@ -54,11 +54,9 @@ export default function About(): JSX.Element {
               These days, I am focusing mainly on software engineering, and on
               the side, I make videos and podcasts. Sometimes I write articles.
               <br />
-              For the software engineering part, I work mainly on the backend
-              and dabble sometimes with the frontend.
+              For software, I work mainly on the backend and dabble sometimes with the frontend.
               <br />
-              For the content part, I am curious about the intersection of two
-              topics: software engineering and finance.
+              For podcasts, I'm curious about understanding people who disagree with me.
               <br />
               Other than that, I like to read books, exercise, and play soccer.
             </p>
