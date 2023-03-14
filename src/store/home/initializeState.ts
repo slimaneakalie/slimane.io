@@ -18,6 +18,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+  {
+    id: "NLy5hweQ4Nk",
+    title: "سلمى بن حدي شوقي — المرأة و الإسلام، الرسم، العلاج بالفن، الشعر، Sapiosexuality، الحب، Don Bigg",
+  },
    {
     id: "jNTypmRsEes",
     title: "نسيمة الشرفي — ريادة الأعمال و المقاولة،شركة Beauthé Skin   ،أكاديمية Zedenya  ،صناعة المحتوى، المال",
@@ -40,10 +44,7 @@ const latestVideos = [
     title:
       "نهيلة مرزوق — إنتحار طبيب متدرب، الملكية البرلمانية، الحكومة الموازية، طلبة الطب، المناظرات، الهجرة",
   },
-  {
-    id: "qozfnKtjux0",
-    title: "منير بنشملاد — العملات المشفرة، المالية اللامركزية، البيتكوين، إيثيريوم، إنشاء شركة، تمويل المشاريع",
-  },
+  
 ];
 
 const staticState: HomeState = {
