@@ -18,6 +18,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+   {
+    id: "ZH5B3vczMBE",
+    title: "أحمد كشكاش — الذكاء الاصطناعي، مخاطره، Chat GPT،العمل بجوجل، Ranking Systems",
+  },
   {
     id: "NLy5hweQ4Nk",
     title: "سلمى بن حدي شوقي — المرأة و الإسلام، الرسم، العلاج بالفن، الشعر، Sapiosexuality، الحب، Don Bigg",
@@ -39,11 +43,7 @@ const latestVideos = [
     id: "9-BN2ojV7TI",
     title: "عبد الحق العيـبي — التدريس المنزلي، تربية الأطفال، التعليم النظامي، البرمجة، الإسلام، المنتخب الوطني"
   },
-  {
-    id: "jjWf4D-Z2GA",
-    title:
-      "نهيلة مرزوق — إنتحار طبيب متدرب، الملكية البرلمانية، الحكومة الموازية، طلبة الطب، المناظرات، الهجرة",
-  },
+ 
   
 ];
 
