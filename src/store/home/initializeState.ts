@@ -18,6 +18,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 }
 
 const latestVideos = [
+  {
+    id: "1V8ioQSBTe4",
+    title: "يوسف البدوي — العادات، صناعة المحتوى، الاستمرارية، بكالوريا أحرار، مباريات ولوج المدارس، تعلم اللغات"
+  },
    {
     id: "ZH5B3vczMBE",
     title: "أحمد كشكاش — الذكاء الاصطناعي، مخاطره، Chat GPT،العمل بجوجل، Ranking Systems",
@@ -39,12 +43,6 @@ const latestVideos = [
     id: "0VU-rZ6aJ5Y",
     title: "طارق المليح — 30 ماراثون في 30 يوم، التدريب، الزواج الواقعي، خرافة قانون الجذب، إنجاز المتخب في قطر"
   },
-  {
-    id: "9-BN2ojV7TI",
-    title: "عبد الحق العيـبي — التدريس المنزلي، تربية الأطفال، التعليم النظامي، البرمجة، الإسلام، المنتخب الوطني"
-  },
- 
-  
 ];
 
 const staticState: HomeState = {
