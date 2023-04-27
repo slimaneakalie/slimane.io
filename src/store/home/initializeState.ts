@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "Ki9uGTBCtZs",
+    title:
+      "عثمان كينان — البرمجة، الاشتغال كـمدير تقني ، التوظيف التقني، .Net، شركة NimbleWays",
+  },
+  {
     id: "T5WcrjEY7kg",
     title: "Ask Me Anything — المغرب و الجزائر، البرمجة، فكرة البودكاست، العمل عن بعد، تنظيم الوقت، اختيار الكتب"
   },
@@ -37,11 +42,6 @@ const latestVideos = [
    {
     id: "jNTypmRsEes",
     title: "نسيمة الشرفي — ريادة الأعمال و المقاولة،شركة Beauthé Skin   ،أكاديمية Zedenya  ،صناعة المحتوى، المال",
-  },
-  {
-    id: "KH5Ijt2RIzU",
-    title:
-      "زياد بندورو — تسلق الجبال، تحطيم رقم قياسي عالمي، التوجيه المدرسي في المغرب، التأمل، خسارة الوزن",
   },
 ];
 
