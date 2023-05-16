@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "I0mBMcm46m4",
+    title: "هشام تيفلاتي — أحداث 16 ماي بالدار البيضاء، الإرهاب، الإصلاح في المغرب ،الهوية الدينية و العلمانية",
+  },
+  {
     id: "Ki9uGTBCtZs",
     title:
       "عثمان كينان — البرمجة، الاشتغال كـمدير تقني ، التوظيف التقني، .Net، شركة NimbleWays",
@@ -38,10 +42,6 @@ const latestVideos = [
   {
     id: "NLy5hweQ4Nk",
     title: "سلمى بن حدي شوقي — المرأة و الإسلام، الرسم، العلاج بالفن، الشعر، Sapiosexuality، الحب، Don Bigg",
-  },
-   {
-    id: "jNTypmRsEes",
-    title: "نسيمة الشرفي — ريادة الأعمال و المقاولة،شركة Beauthé Skin   ،أكاديمية Zedenya  ،صناعة المحتوى، المال",
   },
 ];
 
