@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "P2QVXiCHaQA",
+    title: "نسيم القشيري— التسويق، Branding، قمع العقول المبدعة، احتكار السوق المغربي، الحاجة إلى قيادة",
+  },
+  {
     id: "I0mBMcm46m4",
     title: "هشام تيفلاتي — أحداث 16 ماي بالدار البيضاء، الإرهاب، الإصلاح في المغرب ،الهوية الدينية و العلمانية",
   },
@@ -38,10 +42,6 @@ const latestVideos = [
    {
     id: "ZH5B3vczMBE",
     title: "أحمد كشكاش — الذكاء الاصطناعي، مخاطره، Chat GPT،العمل بجوجل، Ranking Systems",
-  },
-  {
-    id: "NLy5hweQ4Nk",
-    title: "سلمى بن حدي شوقي — المرأة و الإسلام، الرسم، العلاج بالفن، الشعر، Sapiosexuality، الحب، Don Bigg",
   },
 ];
 
