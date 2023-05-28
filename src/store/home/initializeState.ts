@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "JYmXDojq7rU",
+    title: "زكرياء اجعيط — الشركات الناشئة، المغرب و قارة إفريقيا ، شركتا WAANDA و Xibit ، Networking، ألمانيا",
+  },
+  {
     id: "P2QVXiCHaQA",
     title: "نسيم القشيري— التسويق، Branding، قمع العقول المبدعة، احتكار السوق المغربي، الحاجة إلى قيادة",
   },
@@ -38,10 +42,6 @@ const latestVideos = [
   {
     id: "1V8ioQSBTe4",
     title: "يوسف البدوي — العادات، صناعة المحتوى، الاستمرارية، بكالوريا أحرار، مباريات ولوج المدارس، تعلم اللغات"
-  },
-   {
-    id: "ZH5B3vczMBE",
-    title: "أحمد كشكاش — الذكاء الاصطناعي، مخاطره، Chat GPT،العمل بجوجل، Ranking Systems",
   },
 ];
 
