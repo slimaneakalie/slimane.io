@@ -20,7 +20,7 @@ export async function getHomeInitialState(): Promise<HomeState> {
 const latestVideos = [
   {
     id: "JYmXDojq7rU",
-    title: "زكرياء اجعيط — الشركات الناشئة، المغرب و قارة إفريقيا ، شركتا WAANDA و Xibit ، Networking، ألمانيا",
+    title: "زكرياء اجعيط — الشركات الناشئة، WAANDA، الفرص في إفريقيا، تكوين العلاقات المهنية، العيش في ألمانيا",
   },
   {
     id: "P2QVXiCHaQA",
