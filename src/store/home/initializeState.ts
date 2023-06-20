@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "wqqjP-YUed8",
+    title: "أسامة الزاكي — البرمجة الوظيفية، سبوتيفاي، الحرية المالية، تربية الأبناء، الصوفية، السويد، Skydiving"
+  },
+  {
     id: "jiskKs1QDnw",
     title: "حمزة بوربوح — العمل في جوجل و ناسا، الأرض المسطحة، أكاديمية الفهرية، الاستثمار و التقاعد المبكر"
   },
@@ -38,10 +42,6 @@ const latestVideos = [
     id: "Ki9uGTBCtZs",
     title:
       "عثمان كينان — البرمجة، الاشتغال كـمدير تقني ، التوظيف التقني، .Net، شركة NimbleWays",
-  },
-  {
-    id: "T5WcrjEY7kg",
-    title: "Ask Me Anything — المغرب و الجزائر، البرمجة، فكرة البودكاست، العمل عن بعد، تنظيم الوقت، اختيار الكتب"
   },
 ];
 
