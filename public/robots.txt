@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://slimane.io
+Host: https://www.slimane.io
 
 # Sitemaps
-Sitemap: https://slimane.io/sitemap.xml
+Sitemap: https://www.slimane.io/sitemap.xml
