@@ -31,8 +31,23 @@ const navbarProps: HeaderProps = {
     },
     {
       label: "Support",
-      link: "https://www.patreon.com/lectorem",
-      isExternal: true,
+      subLinks: [
+        {
+          label: "Membership",
+          isExternal: true,
+          link: "https://www.youtube.com/@kassataypodcast/join",
+        },
+        {
+          label: "Patreon",
+          isExternal: true,
+          link: "https://www.patreon.com/kassatay",
+        },
+        {
+          label: "Paypal",
+          isExternal: true,
+          link: "https://paypal.com/paypalme/lectorem",
+        },
+      ],
     },
   ],
 };

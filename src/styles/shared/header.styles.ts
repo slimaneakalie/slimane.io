@@ -54,4 +54,19 @@ export const useHeaderStyles = makeStyles(() => ({
     justifyContent: "space-between",
   },
   mobileMenu: {},
+  linksMenuContainer: {
+    display: "inline",
+  },
+  linksMenuContent: {
+    "& a": {
+      display: "block",
+      textAlign: "center",
+    },
+    "& button": {
+      margin: 0,
+      paddingLeft: 20,
+      paddingRight: 20,
+      width: "100%",
+    },
+  },
 }));

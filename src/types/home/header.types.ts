@@ -1,7 +1,8 @@
-interface HeaderLink {
-  link: string;
+export interface HeaderLink {
   label: string;
   isExternal?: boolean;
+  link?: string;
+  subLinks?: HeaderLink[];
 }
 
 export interface HeaderProps {

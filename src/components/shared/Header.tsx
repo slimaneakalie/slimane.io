@@ -11,10 +11,19 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 import { useHeaderStyles } from "../../styles/shared/header.styles";
-import { HeaderProps, HeaderState } from "../../types/home/header.types";
+import {
+  HeaderLink,
+  HeaderProps,
+  HeaderState,
+} from "../../types/home/header.types";
 import { isClient } from "../../lib/utils";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import Logo from "../home/Logo";
+import {
+  HeaderDrawerLink,
+  HeaderMenuLink,
+  HeaderSimpleLink,
+} from "./HeaderLinks";
 
 export default function Header({ links }: HeaderProps): JSX.Element {
   // initial state
@@ -30,36 +39,28 @@ export default function Header({ links }: HeaderProps): JSX.Element {
 
   // ui helpers
   const createMenuButtons = (): React.ReactNode[] =>
-    links.map(({ label, link, isExternal }) => (
-      <LinkWrapper isExternal={isExternal} href={link} key={label}>
-        <a
-          className={classes.link}
-          href={isExternal ? link : undefined}
-          rel="noreferrer"
-          target={isExternal ? "_blank" : undefined}
-        >
-          <Button color={"inherit"} className={classes.menuButton}>
-            {label}
-          </Button>
-        </a>
-      </LinkWrapper>
-    ));
+    links.map((headerLink: HeaderLink) => {
+      if (headerLink?.subLinks && headerLink.subLinks.length > 0) {
+        return <HeaderMenuLink key={headerLink.label} {...headerLink} />;
+      }
+
+      return <HeaderSimpleLink key={headerLink.label} {...headerLink} />;
+    });
 
   const createDrawerMenuChoices = (): React.ReactNode[] =>
-    links.map(({ label, link, isExternal }) => (
-      <LinkWrapper isExternal={isExternal} href={link} key={label}>
-        <MaterialLink
-          {...{
-            className: classes.link,
-            href: isExternal ? link : undefined,
-            target: isExternal ? "_blank" : undefined,
-            rel: isExternal ? "noreferrer" : undefined,
-          }}
-        >
-          <MenuItem className={classes.menuDrawerItem}>{label}</MenuItem>
-        </MaterialLink>
-      </LinkWrapper>
-    ));
+    links.map((headerLink: HeaderLink) => {
+      if (headerLink?.subLinks && headerLink.subLinks.length > 0) {
+        return (
+          <div>
+            {headerLink.subLinks?.map((hl) => (
+              <HeaderDrawerLink key={hl.label} {...hl} />
+            ))}
+          </div>
+        );
+      }
+
+      return <HeaderDrawerLink key={headerLink.label} {...headerLink} />;
+    });
 
   const logo = (): React.ReactNode => (
     <LinkWrapper href={"/"} isExternal={false}>
