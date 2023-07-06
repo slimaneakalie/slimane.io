@@ -20,18 +20,6 @@ interface PortableTextPresenterProps {
   body: Record<string, unknown>;
 }
 
-const serializers = {
-  types: {
-    code: function CodeBlock(props: serializersCodeProps) {
-      return (
-        <pre data-language={props.node.language}>
-          <code>{props.node.code}</code>
-        </pre>
-      );
-    },
-  },
-};
-
 export default function PortableTextPresenter({
   body,
 }: PortableTextPresenterProps): JSX.Element {

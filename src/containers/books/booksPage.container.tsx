@@ -1,3 +1,4 @@
+import React from "react";
 import BooksPageComponent from "../../components/books/BooksPageComponent";
 import { BooksMap } from "../../types/books/booksPage.types";
 import { useSelector } from "react-redux";

@@ -1,3 +1,4 @@
+import React from "react";
 import ArticlesPage from "../../components/articles/ArticlesPage";
 import { useSelector } from "react-redux";
 import { ArticlesMap } from "../../types/shared/articles.types";

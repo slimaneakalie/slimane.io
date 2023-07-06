@@ -1,3 +1,4 @@
+import React from "react";
 import PodcastPageComponent from "../../components/podcast/PodcastPageComponent";
 import { PodcastMap } from "../../types/podcast/podcast.types";
 import { useSelector } from "react-redux";

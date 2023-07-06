@@ -1,3 +1,4 @@
+import React from "react";
 import RecentVideos from "../../components/home/RecentVideos";
 import { Video } from "../../types/home/videoCard.types";
 import { useSelector } from "react-redux";

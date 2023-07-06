@@ -39,7 +39,7 @@ export function HeaderMenuLink(headerLink: HeaderLink): JSX.Element {
         }}
       >
         {headerLink.subLinks?.map((hl) => (
-          <HeaderSimpleLink key={hl.label} {...hl} />
+          <HeaderSimpleLink key={"menuLink-" + hl.link} {...hl} />
         ))}
       </Menu>
     </div>
@@ -48,22 +48,29 @@ export function HeaderMenuLink(headerLink: HeaderLink): JSX.Element {
 
 export function HeaderSimpleLink(headerLink: HeaderLink): JSX.Element {
   const classes = useHeaderStyles();
+  const buttonComp = (
+    <Button color={"inherit"} className={classes.menuButton}>
+      {headerLink.label}
+    </Button>
+  );
   return (
     <LinkWrapper
       isExternal={headerLink.isExternal}
       href={headerLink.link || ""}
       key={headerLink.label}
     >
-      <a
-        className={classes.link}
-        href={headerLink.isExternal ? headerLink.link : undefined}
-        rel="noreferrer"
-        target={headerLink.isExternal ? "_blank" : undefined}
-      >
-        <Button color={"inherit"} className={classes.menuButton}>
-          {headerLink.label}
-        </Button>
-      </a>
+      {headerLink.isExternal ? (
+        <a
+          className={classes.link}
+          href={headerLink.isExternal ? headerLink.link : undefined}
+          rel="noreferrer"
+          target={headerLink.isExternal ? "_blank" : undefined}
+        >
+          {buttonComp}
+        </a>
+      ) : (
+        buttonComp
+      )}
     </LinkWrapper>
   );
 }
@@ -72,7 +79,7 @@ export function HeaderDrawerLink(headerLink: HeaderLink): JSX.Element {
   const classes = useHeaderStyles();
   return (
     <LinkWrapper
-      isExternal={headerLink.isExternal}
+      isExternal={true}
       href={headerLink.link || ""}
       key={headerLink.label}
     >
