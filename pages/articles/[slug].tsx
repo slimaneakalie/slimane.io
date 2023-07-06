@@ -33,28 +33,17 @@ export default function ArticleItem(props: Article): JSX.Element {
         <meta property="og:description" content={props.shortDescription} />
         <meta name="description" content={props.shortDescription} />
 
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name='twitter:title' content={props.title}/>
-        <meta name='twitter:image' content={props.thumbnailURL}/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={props.title} />
+        <meta name="twitter:image" content={props.thumbnailURL} />
         <meta name="twitter:creator" content="@cd_slimane"></meta>
         <meta name="twitter:site" content="@cd_slimane"></meta>
-        <meta name="twitter:description" content={props.shortDescription}></meta>
+        <meta
+          name="twitter:description"
+          content={props.shortDescription}
+        ></meta>
       </Head>
       <ArticleItemPageContainer article={props} />
     </>
   );
-}
-
-export async function getStaticProps(context: GetStaticPropsContext<any>) {
-  const slug = context.params.slug as string;
-  return {
-    props: await fetchArticleCompleteData(slug),
-  };
-}
-
-export async function getStaticPaths() {
-  return {
-    fallback: false,
-    paths: await fetchAllArticleSlugs(),
-  };
 }
