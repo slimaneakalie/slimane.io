@@ -1,7 +1,9 @@
-import * as React from "react";
+import React from "react";
 import { SVGProps } from "react";
 
-export default function Logo(props: SVGProps<SVGSVGElement>): JSX.Element {
+export default function Logo(
+  props: SVGProps<SVGSVGElement>
+): React.ReactElement {
   return (
     <svg
       version="1.0"

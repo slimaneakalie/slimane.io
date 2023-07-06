@@ -41,19 +41,24 @@ export default function Header({ links }: HeaderProps): JSX.Element {
   const createMenuButtons = (): React.ReactNode[] =>
     links.map((headerLink: HeaderLink) => {
       if (headerLink?.subLinks && headerLink.subLinks.length > 0) {
-        return <HeaderMenuLink key={headerLink.label} {...headerLink} />;
+        return (
+          <HeaderMenuLink
+            key={"menulink-" + headerLink.label}
+            {...headerLink}
+          />
+        );
       }
 
-      return <HeaderSimpleLink key={headerLink.label} {...headerLink} />;
+      return <HeaderSimpleLink key={headerLink.link} {...headerLink} />;
     });
 
   const createDrawerMenuChoices = (): React.ReactNode[] =>
     links.map((headerLink: HeaderLink) => {
       if (headerLink?.subLinks && headerLink.subLinks.length > 0) {
         return (
-          <div>
+          <div key={headerLink.label}>
             {headerLink.subLinks?.map((hl) => (
-              <HeaderDrawerLink key={hl.label} {...hl} />
+              <HeaderDrawerLink key={hl.link} {...hl} />
             ))}
           </div>
         );

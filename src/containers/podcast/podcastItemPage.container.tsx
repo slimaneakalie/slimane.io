@@ -1,3 +1,4 @@
+import React from "react";
 import { PodcastItemPageProps } from "../../types/podcast/components.types";
 import PodcastItemPageComponent from "../../components/podcast/PodcastItemPageComponent";
 import { AudioPlatform } from "../../types/shared/whereToListen.types";
@@ -10,6 +11,11 @@ export default function PodcastItemPageContainer({
   const audioPlatforms = useSelector(
     selectSharedStateField("audioPlatforms")
   ) as AudioPlatform[];
-  
-  return <PodcastItemPageComponent podcastItem={podcastItem} audioPlatforms={audioPlatforms} />;
+
+  return (
+    <PodcastItemPageComponent
+      podcastItem={podcastItem}
+      audioPlatforms={audioPlatforms}
+    />
+  );
 }

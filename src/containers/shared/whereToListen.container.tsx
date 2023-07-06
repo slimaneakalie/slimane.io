@@ -1,9 +1,9 @@
+import React from "react";
 import {
   AudioPlatform,
   WhereToListenContainerProps,
 } from "../../types/shared/whereToListen.types";
 import { useSelector } from "react-redux";
-import { PodcastMap } from "../../types/podcast/podcast.types";
 import { selectSharedStateField } from "../../store/shared/selectors";
 import WhereToListen from "../../components/shared/WhereToListen";
 

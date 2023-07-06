@@ -7,7 +7,7 @@ import theme from "../src/theme";
 import createEmotionCache from "../src/lib/ssr/createEmotionCache";
 
 export default class MyDocument extends Document {
-  render() {
+  render(): React.ReactElement {
     return (
       <Html lang="en">
         <Head>

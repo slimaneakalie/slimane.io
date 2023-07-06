@@ -1,3 +1,4 @@
+import React from "react";
 import RecentArticles from "../../components/home/RecentArticles";
 import { useSelector } from "react-redux";
 import { selectHomeStateField } from "../../store/home/selectors";

@@ -1,3 +1,4 @@
+import React from "react";
 import ArticleItemPage from "../../components/articles/ArticleItemPage";
 import { ArticleItemPageProps } from "../../types/articles/articleItemPage.types";
 

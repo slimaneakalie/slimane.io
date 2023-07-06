@@ -22,10 +22,10 @@ export default function CommentsPanel(props: CommentsPanelProps) {
   const className = props.className
     ? props.className
     : useCommentsPanelStyles().defaultClassName;
+  const discussionEmbed = new DiscussionEmbed({
+    shortname: disqusShortname,
+    config: disqusConfig,
+  });
 
-  return (
-    <div className={className}>
-      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />;
-    </div>
-  );
+  return <div className={className}>{discussionEmbed.render()}</div>;
 }
