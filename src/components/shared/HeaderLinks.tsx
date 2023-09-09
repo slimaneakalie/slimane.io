@@ -79,7 +79,7 @@ export function HeaderDrawerLink(headerLink: HeaderLink): JSX.Element {
   const classes = useHeaderStyles();
   return (
     <LinkWrapper
-      isExternal={true}
+      isExternal={headerLink.isExternal}
       href={headerLink.link || ""}
       key={headerLink.label}
     >
