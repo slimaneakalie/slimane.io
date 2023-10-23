@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "DYonOdrgixI",
+    title: "محمد طلال لحلو — طوفان الأقصى، الشبهات في الإسلام، العلمانية، النسوية، الإقتصاد الإسلامي، كأس العالم",
+  },
+  {
     id: "YA84ooxZegA",
     title: "Ask Me Anything II — الإسلام السياسي، البرمجة، البودكاست، الإنتاجية، المغزى من الحياة، الفرنسية",
   },
@@ -38,10 +42,6 @@ const latestVideos = [
   {
     id: "JYmXDojq7rU",
     title: "زكرياء اجعيط — الشركات الناشئة، WAANDA، الفرص في إفريقيا، تكوين العلاقات المهنية، العيش في ألمانيا",
-  },
-  {
-    id: "P2QVXiCHaQA",
-    title: "نسيم القشيري— التسويق، Branding، قمع العقول المبدعة، احتكار السوق المغربي، الحاجة إلى قيادة",
   },
 ];
 
