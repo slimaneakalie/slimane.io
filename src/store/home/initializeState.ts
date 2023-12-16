@@ -19,6 +19,10 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "Po4sLhNDaRY",
+    title: "إسماعيل بلخياط — منصة شاري، BCG ،Sarouty ،Y Combinator، التوازن في الحياة، الفرق بين فرنسا و أمريكا"
+  },
+  {
     id: "iLQr4ecDWt8",
     title: "ريم عكراش — المرض النفسي، التنمر، الجنس بدون زواج، الإجهاض، الثقافة الجنسية، الإدمان، ضريح بويا عمر"
   },
@@ -38,10 +42,6 @@ const latestVideos = [
     id: "6ZOzQC2lmIE",
     title:
       "عثمان الصفصافي — الذكاء، السعادة، الرياضيات، صناعة المحتوى، البحث العلمي، التمييز الإيجابي، الحرية",
-  },
-  {
-    id: "wqqjP-YUed8",
-    title: "أسامة الزاكي — البرمجة الوظيفية، سبوتيفاي، الحرية المالية، تربية الأبناء، الصوفية، السويد، Skydiving"
   },
 ];
 
