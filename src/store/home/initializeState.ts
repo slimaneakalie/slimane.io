@@ -19,6 +19,11 @@ export async function getHomeInitialState(): Promise<HomeState> {
 
 const latestVideos = [
   {
+    id: "xX9dHUzAneo",
+    title:
+      "حسن بوفوس — برنامج أمودو، عودة ظهور أسد الأطلس و فهد الأطلس، قناة هل تعلم، المغرب العميق، حب السفر",
+  },
+  {
     id: "Po4sLhNDaRY",
     title: "إسماعيل بلخياط — منصة شاري، BCG ،Sarouty ،Y Combinator، التوازن في الحياة، الفرق بين فرنسا و أمريكا"
   },
@@ -37,11 +42,6 @@ const latestVideos = [
   {
     id: "YA84ooxZegA",
     title: "Ask Me Anything II — الإسلام السياسي، البرمجة، البودكاست، الإنتاجية، المغزى من الحياة، الفرنسية",
-  },
-  {
-    id: "6ZOzQC2lmIE",
-    title:
-      "عثمان الصفصافي — الذكاء، السعادة، الرياضيات، صناعة المحتوى، البحث العلمي، التمييز الإيجابي، الحرية",
   },
 ];
 
