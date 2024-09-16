@@ -47,6 +47,11 @@ const navbarProps: HeaderProps = {
           isExternal: true,
           link: "https://paypal.com/paypalme/lectorem",
         },
+        {
+          label: "Coffee",
+          isExternal: true,
+          link: "https://buymeacoffee.com/kassatay",
+        },
       ],
     },
   ],
