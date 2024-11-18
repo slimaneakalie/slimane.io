@@ -11,7 +11,9 @@ export function mapResponseToArticlesMap(
   response?: ApolloQueryResult<ArticlesGraphqlResponse>
 ): ArticlesMap {
   const articlesMap: ArticlesMap = {};
-  if (response) {
+  console.log("response: ", response)
+  const cond = false;
+  if (response && cond) {
     const articles = response.data.allPost;
     articles?.forEach((article) => {
       articlesMap[article.slug.current] = mapArticleElement(article);

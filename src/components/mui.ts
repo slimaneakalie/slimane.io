@@ -1,6 +1,5 @@
 "use client";
-import { makeStyles } from "../../components/mui";
-import { ThemeProvider, ServerStyleSheets } from "../../components/mui";
+import { makeStyles, ThemeProvider, ServerStyleSheets} from "@mui/styles";
 import {
     CardMedia,
     CardActionArea,

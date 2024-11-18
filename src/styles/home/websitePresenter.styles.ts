@@ -1,4 +1,4 @@
-import { makeStyles } from "../../components/mui";
+import { makeStyles } from "@mui/styles";
 import React from "react";
 
 export const useWebsitePresenterStyles = makeStyles((theme: any) => ({

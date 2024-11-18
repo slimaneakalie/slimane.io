@@ -52,8 +52,10 @@ export async function fetchAllArticleSlugs(): Promise<StaticPath[]> {
   );
 
   const slugs: StaticPath[] = [];
+  console.log("response: ", response);
 
   response?.data.allPost?.forEach((article) => {
+    console.log("article: ", article);
     slugs.push({ params: { slug: article.slug.current } });
   });
 

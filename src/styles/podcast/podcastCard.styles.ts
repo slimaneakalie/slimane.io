@@ -1,4 +1,4 @@
-import { makeStyles } from "../../components/mui";
+import { makeStyles } from "@mui/styles";
 
 export const usePodcastCardStyles = makeStyles((theme: any) => ({
   root: {
