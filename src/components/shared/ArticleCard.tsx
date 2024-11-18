@@ -5,7 +5,7 @@ import {
   CardMedia,
   Typography,
   Card,
-} from "@mui/material";
+} from "../mui";
 import { useArticleCardStyles } from "../../styles/shared/articleCard.styles";
 import LinkWrapper from "../../containers/shared/linkWrapper.container";
 import { createArticleLink, loadImageEffect } from "../../lib/utils";

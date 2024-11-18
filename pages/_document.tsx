@@ -1,5 +1,5 @@
 import React from "react";
-import { ServerStyleSheets } from "@mui/styles";
+import { ServerStyleSheets } from "../src/components/mui";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import createEmotionServer from "@emotion/server/create-instance";
 

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, ButtonProps, LinkBaseProps } from "@mui/material";
+import { Button, ButtonProps, LinkBaseProps } from "../mui";
 import { usePrimaryButtonStyles } from "../../styles/shared/primaryButton.styles";
 import clsx from "clsx";
 

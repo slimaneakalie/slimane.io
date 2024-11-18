@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "../../components/mui";
 import { ImageTitleProps } from "../../types/shared/imageTitle.types";
 
 export const useImageTitleStyles = makeStyles(() => ({

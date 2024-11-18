@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Typography } from "@mui/material";
+import { Typography } from "../mui";
 import { useWebsitePresenterStyles } from "../../styles/home/websitePresenter.styles";
 import YoutubeEmbed from "./YoutubeEmbed";
 import { WebsitePresenterProps } from "../../types/home/websitePresenter.types";

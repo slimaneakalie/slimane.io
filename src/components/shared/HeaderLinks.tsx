@@ -1,4 +1,4 @@
-import { Button, Link as MaterialLink, Menu, MenuItem } from "@mui/material";
+import { Button, Link as MaterialLink, Menu, MenuItem } from "../mui";
 import React from "react";
 import { useHeaderStyles } from "../../styles/shared/header.styles";
 import { HeaderLink } from "../../types/home/header.types";

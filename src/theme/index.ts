@@ -1,5 +1,4 @@
-import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
+import { createTheme, red } from "../components/mui";
 
 // Create a theme instance.
 const appTheme = createTheme({

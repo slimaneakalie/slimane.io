@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "../../components/mui";
 
 export const useCommentsPanelStyles = makeStyles(() => ({
   defaultClassName: {

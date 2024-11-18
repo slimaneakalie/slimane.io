@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Typography } from "@mui/material";
+import { Typography } from "../mui";
 import { useItemPageTitleStyles } from "../../styles/shared/itemPage.styles";
 import { ItemPageTitleProps } from "../../types/shared/ItemPageTitle.types";
 

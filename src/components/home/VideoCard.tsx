@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CardActionArea, Card } from "@mui/material";
+import { CardActionArea, Card } from "../mui";
 import {
   createVideoLink,
   createVideoThumbnailLink,

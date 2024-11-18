@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { YoutubeEmbedProps } from "../../types/home/youtubeEmbed.types";
 import { useYoutubeEmbedStyles } from "../../styles/home/youtubeEmbed.styles";
 import clsx from "clsx";
-import CircularProgress from "@mui/material/CircularProgress";
+import {CircularProgress} from "../mui";
 
 export default function YoutubeEmbed({
   embedId,

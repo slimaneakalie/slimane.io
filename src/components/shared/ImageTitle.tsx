@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Typography } from "@mui/material";
+import { Typography } from "../mui";
 import { useImageTitleStyles } from "../../styles/shared/ImageTitle.styles";
 import { ImageTitleProps } from "../../types/shared/imageTitle.types";
 import clsx from "clsx";

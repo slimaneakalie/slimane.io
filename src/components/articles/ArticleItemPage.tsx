@@ -7,7 +7,7 @@ import ImageTitle from "../shared/ImageTitle";
 import ArticleMetadata from "./ArticleMetadata";
 import { MDXRemote } from "next-mdx-remote";
 import CommentsPanel from "../shared/CommentsPanel";
-import { Direction } from "@mui/material";
+import { Direction } from "../mui";
 import { isArabicArticle } from "../../lib/utils";
 
 export default function ArticleItemPage({

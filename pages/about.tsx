@@ -1,8 +1,6 @@
 import * as React from "react";
-import { Avatar } from "@mui/material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import { Avatar } from "../src/components/mui";
+import { LinkedIn as LinkedInIcon, GitHub as GitHubIcon, Twitter as TwitterIcon } from "../src/components/mui";
 
 import MainTitle from "../src/components/shared/MainTitle";
 import { useAboutPageStyles } from "../src/styles/about/aboutPage.styles";

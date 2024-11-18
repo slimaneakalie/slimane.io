@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Typography } from "@mui/material";
+import { Typography } from "../mui";
 import { WhereToListenProps } from "../../types/shared/whereToListen.types";
 import { useWhereToListenStyles } from "../../styles/shared/whereToListen.styles";
 import clsx from "clsx";

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Divider, Typography } from "@mui/material";
+import { Divider, Typography } from "../mui";
 import { useArticleMetadataStyles } from "../../styles/articles/articleMetadata.styles";
 import { ArticleMetadataProps } from "../../types/articles/articleItemPage.types";
 import { Tag } from "../../types/shared/articles.types";
