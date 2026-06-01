@@ -2,7 +2,6 @@ import * as React from "react";
 import { Avatar } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
 
 import MainTitle from "../src/components/shared/MainTitle";
 import { useAboutPageStyles } from "../src/styles/about/aboutPage.styles";
@@ -13,11 +12,6 @@ import Head from "next/head";
 export default function About(): JSX.Element {
   const classes = useAboutPageStyles();
   const iconLinks: IconLinkProps[] = [
-    {
-      link: "https://twitter.com/cd_slimane",
-      icon: <TwitterIcon />,
-      label: "Twitter",
-    },
     {
       link: "https://www.linkedin.com/in/slimaneakalie",
       icon: <LinkedInIcon />,

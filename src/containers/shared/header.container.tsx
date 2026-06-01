@@ -29,31 +29,31 @@ const navbarProps: HeaderProps = {
       label: "About",
       link: "/about",
     },
-    {
-      label: "Support",
-      subLinks: [
-        {
-          label: "Membership",
-          isExternal: true,
-          link: "https://www.youtube.com/@kassataypodcast/join",
-        },
-        {
-          label: "Patreon",
-          isExternal: true,
-          link: "https://www.patreon.com/kassatay",
-        },
-        {
-          label: "Paypal",
-          isExternal: true,
-          link: "https://paypal.com/paypalme/lectorem",
-        },
-        {
-          label: "Coffee",
-          isExternal: true,
-          link: "https://buymeacoffee.com/kassatay",
-        },
-      ],
-    },
+    // {
+    //   label: "Support",
+    //   subLinks: [
+    //     {
+    //       label: "Membership",
+    //       isExternal: true,
+    //       link: "https://www.youtube.com/@kassataypodcast/join",
+    //     },
+    //     {
+    //       label: "Patreon",
+    //       isExternal: true,
+    //       link: "https://www.patreon.com/kassatay",
+    //     },
+    //     {
+    //       label: "Paypal",
+    //       isExternal: true,
+    //       link: "https://paypal.com/paypalme/lectorem",
+    //     },
+    //     {
+    //       label: "Coffee",
+    //       isExternal: true,
+    //       link: "https://buymeacoffee.com/kassatay",
+    //     },
+    //   ],
+    // },
   ],
 };
 

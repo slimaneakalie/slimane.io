@@ -42,7 +42,7 @@ export default function WebsitePresenter({
             </div>
             <div className={classes.websiteComment}>
               {
-                "// My opinions are my own."
+                "/* All views expressed are my own and not those of any organization I am affiliated with. */"
               }
             </div>
           </Typography>
