@@ -19,7 +19,6 @@ export default function WebsitePresenter({
       "human.being 😎",
       "software.engineer 💻",
       "podcast.host 🎙️",
-      "part-time.writer ✍️",
       "book.lover 📚",
     ],
   };
@@ -43,7 +42,7 @@ export default function WebsitePresenter({
             </div>
             <div className={classes.websiteComment}>
               {
-                "/* In this website I share whatever I create and my thoughts on various topics. My money .. I mean my opinions are my own. */"
+                "// My opinions are my own."
               }
             </div>
           </Typography>

@@ -56,7 +56,7 @@ export const useWebsitePresenterStyles = makeStyles((theme: any) => ({
     fontSize: "1.5rem",
   },
   selfPresentation: {
-    marginBottom: 25,
+    marginBottom: 10,
     "& > div": {
       display: "inline",
     },
